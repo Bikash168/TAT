@@ -1,5 +1,13 @@
-import "@/styles/globals.css";
+// pages/_app.js
+import Layout from '../components/Layout'; // Import Layout
+import '../styles/globals.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }) {
+  return (
+    <Layout title={pageProps.title || "Trident Academy of Technology"}> {/* Pass dynamic title */}
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
+
+export default MyApp;
