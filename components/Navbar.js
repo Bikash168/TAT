@@ -43,7 +43,7 @@ export default function Navbar() {
 
       {/* Right Side - Blue Background */}
       <div className="bg-[#002147] text-white flex-1">
-        <div className="flex items-center justify-between max-w-screen-xl mx-auto px-6 relative mt-8">
+        <div className="flex items-center justify-between max-w-screen-xl mx-auto px-12 relative mt-8">
           {/* Hamburger Menu Button */}
           <button
             className="text-white text-3xl md:hidden px-4"
