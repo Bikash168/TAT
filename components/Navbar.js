@@ -39,35 +39,26 @@ export default function Navbar() {
           {/* Social Media Icons */}
           <div className="flex space-x-6">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-600 hover:text-blue-800 text-1.5xl" />
+              <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-blue-400 hover:text-blue-600 text-1.5xl" />
+              <FaTwitter className="text-blue-400 hover:text-blue-600 text-xl" />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-pink-500 hover:text-pink-700 text-1.5xl" />
+              <FaInstagram className="text-pink-500 hover:text-pink-700 text-xl" />
             </a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-700 hover:text-blue-900 text-1.5xl" />
+              <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-red-600 hover:text-red-800 text-1.5xl" />
+              <FaYoutube className="text-red-600 hover:text-red-800 text-xl" />
             </a>
           </div>
 
-          {/* Menu Items in Top Bar */}
-          <div className="hidden sm:flex space-x-6 text-sm">
-            {topBarMenu.map((item) => (
-              <div key={item.name} className="cursor-pointer">
-                <Link href={item.href}>
-                  <span className="font-semibold text-gray-600 hover:text-blue-600">{item.name}</span>
-                </Link>
-              </div>
-            ))}
-          </div>
+         
 
           {/* Contact Info (Phone, Email, Address) */}
-          <div className="hidden sm:flex space-x-6 text-sm">
+          <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
             {/* Phone */}
             <div className="flex items-center space-x-2">
               <FaPhoneAlt className="text-gray-600" />
@@ -98,6 +89,18 @@ export default function Navbar() {
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
+
+           {/* Menu Items in Top Bar */}
+           <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
+            {topBarMenu.map((item) => (
+              <div key={item.name} className="cursor-pointer">
+                <Link href={item.href}>
+                  <span className="font-semibold text-gray-600 hover:text-blue-600">{item.name}</span>
+                </Link>
+              </div>
+            ))}
+          </div>
+          
         </div>
       </div>
 
