@@ -15,7 +15,7 @@ export default function AboutSection() {
       {/* Text Section */}
       <div className="w-full md:w-1/2 p-8 md:p-12 bg-blue-600 text-white">
         <h2 className="text-2xl font-bold mb-4">
-          What drives us: President Thomas F. Hofmann about TUM
+          What drives us: about TAT
         </h2>
         <p className="text-base leading-relaxed mb-6">
           Research and innovations for society, innovative teaching and

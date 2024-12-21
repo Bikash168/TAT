@@ -15,7 +15,7 @@ export default function HighlightSection() {
         {/* Text Section */}
         <div className="w-full md:w-1/2 p-8 md:p-12 bg-orange-600 text-white">
           <blockquote className="text-lg font-bold mb-4">
-            "TUM is a global hub for cutting-edge research and innovation"
+            "TAT is a global hub for cutting-edge research and innovation"
           </blockquote>
           <p className="text-sm font-semibold mb-6">
             Johann Deisenhofer, alumnus and Nobel Laureate
@@ -41,7 +41,7 @@ export default function HighlightSection() {
           <div className="p-6">
             <h3 className="text-xl font-semibold mb-4">Your life-long education partner</h3>
             <p className="text-sm text-gray-600 mb-6">
-              The TUM Institute for LifeLong Learning offers evidence-based,
+              The TAT Institute for LifeLong Learning offers evidence-based,
               future-oriented, and sustainable continuing education throughout your career.
             </p>
             <a
