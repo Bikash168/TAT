@@ -1,5 +1,5 @@
 // pages/index.js
-import Hero from "../components/Hero";
+import HeroSection from "../components/HeroSection";
 import NewsEvents from "../components/NewsEvents";
 import Highlights from "../components/Highlights";
 import Tatoffer from "../components/Tatoffer";
@@ -10,7 +10,7 @@ import HighlightSection from "../components/HighlightSection";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HeroSection />
       <NewsEvents />
       <Tatoffer />
       <Program />

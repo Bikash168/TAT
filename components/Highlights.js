@@ -6,7 +6,7 @@ const Highlights = () => (
         {/* Card 1 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="/path-to-your-image1.jpg" // Replace with the actual image path
+            src="../images/alumni.jpg" // Replace with the actual image path
             alt="World-Class Faculty"
             className="w-full h-32 object-cover rounded mb-4"
           />
@@ -17,7 +17,7 @@ const Highlights = () => (
         {/* Card 2 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="/path-to-your-image2.jpg" // Replace with the actual image path
+            src="../images/alumni.jpg" // Replace with the actual image path
             alt="State-of-the-Art Facilities"
             className="w-full h-32 object-cover rounded mb-4"
           />
@@ -28,7 +28,7 @@ const Highlights = () => (
         {/* Card 3 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="/path-to-your-image3.jpg" // Replace with the actual image path
+            src="../images/alumni.jpg" // Replace with the actual image path
             alt="Strong Industry Partnerships"
             className="w-full h-32 object-cover rounded mb-4"
           />

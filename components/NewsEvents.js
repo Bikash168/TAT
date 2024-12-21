@@ -14,7 +14,7 @@ const NewsEvents = () => (
           {/* News Card 1 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="../images/21.12.24-World-Meditation-Day.png"
               alt="Biotech Startups"
               className="w-full h-40 object-cover"
             />
@@ -39,7 +39,7 @@ const NewsEvents = () => (
           {/* News Card 2 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="../images/11.12.24-How-to-make-MbA-learning-rewarding-from-Career-Perspective.png"
               alt="AI Brain Damage"
               className="w-full h-40 object-cover"
             />
@@ -64,7 +64,7 @@ const NewsEvents = () => (
           {/* News Card 3 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="../images/18.11.24-BPUT-Carnival.png"
               alt="TUM Magazine"
               className="w-full h-40 object-cover"
             />
@@ -89,7 +89,7 @@ const NewsEvents = () => (
           {/* News Card 4 */}
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
-              src="https://via.placeholder.com/600x400"
+              src="../images/14.11.24-Together-for-a-sustainable-tomorrow.png"
               alt="Biodiversity Impact"
               className="w-full h-40 object-cover"
             />

@@ -6,7 +6,7 @@ export default function AboutSection() {
       {/* Image Section */}
       <div className="w-full md:w-1/2 h-64 md:h-auto">
         <img
-          src="/image.png" // Replace with the path to your uploaded image
+          src="../images/alumni.jpg" // Replace with the path to your uploaded image
           alt="President Thomas F. Hofmann"
           className="object-cover w-full h-full"
         />

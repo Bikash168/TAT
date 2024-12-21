@@ -22,21 +22,21 @@ const NewsEvents = () => {
       title: "Prospective Students",
       description:
         "Learn to bring ideas to life, discover new possibilities, work in teams and build networks.",
-      img: "https://via.placeholder.com/600x400",
+      img: "../images/Prospective-Students.jpg",
       bgColor: "bg-yellow-400",
     },
     Students: {
       title: "Students",
       description:
         "Explore opportunities for growth and gain valuable hands-on experiences in diverse fields.",
-      img: "https://via.placeholder.com/600x400/ff0000",
+      img: "../images/Students.jpg",
       bgColor: "bg-red-400",
     },
     Researchers: {
       title: "Researchers",
       description:
         "Engage in cutting-edge research and innovation, pushing boundaries in your chosen field.",
-      img: "https://via.placeholder.com/600x400/00ff00",
+      img: "../images/Researchers.jpg",
       bgColor: "bg-green-400",
     },
     Employees: {
