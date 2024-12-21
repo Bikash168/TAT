@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; 
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -55,7 +55,7 @@ export default function Navbar() {
             </a>
           </div>
 
-         
+
 
           {/* Contact Info (Phone, Email, Address) */}
           <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
@@ -64,7 +64,7 @@ export default function Navbar() {
               <FaPhoneAlt className="text-gray-600" />
               <span className="font-semibold text-gray-600">+91-9439173220</span>
             </div>
-            
+
             {/* Email */}
             <div className="flex items-center space-x-2">
               <FaEnvelope className="text-gray-600" />
@@ -90,8 +90,8 @@ export default function Navbar() {
             </button>
           </div>
 
-           {/* Menu Items in Top Bar */}
-           <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
+          {/* Menu Items in Top Bar */}
+          <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
             {topBarMenu.map((item) => (
               <div key={item.name} className="cursor-pointer">
                 <Link href={item.href}>
@@ -100,7 +100,7 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-          
+
         </div>
       </div>
 
