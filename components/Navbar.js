@@ -105,7 +105,8 @@ export default function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav className="flex bg-white">
+      {/* Main Navbar */}
+      <nav className="flex bg-white border-b border-gray-300">
         {/* Left Side - White Background */}
         <div className="bg-white text-[#002147] flex items-center py-2 px-8">
           <Link href="/">
@@ -165,6 +166,7 @@ export default function Navbar() {
           </div>
         )}
       </nav>
+
     </div>
   );
 }
