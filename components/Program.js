@@ -7,11 +7,19 @@ const DegreeDropdown = () => {
 
   // Sample degree programs with IDs or slugs for redirection
   const degreePrograms = [
-    { name: "Aerospace - Bachelor of Science (B.Sc.)", slug: "aerospace-bsc" },
-    { name: "Aerospace - Master of Science (M.Sc.)", slug: "aerospace-msc" },
-    { name: "Aerospace Engineering - Master of Science (M.Sc.)", slug: "aerospace-engineering" },
-    { name: "Agricultural Biosciences - Master of Science (M.Sc.)", slug: "agricultural-biosciences" },
-    { name: "Chemical Engineering - Bachelor of Science (B.Sc.)", slug: "chemical-engineering" },
+    { name: "Computer Science & Engineering", slug: "cse-btech" },
+    { name: "Electronics and Telecomm Engineering", slug: "ete-btech" },
+    { name: "Electronics Engineering", slug: "ee-btech" },
+    { name: "Computer Science & Engineering (AI & ML)", slug: "cse-ai-ml-btech" },
+    { name: "Computer Science & Information Technology", slug: "csit-bech" },
+    { name: "Computer Science and Technology", slug: "cst-bech" },
+    { name: "Computer Science & Engineering (Data Science)", slug: "csedt-bech" },
+    { name: "Electrical and Electronics Engineering", slug: "eee-bech" },
+    { name: "Mechanical Engineering", slug: "me-bech" },
+    { name: "Civil Engineering", slug: "ce-bech" },
+    { name: "Biotechnology Engineering", slug: "be-bech" },
+    { name: "Master in Business Administration", slug: "mba" },
+    { name: "Master in Computer Application", slug: "mca" },
     // Add more programs as needed
   ];
 
