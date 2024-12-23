@@ -10,14 +10,17 @@ import HighlightSection from "../components/HighlightSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
+    <div className="nopadding">
+    <HeroSection />
+    </div>
+    <div className="px-2 sm:px-4 lg:px-6">
       <NewsEvents />
       <Tatoffer />
       <Program />
       <AboutSection />
      <HighlightSection />
       <Highlights />
-    
+    </div>
     </>
   );
 }
