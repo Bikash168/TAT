@@ -36,7 +36,6 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
     { name: 'Alumni', href: '/alumni' },
     { name: 'Grievance', href: '/grievance' },
-    { name: 'E-Governance', href: '/e-governance' },
     { name: 'Careers', href: '/careers' },
   ];
 
@@ -92,8 +91,8 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Top Bar Menu */}
-          <div className="md:hidden mt-2 px-4">
-            <ul className="flex flex-wrap space-x-4">
+          <div className="md:hidden mt-4 px-1">
+            <ul className="flex flex-wrap space-x-3">
               {topBarMenu.map((item) => (
                 <li key={item.name} className="text-sm font-semibold text-gray-700 hover:text-blue-500">
                   <Link href={item.href}>{item.name}</Link>
