@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+} from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
@@ -55,80 +64,75 @@ export default function Navbar() {
             </a>
           </div>
 
+          {/* Search Bar */}
+          <div className="relative block w-full sm:w-auto px-4 py-2">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300 w-full"
+            />
+            <button className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
+          </div>
 
-
-          {/* Contact Info (Phone, Email, Address) */}
+          {/* Contact Info */}
           <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
-            {/* Phone */}
             <div className="flex items-center space-x-2">
               <FaPhoneAlt className="text-gray-600" />
               <span className="font-semibold text-gray-600">+91-9439173220</span>
             </div>
-
-            {/* Email */}
             <div className="flex items-center space-x-2">
               <FaEnvelope className="text-gray-600" />
               <span className="font-semibold text-gray-600">info@sacred.foundation</span>
             </div>
-
-            {/* Address */}
             <div className="flex items-center space-x-2">
               <FaMapMarkerAlt className="text-gray-600" />
               <span className="font-semibold text-gray-600">Bhubaneswar, India</span>
             </div>
           </div>
 
-          {/* Search Bar */}
-          <div className="relative hidden sm:block">
-            <input
-              type="text"
-              placeholder="Search..."
-              className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300"
-            />
-            <button className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
-              <FontAwesomeIcon icon={faSearch} />
-            </button>
-          </div>
-
-          {/* Menu Items in Top Bar */}
-          <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
+          {/* Top Bar Menu */}
+          <div className="hidden md:flex space-x-6 text-sm font-semibold">
             {topBarMenu.map((item) => (
-              <div key={item.name} className="cursor-pointer">
-                <Link href={item.href}>
-                  <span className="font-semibold text-gray-600 hover:text-blue-600">{item.name}</span>
-                </Link>
-              </div>
+              <Link key={item.name} href={item.href} className="hover:text-blue-500">
+                {item.name}
+              </Link>
             ))}
           </div>
 
+          {/* Mobile Top Bar Menu */}
+          <div className="md:hidden mt-2 px-4">
+            <ul className="flex flex-wrap space-x-4">
+              {topBarMenu.map((item) => (
+                <li key={item.name} className="text-sm font-semibold text-gray-700 hover:text-blue-500">
+                  <Link href={item.href}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
       {/* Main Navbar */}
-      {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
-        {/* Left Side - White Background */}
         <div className="bg-white text-[#002147] flex items-center py-2 px-8">
-          <Link href="/">
-            <div className="flex items-center cursor-pointer">
-              <img
-                src="/logo.png" // Replace with your logo path
-                alt="Trident Logo"
-                className="h-20 mr-4"
-              />
-              <div>
-                <h1 className="text-lg font-bold leading-tight">TRIDENT</h1>
-                <h1 className="text-lg font-bold leading-tight">ACADEMY</h1>
-                <h1 className="text-lg font-bold leading-tight">OF TECHNOLOGY</h1>
-              </div>
+          <Link href="/" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="Trident Logo"
+              className="h-20 mr-4"
+            />
+            <div>
+              <h1 className="text-lg font-bold leading-tight">TRIDENT</h1>
+              <h1 className="text-lg font-bold leading-tight">ACADEMY</h1>
+              <h1 className="text-lg font-bold leading-tight">OF TECHNOLOGY</h1>
             </div>
           </Link>
         </div>
 
-        {/* Right Side - Blue Background */}
         <div className="bg-[#002147] text-white flex-1">
           <div className="flex items-center justify-between max-w-screen-xl mx-auto px-12 relative mt-8">
-            {/* Hamburger Menu Button */}
             <button
               className="text-white text-3xl md:hidden px-4"
               onClick={toggleMenu}
@@ -136,7 +140,6 @@ export default function Navbar() {
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
             </button>
 
-            {/* Desktop Menu */}
             <ul className="hidden md:flex space-x-6 uppercase text-base font-semibold ml-auto">
               {menuItems.map((item) => (
                 <li key={item.name} className="hover:text-gray-300 cursor-pointer">
@@ -149,7 +152,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg mt-2">
             <ul className="flex flex-col space-y-2 p-4">
@@ -166,7 +168,6 @@ export default function Navbar() {
           </div>
         )}
       </nav>
-
     </div>
   );
 }
