@@ -43,25 +43,15 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
       {/* Top Bar */}
-      <div className="bg-white py-2 border-b border-gray-300">
-        <div className="container mx-auto flex flex-wrap items-center justify-between px-8">
-          {/* Social Media Icons */}
-          <div className="flex space-x-6">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-blue-600 hover:text-blue-800 text-xl" />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="text-blue-400 hover:text-blue-600 text-xl" />
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-pink-500 hover:text-pink-700 text-xl" />
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="text-blue-700 hover:text-blue-900 text-xl" />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube className="text-red-600 hover:text-red-800 text-xl" />
-            </a>
+      <div className="bg-gray-100 py-2 px-4">
+        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+          {/* Left: Social Media Icons */}
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-600 hover:text-blue-500"><FaFacebook /></a>
+            <a href="#" className="text-gray-600 hover:text-pink-500"><FaInstagram /></a>
+            <a href="#" className="text-gray-600 hover:text-blue-700"><FaLinkedin /></a>
+            <a href="#" className="text-gray-600 hover:text-red-500"><FaYoutube /></a>
+            <a href="#" className="text-gray-600 hover:text-blue-400"><FaTwitter /></a>
           </div>
 
           {/* Search Bar */}
@@ -76,20 +66,19 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Contact Info */}
-
-          <div className="flex flex-wrap justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm mt-4 sm:mt-0">
-            <div className="flex items-center space-x-2 w-full sm:w-auto">
-              <FaPhoneAlt className="text-gray-600" />
-              <span className="font-semibold text-gray-600">+91-9439173220</span>
+          {/* Right: Contact Information */}
+          <div className="flex flex-wrap justify-center sm:justify-end space-y-2 sm:space-y-0 space-x-4 sm:space-x-6 text-sm text-gray-600">
+            <div className="flex items-center space-x-2">
+              <FaPhoneAlt />
+              <span className="font-medium">+91-9439173220</span>
             </div>
-            <div className="flex items-center space-x-2 w-full sm:w-auto">
-              <FaEnvelope className="text-gray-600" />
-              <span className="font-semibold text-gray-600">info@sacred.foundation</span>
+            <div className="flex items-center space-x-2">
+              <FaEnvelope />
+              <span className="font-medium">info@sacred.foundation</span>
             </div>
-            <div className="flex items-center space-x-2 w-full sm:w-auto">
-              <FaMapMarkerAlt className="text-gray-600" />
-              <span className="font-semibold text-gray-600">Bhubaneswar, India</span>
+            <div className="flex items-center space-x-2">
+              <FaMapMarkerAlt />
+              <span className="font-medium">Bhubaneswar, India</span>
             </div>
           </div>
 
