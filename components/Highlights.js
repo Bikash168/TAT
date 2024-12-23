@@ -6,9 +6,9 @@ const Highlights = () => (
         {/* Card 1 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="../images/alumni.jpg" // Replace with the actual image path
+            src="../images/Faculty.jpg" // Replace with the actual image path
             alt="World-Class Faculty"
-            className="w-full h-32 object-cover rounded mb-4"
+            className="w-full h-60 object-cover rounded mb-4"
           />
           <h3 className="font-bold text-lg mb-2">World-Class Faculty</h3>
           <p>Learn from the best educators and industry professionals.</p>
@@ -17,9 +17,9 @@ const Highlights = () => (
         {/* Card 2 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="../images/alumni.jpg" // Replace with the actual image path
+            src="../images/Facilities.jpeg" // Replace with the actual image path
             alt="State-of-the-Art Facilities"
-            className="w-full h-32 object-cover rounded mb-4"
+            className="w-full h-60 object-cover rounded mb-4"
           />
           <h3 className="font-bold text-lg mb-2">State-of-the-Art Facilities</h3>
           <p>Access cutting-edge labs and research centers.</p>
@@ -28,9 +28,9 @@ const Highlights = () => (
         {/* Card 3 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="../images/alumni.jpg" // Replace with the actual image path
+            src="../images/Industry.jpg" // Replace with the actual image path
             alt="Strong Industry Partnerships"
-            className="w-full h-32 object-cover rounded mb-4"
+            className="w-full h-60 object-cover rounded mb-4"
           />
           <h3 className="font-bold text-lg mb-2">Strong Industry Partnerships</h3>
           <p>Collaborate with leading companies and organizations.</p>
