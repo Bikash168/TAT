@@ -1,7 +1,7 @@
 // components/HighlightSection.js
 export default function HighlightSection() {
-    return (
-        <section id="news" className="py-10 bg-gray-50">
+  return (
+    <section id="news" className="py-10 bg-gray-50">
       <div className="flex flex-col md:flex-row items-center justify-between bg-white shadow-lg rounded-lg overflow-hidden mx-auto max-w-6xl">
         {/* Image Section */}
         <div className="w-full md:w-1/2 h-64 md:h-auto">
@@ -11,9 +11,10 @@ export default function HighlightSection() {
             className="object-cover w-full h-full"
           />
         </div>
-  
+
         {/* Text Section */}
-        <div className="w-full md:w-1/2 p-8 md:p-12 bg-orange-600 text-white">
+        <div className="w-full md:w-1/2 p-16 md:p-24 bg-orange-600 text-white min-h-[240px] md:min-h-[340px] lg:min-h-[440px]">
+          {/* Content goes here */}
           <blockquote className="text-lg font-bold mb-4">
             "TAT is a global hub for cutting-edge research and innovation"
           </blockquote>
@@ -76,7 +77,6 @@ export default function HighlightSection() {
           </div>
         </div>
       </div>
-      </section>
-    );
-  }
-  
+    </section>
+  );
+}

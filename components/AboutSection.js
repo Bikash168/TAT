@@ -13,14 +13,14 @@ export default function AboutSection() {
       </div>
 
       {/* Text Section */}
-      <div className="w-full md:w-1/2 p-8 md:p-12 bg-blue-600 text-white">
+      <div className="w-full md:w-1/2 p-14 md:p-24 bg-blue-600 text-white">
         <h2 className="text-2xl font-bold mb-4">
           What drives us: about TAT
         </h2>
         <p className="text-base leading-relaxed mb-6">
           Research and innovations for society, innovative teaching and
           continuing education: This is how we shape a sustainable future,
-          relying on the intelligence of the entire university and working
+          relying on the intelligence of the entire college and working
           closely with global partners to do so.
         </p>
         <a
