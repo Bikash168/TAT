@@ -20,17 +20,16 @@ const NewsEvents = () => (
             />
             <div className="p-4">
               <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
-                Innovation
+              Yoga
               </span>
               <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
-                Breeding ground for biotech start-ups
+              World Meditation day 
               </h3>
               <p className="text-sm text-gray-600 mt-2">
-                Trident Labs foster an outstanding ecosystem for budding
-                biotechnology innovations and ventures...
+              On 21st December 2024, our college celebrated World Meditation Day with lively participation from students, faculty, and staff. The event focused on the positive effects of meditation on mental clarity, emotional balance, and overall health.
               </p>
               <div className="mt-3 text-xs text-gray-400 flex justify-between">
-                <span>12/18/2024</span>
+                <span>12/21/2024</span>
                 <span>Reading time 5 min</span>
               </div>
             </div>
@@ -45,14 +44,13 @@ const NewsEvents = () => (
             />
             <div className="p-4">
               <span className="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded">
-                AI & Research
+                Academy
               </span>
               <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
-                AI pinpoints stroke timing with high accuracy
+              How to Make MBA Learning Rewarding from a Career Perspective
               </h3>
               <p className="text-sm text-gray-600 mt-2">
-                Quick advancements in AI help reduce stroke impact with accurate
-                diagnosis in critical scenarios...
+              A session on "How to Make MBA Learning Rewarding from a Career Perspective" was conducted by Rakesh Kumar, where he guided students on aligning their academic journey with their career goals. The session offered valuable insights on leveraging an MBA to enhance career prospects and achieve long-term success.
               </p>
               <div className="mt-3 text-xs text-gray-400 flex justify-between">
                 <span>12/18/2024</span>
@@ -73,11 +71,10 @@ const NewsEvents = () => (
                 Community
               </span>
               <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
-                Join us as we turn a new page
+              BPUT Carnival 
               </h3>
               <p className="text-sm text-gray-600 mt-2">
-                The new edition of our campus magazine highlights key events,
-                alumni achievements, and innovations...
+              The BPUT Tech Carnival featured exciting competitions like the AI Project Competition, Social Entrepreneurship Competition, and Rangoli Jhoti Competition, where ideas and creativity merged. These events highlighted the talent and energy of the participants, leaving a strong impression of their skills and creativity.
               </p>
               <div className="mt-3 text-xs text-gray-400 flex justify-between">
                 <span>12/18/2024</span>
@@ -95,14 +92,13 @@ const NewsEvents = () => (
             />
             <div className="p-4">
               <span className="inline-block bg-teal-100 text-teal-800 text-xs px-2 py-1 rounded">
-                Sustainability
+                Program
               </span>
               <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
-                Biodiversity loss due to trade practices
+              FDP on application of Mathematics in data science
               </h3>
               <p className="text-sm text-gray-600 mt-2">
-                Recent studies show a rise in biodiversity loss due to extensive
-                agricultural trade across continents...
+              An FDP on the "Application of Mathematics in Data Science" was conducted, focusing on the essential role mathematics plays in analyzing and interpreting data. The session covered key mathematical concepts and techniques used in data science, helping participants understand how to apply these principles to solve complex problems and make data-driven decisions effectively.
               </p>
               <div className="mt-3 text-xs text-gray-400 flex justify-between">
                 <span>12/18/2024</span>
