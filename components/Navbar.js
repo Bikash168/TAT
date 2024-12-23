@@ -69,11 +69,11 @@ export default function Navbar() {
           <div className="flex flex-wrap justify-center sm:justify-end space-y-2 sm:space-y-0 space-x-4 sm:space-x-6 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt />
-              <span className="font-medium">+91-9439173220</span>
+              <span className="font-medium">0674-3530517, 9861191195</span>
             </div>
             <div className="flex items-center space-x-2">
               <FaEnvelope />
-              <span className="font-medium">info@sacred.foundation</span>
+              <span className="font-medium">info@trident.ac.in</span>
             </div>
             <div className="flex items-center space-x-2">
               <FaMapMarkerAlt />
