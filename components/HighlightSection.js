@@ -6,7 +6,7 @@ export default function HighlightSection() {
         {/* Image Section */}
         <div className="w-full md:w-1/2 h-64 md:h-auto">
           <img
-            src="../images/alumni.jpg" // Replace with the path to your uploaded image
+            src="../images/ALUMNI1.jpg" // Replace with the path to your uploaded image
             alt="Johann Deisenhofer, alumnus and Nobel Laureate"
             className="object-cover w-full h-full"
           />
@@ -34,7 +34,7 @@ export default function HighlightSection() {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="h-64">
             <img
-              src="../images/alumni.jpg" // Replace with your image path
+              src="../images/partner.jpg" // Replace with your image path
               alt="Your life-long education partner"
               className="object-cover w-full h-full"
             />
@@ -58,7 +58,7 @@ export default function HighlightSection() {
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <div className="h-64">
             <img
-              src="../images/alumni.jpg" // Replace with your image path
+              src="../images/research.jpg" // Replace with your image path
               alt="Schools and research centers"
               className="object-cover w-full h-full"
             />
