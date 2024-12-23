@@ -77,16 +77,17 @@ export default function Navbar() {
           </div>
 
           {/* Contact Info */}
-          <div className="hidden sm:flex space-x-6 text-sm overflow-x-auto">
-            <div className="flex items-center space-x-2">
+
+          <div className="flex flex-wrap justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-6 text-sm mt-4 sm:mt-0">
+            <div className="flex items-center space-x-2 w-full sm:w-auto">
               <FaPhoneAlt className="text-gray-600" />
               <span className="font-semibold text-gray-600">+91-9439173220</span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 w-full sm:w-auto">
               <FaEnvelope className="text-gray-600" />
               <span className="font-semibold text-gray-600">info@sacred.foundation</span>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 w-full sm:w-auto">
               <FaMapMarkerAlt className="text-gray-600" />
               <span className="font-semibold text-gray-600">Bhubaneswar, India</span>
             </div>
