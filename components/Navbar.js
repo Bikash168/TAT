@@ -105,7 +105,7 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
-        <div className="bg-white text-[#002147] flex items-center py-2 px-8">
+        <div className="bg-white text-[#002147] flex items-center py-2 px-4">
           <Link href="/" className="flex items-center">
             <img
               src="/logo.png"
@@ -113,9 +113,9 @@ export default function Navbar() {
               className="h-20 mr-4"
             />
             <div>
-              <h1 className="text-lg font-bold leading-tight">TRIDENT</h1>
-              <h1 className="text-lg font-bold leading-tight">ACADEMY</h1>
-              <h1 className="text-lg font-bold leading-tight">OF TECHNOLOGY</h1>
+              <h1 className="text-md font-semibold leading-tight">TRIDENT</h1>
+              <h1 className="text-md font-semibold leading-tight">ACADEMY</h1>
+              <h1 className="text-md font-semibold leading-tight">OF TECHNOLOGY</h1>
             </div>
           </Link>
         </div>
