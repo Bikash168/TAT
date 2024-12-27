@@ -141,7 +141,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-wrap justify-between items-center mt-8 space-y-4 md:space-y-0 text-lg">
+        <div className="flex flex-wrap items-center justify-between mt-8">
           {/* Links */}
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row">
             {[
@@ -164,7 +164,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="flex flex-wrap justify-center space-x-4 text-2xl">
+          <div className="flex justify-end w-full sm:w-auto mt-4 sm:mt-0 space-x-4 text-2xl">
             {[
               { icon: faInstagram, label: "Instagram" },
               { icon: faLinkedin, label: "LinkedIn" },
@@ -183,6 +183,11 @@ const Footer = () => {
               </a>
             ))}
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 text-center text-sm">
+          &copy; 2024 Trident Academy of Technology. All Rights Reserved.
         </div>
       </div>
     </footer>

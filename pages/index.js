@@ -38,9 +38,57 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className="py-16 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 space-y-8">
+        {/* Vertical Cards */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {/* Dedicated Faculty Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-start">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Dedicated Faculty</h3>
+            <p className="text-gray-600 mb-4">
+              Our faculty members are experienced educators and professionals dedicated to providing students with a valuable learning experience. They bring their expertise to well-designed programs, helping students gain both knowledge and skills.
+            </p>
+            <p className="text-gray-600">
+              Using a mix of traditional blackboard teaching and modern tools like LCD projectors, they make lessons engaging and accessible. Faculty members also address student concerns and guide them through academic challenges.
+            </p>
+          </div>
+
+          {/* Excellent Laboratory Facilities Card */}
+          <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-start">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Excellent Laboratory Facilities</h3>
+            <p className="text-gray-600">
+              Trident Academy of Technology provides essential facilities to support a strong engineering education system in Odisha. With well-equipped classrooms and AICTE-compliant laboratories, students are ensured the best resources for practical learning.
+            </p>
+            <p className="text-gray-600">
+              Requirements for these facilities are reviewed annually, with necessary updates and improvements approved by the working committee.
+            </p>
+          </div>
+        </div>
+
+        {/* Horizontal Card */}
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start md:space-x-6">
+          <div className="flex-shrink-0 w-full md:w-1/3">
+            <img
+              src="/images/student-development.jpg" // Replace with your image URL
+              alt="Student Development"
+              className="rounded-lg w-full object-cover"
+            />
+          </div>
+          <div className="w-full md:w-2/3">
+            <h3 className="text-2xl font-semibold text-gray-800 mb-4">Student Overall Development</h3>
+            <p className="text-gray-600 mb-4">
+              Our Student Development Programs help students achieve academic and career objectives by encouraging self-direction, personal development, and empowerment. Activities like seminars, workshops, and mock interviews are organized to foster growth.
+            </p>
+            <p className="text-gray-600">
+              These programs aim to improve employability skills while focusing on overall personality development, helping students maximize their college experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
       </div>
       <div className="px-2 sm:px-4 lg:px-6">
-
         <NewsEvents />
         <Tatoffer />
         <Program />
