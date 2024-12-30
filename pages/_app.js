@@ -1,14 +1,13 @@
-// pages/_app.js
-import Layout from '../components/Layout';
-import '../styles/globals.css';
+import Navbar from '../components/Navbar'; // Import Navbar
+import '../styles/globals.css'; // Import Tailwind or your global styles
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout title={pageProps.title || "Trident Academy of Technology"}> {/* Pass dynamic title */}
+    <>
+      <Navbar /> {/* Add Navbar here */}
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 
 export default MyApp;
-
