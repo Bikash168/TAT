@@ -17,7 +17,11 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen((prev) => !prev);
+  };
+
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false); // Close the menu when a menu item is clicked
   };
 
   const menuItems = [
@@ -95,16 +99,14 @@ export default function Navbar() {
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
         <div className="bg-white text-[#002147] flex items-center py-2 px-4">
-          <Link href="/" className="flex items-center">
-            <img
-              src="/logo.png"
-              alt="Trident Logo"
-              className="h-20 mr-4"
-            />
-            <div>
-              <h1 className="text-md font-semibold leading-tight">TRIDENT</h1>
-              <h1 className="text-md font-semibold leading-tight">ACADEMY</h1>
-              <h1 className="text-md font-semibold leading-tight">OF TECHNOLOGY</h1>
+          <Link href="/">
+            <div className="flex items-center cursor-pointer">
+              <img src="/logo.png" alt="Trident Logo" className="h-20 mr-4" />
+              <div>
+                <h1 className="text-md font-semibold leading-tight">TRIDENT</h1>
+                <h1 className="text-md font-semibold leading-tight">ACADEMY</h1>
+                <h1 className="text-md font-semibold leading-tight">OF TECHNOLOGY</h1>
+              </div>
             </div>
           </Link>
         </div>
@@ -136,10 +138,10 @@ export default function Navbar() {
             <ul className="flex flex-col space-y-2 p-4">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
-                  <Link href={item.href}>
-                    <span className="block bg-white text-[#002147] hover:bg-gray-100 font-semibold text-sm py-3 px-4 rounded shadow-md transition-all duration-300 ease-in-out">
+                  <Link href={item.href} onClick={handleMenuItemClick}>
+                    <div className="block bg-white text-[#002147] hover:bg-gray-100 font-semibold text-sm py-3 px-4 rounded shadow-md transition-all duration-300 ease-in-out">
                       {item.name}
-                    </span>
+                    </div>
                   </Link>
                 </li>
               ))}
