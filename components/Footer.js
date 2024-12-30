@@ -134,23 +134,24 @@ const Footer = () => {
               </a>
             ))}
           </div>
-
-          {/* Social Media */}
-          <div className="flex justify-end w-full sm:w-auto mt-4 sm:mt-0 space-x-4 text-2xl">
-            {[
-              { icon: faInstagram, label: "Instagram" },
-              { icon: faLinkedin, label: "LinkedIn" },
-              { icon: faFacebook, label: "Facebook" },
-              { icon: faTwitter, label: "Twitter" },
-              { icon: faYoutube, label: "YouTube" },
-              { icon: faRss, label: "RSS" },
-            ].map(({ icon, label }) => (
-              <a key={label} href="/" className="hover:text-gray-300 transition-all" aria-label={label}>
-                <FontAwesomeIcon icon={icon} />
-              </a>
-            ))}
-          </div>
         </div>
+
+        {/* Social Media */}
+        <div className="flex justify-end w-full sm:w-auto mt-4 sm:mt-0 space-x-4 text-2xl">
+          {[
+            { icon: faInstagram, label: "Instagram" },
+            { icon: faLinkedin, label: "LinkedIn" },
+            { icon: faFacebook, label: "Facebook" },
+            { icon: faTwitter, label: "Twitter" },
+            { icon: faYoutube, label: "YouTube" },
+            { icon: faRss, label: "RSS" },
+          ].map(({ icon, label }) => (
+            <a key={label} href="/" className="hover:text-gray-300 transition-all" aria-label={label}>
+              <FontAwesomeIcon icon={icon} />
+            </a>
+          ))}
+        </div>
+
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm">
