@@ -36,7 +36,7 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
     { name: 'Alumni', href: '/alumni' },
     { name: 'Grievance', href: '/grievance' },
-    { name: 'Careers', href: '/career'},
+    { name: 'Careers', href: '/career' },
   ];
 
   return (
@@ -88,17 +88,6 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-          </div>
-
-          {/* Mobile Top Bar Menu */}
-          <div className="md:hidden mt-4 px-1">
-            <ul className="flex flex-wrap space-x-3">
-              {topBarMenu.map((item) => (
-                <li key={item.name} className="text-sm font-semibold text-gray-700 hover:text-blue-500">
-                  <Link href={item.href}>{item.name}</Link>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
