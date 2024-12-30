@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Link from 'next/link';
 
 export default function Research() {
@@ -116,6 +117,7 @@ export default function Research() {
         </div>
         </div>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 }

@@ -10,8 +10,7 @@ import {
 
 const Footer = () => {
   return (
-
-    <footer className="bg-[#002147] text-white text-base py-8">
+    <footer className="bg-[#002147] text-center text-white text-base py-8">
       <div className="container mx-auto px-4">
         {/* Top Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-6">
@@ -25,25 +24,16 @@ const Footer = () => {
             </p>
             <p className="mt-4 text-lg">
               Phone:{" "}
-              <a
-                href="tel:0674-3530517"
-                className="hover:text-gray-300 underline"
-              >
+              <a href="tel:0674-3530517" className="hover:text-gray-300 underline">
                 0674-3530517
               </a>
               ,{" "}
-              <a
-                href="tel:9861191195"
-                className="hover:text-gray-300 underline"
-              >
+              <a href="tel:9861191195" className="hover:text-gray-300 underline">
                 9861191195
               </a>
               <br />
               Email:{" "}
-              <a
-                href="mailto:info@trident.ac.in"
-                className="hover:text-gray-300 underline"
-              >
+              <a href="mailto:info@trident.ac.in" className="hover:text-gray-300 underline">
                 info@trident.ac.in
               </a>
             </p>
@@ -54,7 +44,7 @@ const Footer = () => {
             <h2 className="font-bold text-xl">
               Let's shape the future together.
             </h2>
-            <p className="mt-4">
+            <p className="mt-4 text-center">
               <a
                 href="/"
                 className="bg-white text-[#002147] px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition-all"
@@ -69,26 +59,17 @@ const Footer = () => {
             <h2 className="font-bold text-xl">Latest News</h2>
             <ul className="mt-4 space-y-2 text-lg">
               <li>
-                <a
-                  href="/"
-                  className="hover:text-gray-300 transition-all underline"
-                >
+                <a href="/" className="hover:text-gray-300 transition-all underline">
                   → Mission: a human-made leaf
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="hover:text-gray-300 transition-all underline"
-                >
+                <a href="/" className="hover:text-gray-300 transition-all underline">
                   → AI pinpoints stroke timing with high accuracy
                 </a>
               </li>
               <li>
-                <a
-                  href="/"
-                  className="hover:text-gray-300 transition-all underline"
-                >
+                <a href="/" className="hover:text-gray-300 transition-all underline">
                   → Join TAT as we turn a new page
                 </a>
               </li>
@@ -112,10 +93,7 @@ const Footer = () => {
                 "DF Group",
               ].map((site) => (
                 <li key={site}>
-                  <a
-                    href="/"
-                    className="hover:text-gray-300 transition-all underline"
-                  >
+                  <a href="/" className="hover:text-gray-300 transition-all underline">
                     {site} ↗
                   </a>
                 </li>
@@ -129,10 +107,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-lg">
               {["About TAT", "Library", "Workshop"].map((link) => (
                 <li key={link}>
-                  <a
-                    href="/"
-                    className="hover:text-gray-300 transition-all underline"
-                  >
+                  <a href="/" className="hover:text-gray-300 transition-all underline">
                     {link} ↗
                   </a>
                 </li>
@@ -154,11 +129,7 @@ const Footer = () => {
               "Legal Notice",
               "Emergency",
             ].map((item) => (
-              <a
-                key={item}
-                href="/"
-                className="hover:text-gray-300 transition-all underline"
-              >
+              <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
                 {item}
               </a>
             ))}
@@ -174,12 +145,7 @@ const Footer = () => {
               { icon: faYoutube, label: "YouTube" },
               { icon: faRss, label: "RSS" },
             ].map(({ icon, label }) => (
-              <a
-                key={label}
-                href="/"
-                className="hover:text-gray-300 transition-all"
-                aria-label={label}
-              >
+              <a key={label} href="/" className="hover:text-gray-300 transition-all" aria-label={label}>
                 <FontAwesomeIcon icon={icon} />
               </a>
             ))}

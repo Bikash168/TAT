@@ -5,6 +5,7 @@ import Tatoffer from "../components/Tatoffer";
 import Program from "../components/Program";
 import AboutSection from "../components/AboutSection";
 import HighlightSection from "../components/HighlightSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -95,7 +96,9 @@ export default function Home() {
         <AboutSection />
         <HighlightSection />
         <Highlights />
+        
       </div>
+      <Footer />
     </>
   );
 }

@@ -1,5 +1,5 @@
 // pages/_app.js
-import Layout from '../components/Layout'; // Import Layout
+import Layout from '../components/Layout';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -11,3 +11,4 @@ function MyApp({ Component, pageProps }) {
 }
 
 export default MyApp;
+

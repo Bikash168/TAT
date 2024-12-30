@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Link from 'next/link';
 
 const Placement = () => {
@@ -107,6 +108,7 @@ const Placement = () => {
           </div>
         </div>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 };

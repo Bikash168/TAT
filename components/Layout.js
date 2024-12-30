@@ -1,7 +1,7 @@
 // components/Layout.js
 import Head from 'next/head';
 import Navbar from './Navbar';
-import Footer from './Footer';
+
 
 const Layout = ({ children, title, description, keywords }) => {
   return (
@@ -15,10 +15,10 @@ const Layout = ({ children, title, description, keywords }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex-grow ">
+      <main className="flex-grow">
         {children}
       </main>
-      <Footer />
+    
     </div>
   );
 };

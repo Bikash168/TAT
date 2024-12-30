@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Link from 'next/link';
 
 export default function Alumni() {
@@ -72,6 +73,7 @@ export default function Alumni() {
           </p>
         </section>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 }

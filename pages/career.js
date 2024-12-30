@@ -1,5 +1,6 @@
 // pages/career.js
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 
 export default function Career() {
   return (
@@ -170,6 +171,7 @@ export default function Career() {
           </div>
         </section>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 }

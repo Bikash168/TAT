@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import { useState } from 'react';
 
 const Contact = () => {
@@ -148,6 +149,7 @@ const Contact = () => {
           )}
         </section>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 };

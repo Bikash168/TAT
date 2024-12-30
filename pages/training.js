@@ -1,5 +1,6 @@
 // pages/training.js
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Link from 'next/link';
 
 export default function Training() {
@@ -154,6 +155,7 @@ export default function Training() {
         </div>
         </div>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 }

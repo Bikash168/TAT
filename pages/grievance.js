@@ -1,5 +1,6 @@
 // pages/grievance.js
 import Layout from '../components/Layout';
+import Footer from '../components/Footer';
 import Link from 'next/link';
 
 export default function Grievance() {
@@ -171,6 +172,7 @@ export default function Grievance() {
           </section>
         </div>
       </main>
+      <Footer /> {/* Footer is here */}
     </Layout>
   );
 }
