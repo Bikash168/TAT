@@ -5,10 +5,10 @@ const Academics = () => {
   return (
     <Layout title="Academics | Trident Academy of Technology">
       <main className="flex container mx-auto px-4 lg:px-16 py-12">
-
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Sidebar Menu */}
           <div className="w-1/4 lg:w-1/5 bg-[#002147] text-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold text-white">Academics Menu</h2>
+            <h2 className="text-2xl font-semibold text-white mb-6">Academics Menu</h2>
             <ul className="mt-6 space-y-3">
               {[ 
                 { name: 'Departments', link: '#departments' },
@@ -32,7 +32,7 @@ const Academics = () => {
           </div>
 
           {/* Main Content */}
-          <div className="w-full lg:w-3/4">
+          <div className="w-3/4 lg:w-4/5 pl-6">
             {/* Departments Section */}
             <section id="departments" className="mb-12">
               <h2 className="text-3xl font-semibold text-[#002147] mb-6">Departments</h2>
@@ -113,7 +113,7 @@ const Academics = () => {
               </p>
             </section>
           </div>
-       
+       </div>
       </main>
     </Layout>
   );

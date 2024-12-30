@@ -4,11 +4,12 @@ import Link from 'next/link';
 const Placement = () => {
   return (
     <Layout title="Placement | Trident Academy of Technology">
-      <main className="container mx-auto mt-12 px-6 md:px-12">
+      <main className="flex container mx-auto px-4 lg:px-16 py-12">
+
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Sidebar Menu */}
           <div className="w-full lg:w-1/4 p-4 lg:p-6 bg-[#002147] shadow-md rounded-lg">
-            <h2 className="text-2xl font-semibold text-white">PLACEMENT Menu</h2>
+            <h2 className="text-2xl font-semibold text-white mb-6">PLACEMENT</h2>
             <ul className="mt-6 space-y-3">
               {[ 
                 { name: 'Placement Overview', link: '#placement-overview' },
@@ -28,7 +29,7 @@ const Placement = () => {
           </div>
 
           {/* Main Content */}
-          <div className="w-full lg:w-3/4">
+          <div className="w-3/4 lg:w-4/5 pl-6">
             {/* Placement Overview Section */}
             <section id="placement-overview" className="mb-12">
               <h2 className="text-3xl font-semibold text-[#002147] mb-6">Placement Overview</h2>

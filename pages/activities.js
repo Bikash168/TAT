@@ -4,22 +4,14 @@ import Link from 'next/link';
 const Activities = () => {
   return (
     <Layout title="Activities | Trident Academy of Technology">
-      <main className="container mx-auto mt-12 px-6 md:px-12">
-        {/* Header Section */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl font-semibold text-[#002147]">Student Activities at Trident</h1>
-          <p className="text-lg text-gray-700 mt-4">
-            Education at Trident is more than just books and classrooms. Our students are equipped with opportunities to excel in various fields, whether in academics, personality development, extracurricular activities, or beyond.
-          </p>
-        </section>
-
-        {/* Sidebar and Main Content Section */}
+      <main className="flex container mx-auto px-4 lg:px-16 py-12">
+              {/* Sidebar and Main Content Section */}
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Sidebar Menu */}
           <div className="w-full lg:w-1/4 p-4 lg:p-6 bg-[#002147] shadow-md rounded-lg">
-            <h2 className="text-2xl font-semibold text-white">Activities Menu</h2>
+            <h2 className="text-2xl font-semibold text-white mb-6">Activities</h2>
             <ul className="mt-6 space-y-3">
-              {[ 
+              {[
                 { name: 'Co-Curricular', link: '#co-curricular' },
                 { name: 'Extra-Curricular', link: '#extra-curricular' },
                 { name: 'Innovation & Entrepreneurship', link: '#innovation-entrepreneurship' },
@@ -39,7 +31,14 @@ const Activities = () => {
           </div>
 
           {/* Main Content */}
-          <section className="w-full lg:w-3/4">
+          <section className="w-3/4 lg:w-4/5 pl-6">
+            {/* Header Section */}
+            <section className="text-center mb-12">
+              <h1 className="text-4xl font-semibold text-[#002147]">Student Activities at Trident</h1>
+              <p className="text-lg text-gray-700 mt-4">
+                Education at Trident is more than just books and classrooms. Our students are equipped with opportunities to excel in various fields, whether in academics, personality development, extracurricular activities, or beyond.
+              </p>
+            </section>
             {/* Co-Curricular Section */}
             <section className="bg-white p-8 rounded-lg shadow-lg mb-12" id="co-curricular">
               <h2 className="text-3xl font-semibold text-[#002147] mb-6">Student Enrichment through Student Clubs</h2>

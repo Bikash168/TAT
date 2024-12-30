@@ -6,10 +6,10 @@ export default function Training() {
   return (
     <Layout title="Training Programs | Trident Academy of Technology">
       <main className="flex container mx-auto px-4 lg:px-16 py-12">
-
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         {/* Sidebar */}
         <div className="w-1/4 lg:w-1/5 bg-[#002147] text-white p-6 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-6">Training Programs</h2>
+          <h2 className="text-2xl font-semibold text-white mb-6">Training Programs</h2>
           <ul className="space-y-4">
             {[
               { title: 'Attitude is Everything', link: '#attitude' },
@@ -151,6 +151,7 @@ export default function Training() {
               <strong>Phone:</strong> +91 123 456 7890
             </p>
           </section>
+        </div>
         </div>
       </main>
     </Layout>
