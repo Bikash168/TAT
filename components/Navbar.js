@@ -86,10 +86,10 @@ export default function Navbar() {
           </div>
 
           {/* Top Bar Menu */}
-          <div className="hidden md:flex space-x-6 text-sm font-semibold">
+          <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm font-semibold">
             {topBarMenu.map((item) => (
-              <Link key={item.name} href={item.href} className="hover:text-blue-500">
-                {item.name}
+              <Link key={item.name} href={item.href}>
+                <span className="hover:text-blue-500">{item.name}</span>
               </Link>
             ))}
           </div>
@@ -124,7 +124,7 @@ export default function Navbar() {
               {menuItems.map((item) => (
                 <li key={item.name} className="hover:text-gray-300 cursor-pointer">
                   <Link href={item.href}>
-                    {item.name}
+                    <span>{item.name}</span>
                   </Link>
                 </li>
               ))}
@@ -138,10 +138,13 @@ export default function Navbar() {
             <ul className="flex flex-col space-y-2 p-4">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
-                  <Link href={item.href} onClick={handleMenuItemClick}>
-                    <div className="block bg-white text-[#002147] hover:bg-gray-100 font-semibold text-sm py-3 px-4 rounded shadow-md transition-all duration-300 ease-in-out">
+                  <Link href={item.href}>
+                    <span
+                      className="block bg-white text-[#002147] hover:bg-gray-100 font-semibold text-sm py-3 px-4 rounded shadow-md transition-all duration-300 ease-in-out"
+                      onClick={handleMenuItemClick}
+                    >
                       {item.name}
-                    </div>
+                    </span>
                   </Link>
                 </li>
               ))}
