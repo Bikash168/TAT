@@ -41,10 +41,10 @@ const Footer = () => {
 
           {/* Center Section */}
           <div className="text-center sm:text-left">
-            <h2 className="font-bold text-xl">
+            <h2 className="font-bold text-xl text-center">
               Let's shape the future together.
             </h2>
-            <p className="mt-4 text-center">
+            <p className="mt-4 text-center py-4">
               <a
                 href="/"
                 className="bg-white text-[#002147] px-4 py-2 rounded-full shadow-md hover:bg-gray-100 transition-all"
