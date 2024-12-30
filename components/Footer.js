@@ -10,6 +10,7 @@ import {
 
 const Footer = () => {
   return (
+
     <footer className="bg-[#002147] text-white text-base py-8">
       <div className="container mx-auto px-4">
         {/* Top Section */}

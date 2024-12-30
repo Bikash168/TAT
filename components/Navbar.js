@@ -36,7 +36,7 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
     { name: 'Alumni', href: '/alumni' },
     { name: 'Grievance', href: '/grievance' },
-    { name: 'Careers', href: '/careers' },
+    { name: 'Careers', href: '/career'},
   ];
 
   return (

@@ -4,15 +4,14 @@
 
 
 /* styles/globals.css */
-body {
-    margin: 0;
-    padding: 0;
-  }
-  
+/* Sticky navbar fix */
+
+
   main {
     padding-top: 96px; /* Adjust this value according to your navbar height */
   }
   @media (min-width:992px) and (max-width:1920px){
     .nopadding{padding: 0px;}
     }
-  
+  /* Custom sticky navbar */
+
