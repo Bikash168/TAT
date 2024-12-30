@@ -141,6 +141,7 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Mobile Navbar Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg mt-2">
             <ul className="flex flex-col space-y-2 p-4">
