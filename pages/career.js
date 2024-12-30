@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 export default function Career() {
   return (
     <Layout title="Careers | Trident Academy of Technology">
-      <main className="container mx-auto px-6 md:px-12 mt-12">
+      <main className="container mx-auto px-6 md:px-12 mt-2">
         {/* Header Section */}
         <section className="text-center mb-12">
           <h1 className="text-4xl font-semibold text-[#002147]">Join Our Team</h1>

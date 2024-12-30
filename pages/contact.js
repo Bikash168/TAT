@@ -1,4 +1,3 @@
-// pages/contact.js
 import Layout from '../components/Layout';
 import { useState } from 'react';
 
@@ -27,14 +26,17 @@ const Contact = () => {
 
   return (
     <Layout title="Contact Us | Trident Academy of Technology">
-      <main className="container mx-auto mt-12 px-4 lg:px-16">
-        {/* Contact Info Section */}
-        <section className="text-center mb-12">
-          <h1 className="text-4xl font-semibold text-[#002147]">Contact Us</h1>
-          <p className="text-lg text-gray-700 mt-4">
-            Get in touch with us for any queries or information. We are here to help.
-          </p>
-        </section>
+  <main className="container mx-auto mt-2 px-4 lg:px-16">
+    {/* Contact Info Section */}
+    <section className="text-center mb-12">
+      <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
+        Contact Us
+      </h1>
+      <p className="text-lg text-gray-700 mt-4">
+        We would love to hear from you. Whether you have a question or need assistance, feel free to reach out!
+      </p>
+    </section>
+
 
         {/* Contact Details */}
         <section className="lg:flex lg:gap-16 mb-12">
