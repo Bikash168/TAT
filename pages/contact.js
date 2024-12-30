@@ -26,20 +26,19 @@ const Contact = () => {
 
   return (
     <Layout title="Contact Us | Trident Academy of Technology">
-  <main className="container mx-auto mt-2 px-4 lg:px-16">
-    {/* Contact Info Section */}
-    <section className="text-center mb-12">
-      <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
-        Contact Us
-      </h1>
-      <p className="text-lg text-gray-700 mt-4">
-        We would love to hear from you. Whether you have a question or need assistance, feel free to reach out!
-      </p>
-    </section>
-
+      <main className="container mx-auto mt-1 px-4 lg:px-16"> {/* Reduced top margin to mt-1 */}
+        {/* Contact Info Section */}
+        <section className="text-center mb-8"> {/* Reduced bottom margin */}
+          <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
+            Contact Us
+          </h1>
+          <p className="text-lg text-gray-700 mt-2"> {/* Reduced top margin */}
+            We would love to hear from you. Whether you have a question or need assistance, feel free to reach out!
+          </p>
+        </section>
 
         {/* Contact Details */}
-        <section className="lg:flex lg:gap-16 mb-12">
+        <section className="lg:flex lg:gap-12 mb-8"> {/* Reduced bottom margin and gap */}
           <div className="lg:w-1/3 bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Contact Details</h2>
             <p className="text-lg text-gray-700 mb-4">
@@ -79,10 +78,10 @@ const Contact = () => {
         </section>
 
         {/* Contact Form Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-8"> {/* Reduced bottom margin */}
           <h2 className="text-3xl font-semibold text-[#002147] mb-6">Get In Touch</h2>
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4"> {/* Reduced gap */}
               <div>
                 <label className="text-lg text-gray-700" htmlFor="name">Name</label>
                 <input
@@ -109,7 +108,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-6">
+            <div className="mt-4"> {/* Reduced margin-top */}
               <label className="text-lg text-gray-700" htmlFor="subject">Subject</label>
               <input
                 type="text"
@@ -122,7 +121,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="mt-6">
+            <div className="mt-4"> {/* Reduced margin-top */}
               <label className="text-lg text-gray-700" htmlFor="message">Message</label>
               <textarea
                 id="message"
@@ -135,7 +134,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <div className="mt-6 text-center">
+            <div className="mt-4 text-center"> {/* Reduced margin-top */}
               <button type="submit" className="px-8 py-3 bg-[#002147] text-white rounded-lg hover:bg-[#004D73] transition">
                 Send Message
               </button>
@@ -143,7 +142,7 @@ const Contact = () => {
           </form>
 
           {formSubmitted && (
-            <div className="mt-6 text-center text-green-500">
+            <div className="mt-4 text-center text-green-500"> {/* Reduced margin-top */}
               <p>Thank you for your message! We will get back to you shortly.</p>
             </div>
           )}
