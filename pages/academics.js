@@ -4,10 +4,10 @@ import Link from 'next/link';
 const Academics = () => {
   return (
     <Layout title="Academics | Trident Academy of Technology">
-      <main className="container mx-auto mt-12 px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
+      <main className="flex container mx-auto px-4 lg:px-16 py-12">
+
           {/* Sidebar Menu */}
-          <div className="w-full lg:w-1/4 p-4 lg:p-6 bg-[#002147] shadow-md rounded-lg">
+          <div className="w-1/4 lg:w-1/5 bg-[#002147] text-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-semibold text-white">Academics Menu</h2>
             <ul className="mt-6 space-y-3">
               {[ 
@@ -113,7 +113,7 @@ const Academics = () => {
               </p>
             </section>
           </div>
-        </div>
+       
       </main>
     </Layout>
   );
