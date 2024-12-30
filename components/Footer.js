@@ -117,9 +117,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-wrap items-center justify-between mt-8">
+        <div className="flex justify-center items-center mt-8">
           {/* Links */}
-          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row">
+          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
             {[
               "Jobs",
               "Feedback",
@@ -137,7 +137,7 @@ const Footer = () => {
         </div>
 
         {/* Social Media */}
-        <div className="flex justify-end w-full sm:w-auto mt-4 sm:mt-0 space-x-4 text-2xl">
+        <div className="flex justify-center w-full mt-4 sm:mt-0 space-x-4 text-2xl pt-4">
           {[
             { icon: faInstagram, label: "Instagram" },
             { icon: faLinkedin, label: "LinkedIn" },
@@ -151,7 +151,6 @@ const Footer = () => {
             </a>
           ))}
         </div>
-
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm">
