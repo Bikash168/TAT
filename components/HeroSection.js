@@ -38,15 +38,20 @@ const HeroSection = () => {
         </video>
       </div>
 
-      {/* Content Overlay (Optional) */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center px-4">
-          <h1 className="text-4xl md:text-6xl font-bold">
+      {/* Content Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-6 my-10">
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight my-10">
             Welcome to Trident Academy Of Technology
           </h1>
-          <p className="text-lg md:text-xl mt-4">
+          <p className="text-base sm:text-lg md:text-xl mt-2 sm:mt-4">
             Creating impactful solutions for a sustainable future.
           </p>
+          <div className="mt-6">
+            <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm sm:text-base md:text-lg">
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </div>
