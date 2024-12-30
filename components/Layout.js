@@ -15,7 +15,7 @@ const Layout = ({ children, title, description, keywords }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow pt-32">
         {children}
       </main>
     

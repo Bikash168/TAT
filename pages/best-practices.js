@@ -5,7 +5,7 @@ import Link from 'next/link';
 const BestPractices = () => {
   return (
     <Layout title="Best Practices | Trident Academy of Technology">
-      <main className="flex container mx-auto px-4 lg:px-16 py-12">
+      <main className="flex container mx-auto px-4 lg:px-16 my-8">
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
           {/* Sidebar Menu */}

@@ -32,7 +32,7 @@ export default function Research() {
 
   return (
     <Layout title="Research | Trident Academy of Technology">
-      <main className="flex container mx-auto px-4 lg:px-16 py-12">
+      <main className="flex container mx-auto px-4 lg:px-16 my-8">
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
         {/* Sidebar Menu */}
         <div className="w-1/4 lg:w-1/5 bg-[#002147] text-white p-6 rounded-lg shadow-md">
