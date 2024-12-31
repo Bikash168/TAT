@@ -43,42 +43,42 @@ const NewsEvents = () => {
       title: "Employees",
       description:
         "Be a part of an empowering environment, contributing to impactful projects and initiatives.",
-      img: "https://via.placeholder.com/600x400/0000ff",
+      img: "../images/employee.jpg",
       bgColor: "bg-blue-400",
     },
     Alumni: {
       title: "Alumni",
       description:
         "Stay connected with your alma mater and contribute to the growing legacy of excellence.",
-      img: "https://via.placeholder.com/600x400/f0f0f0",
+      img: "../images/alumni2.jpg",
       bgColor: "bg-gray-400",
     },
     "Executives and professionals": {
       title: "Executives and Professionals",
       description:
         "Harness your expertise and join a community of forward-thinking leaders and innovators.",
-      img: "https://via.placeholder.com/600x400/ffa500",
+      img: "../images/Professionals.jpg",
       bgColor: "bg-orange-400",
     },
     Founders: {
       title: "Founders",
       description:
         "Collaborate with visionaries and entrepreneurs to bring groundbreaking ideas to life.",
-      img: "https://via.placeholder.com/600x400/800080",
+      img: "../images/Founders.jpg",
       bgColor: "bg-purple-400",
     },
     Cooperations: {
       title: "Cooperations",
       description:
         "Build strong partnerships and explore synergies to create meaningful impacts.",
-      img: "https://via.placeholder.com/600x400/008080",
+      img: "../images/Cooperations.jpg",
       bgColor: "bg-teal-400",
     },
     "Press and media": {
       title: "Press and Media",
       description:
         "Stay updated on the latest news, events, and milestones achieved by our community.",
-      img: "https://via.placeholder.com/600x400/ffc0cb",
+      img: "../images/Media.jpg",
       bgColor: "bg-pink-400",
     },
   };
@@ -124,17 +124,7 @@ const NewsEvents = () => {
                 backgroundImage: `url(${newsContent[activeTab].img})`,
               }}
             />
-            {/* Centered TAT with Enlarged Font */}
-            <div
-              className="absolute inset-0 flex items-center justify-center text-transparent text-[12rem] font-extrabold leading-none"
-              style={{
-                backgroundImage: `url(${newsContent[activeTab].img})`,
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-              }}
-            >
-              TAT
-            </div>
+            
           </div>
 
           {/* Content Section */}
