@@ -40,26 +40,26 @@ export default function Home() {
   {/* New Grid Section for Certifications/Partnerships */}
   <div className="mt-16 grid grid-cols-1 bg-white sm:grid-cols-2 lg:grid-cols-4 gap-2 items-center">
       {/* ISO Certified Institution */}
-      <div className="text-center border border-red-600 rounded-md p-6">
-        <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-4 w-20 h-20" />
+      <div className="text-center border border-red-600 rounded-md p-4">
+        <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-4 w-25 h-20" />
         <h4 className="text-lg text-black font-semibold">ISO CERTIFIED INSTITUTION</h4>
       </div>
 
       {/* DSIR SIRO Center */}
-      <div className="text-center border border-red-600 rounded-md p-6">
+      <div className="text-center border border-red-600 rounded-md p-4">
         <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-4 w-20 h-20" />
         <h4 className="text-lg text-black font-semibold">DSIR SIRO CENTER</h4>
       </div>
 
       {/* Cisco ThingQbator */}
-      <div className="text-center border border-red-600 rounded-md p-6">
+      <div className="text-center border border-red-600 rounded-md p-4">
         <img src="/images/thingQbator.png" alt="Cisco ThingQbator" className="mx-auto mb-4 w-30 h-20" />
         <h4 className="text-lg font-semibold text-black">INCUBATORS</h4>
         <p className="text-sm text-black">Cisco ThingQbator</p>
       </div>
 
       {/* HESI Member */}
-      <div className="text-center border border-red-600 rounded-md p-6">
+      <div className="text-center border border-red-600 rounded-md p-4">
         <img src="/images/HESI-logo-horizontal.png" alt="HESI Member" className="mx-auto mb-4 w-30 h-20" />
         <h4 className="text-lg font-semibold text-black">MEMBER OF</h4>
         <p className="text-sm text-black">Higher Education Sustainability Initiative</p>
