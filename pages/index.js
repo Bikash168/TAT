@@ -13,28 +13,59 @@ export default function Home() {
       <div className="nopadding">
         <HeroSection />
         <section className="bg-[#002147] text-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
-            <p className="text-base sm:text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
-            Trident Academy of Technology is a renowned name in technical education, celebrated for its high standards of quality and excellence. We aim to provide an environment brimming with energy and enthusiasm where our students can grow both academically and personally. With cutting-edge facilities, a committed faculty, and a focus on innovation, we emphasize hands-on experience alongside theoretical learning to ensure our students are prepared for successful careers.
-            </p>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 text-center">
+    <p className="text-base sm:text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
+      Trident Academy of Technology is a renowned name in technical education, celebrated for its high standards of quality and excellence. We aim to provide an environment brimming with energy and enthusiasm where our students can grow both academically and personally. With cutting-edge facilities, a committed faculty, and a focus on innovation, we emphasize hands-on experience alongside theoretical learning to ensure our students are prepared for successful careers.
+    </p>
 
-            <div className="mt-16 space-y-12">
-              <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Vision</h3>
-                <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
-                Our vision is to become the leading institution in Eastern India, continuously developing skilled professionals through excellence in education and training practices.
-                </p>
-              </div>
+    {/* Vision and Mission Section */}
+    <div className="mt-16 space-y-12">
+      <div className="space-y-4">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Vision</h3>
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
+          Our vision is to become the leading institution in Eastern India, continuously developing skilled professionals through excellence in education and training practices.
+        </p>
+      </div>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Mission</h3>
-                <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
-                Our mission is to help students achieve excellence by fostering creativity, positive thinking, and a passion for lifelong learning. We aim to contribute meaningfully to society by conducting impactful research and driving innovation in emerging technologies.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className="space-y-4">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Mission</h3>
+        <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto">
+          Our mission is to help students achieve excellence by fostering creativity, positive thinking, and a passion for lifelong learning. We aim to contribute meaningfully to society by conducting impactful research and driving innovation in emerging technologies.
+        </p>
+      </div>
+    </div>
+
+    {/* New Grid Section for Certifications/Partnerships */}
+    <div className="mt-16 grid grid-cols-1 bg-white sm:grid-cols-2 lg:grid-cols-4 gap-6 items-center">
+      {/* ISO Certified Institution */}
+      <div className="text-center border border-red-600 rounded-md p-6">
+        <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-4 w-20 h-20" />
+        <h4 className="text-lg text-black font-semibold">ISO CERTIFIED INSTITUTION</h4>
+      </div>
+
+      {/* DSIR SIRO Center */}
+      <div className="text-center border border-red-600 rounded-md p-6">
+        <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-4 w-20 h-20" />
+        <h4 className="text-lg text-black font-semibold">DSIR SIRO CENTER</h4>
+      </div>
+
+      {/* Cisco ThingQbator */}
+      <div className="text-center border border-red-600 rounded-md p-6">
+        <img src="/images/thingQbator.png" alt="Cisco ThingQbator" className="mx-auto mb-4 w-20 h-20" />
+        <h4 className="text-lg font-semibold text-black">INCUBATORS</h4>
+        <p className="text-sm text-black">Cisco ThingQbator</p>
+      </div>
+
+      {/* HESI Member */}
+      <div className="text-center border border-red-600 rounded-md p-6">
+        <img src="/images/HESI-logo-horizontal.png" alt="HESI Member" className="mx-auto mb-4 w-20 h-20" />
+        <h4 className="text-lg font-semibold text-black">MEMBER OF</h4>
+        <p className="text-sm text-black">Higher Education Sustainability Initiative</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-8">
