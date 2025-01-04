@@ -13,11 +13,13 @@ const Academics = () => {
 
   return (
     <Layout title="Academics | Trident Academy of Technology">
-      {/* Background Image Section */}
+      {/* Background Image Section with Reduced Height */}
       <section
-        className="relative w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] flex items-center justify-center bg-cover bg-center"
+        className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage: "url('/images/Academics.jpg')", // Replace with your image path
+          backgroundPosition: "center center", // Center the image horizontally and vertically
+          backgroundAttachment: "fixed", // Keeps the background fixed while scrolling
         }}
       >
         {/* Optional overlay for better text visibility */}
@@ -30,7 +32,7 @@ const Academics = () => {
       </section>
 
       {/* Main Section */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[20px] sm:mt-[40px] lg:mt-[60px]">
         {/* Sidebar */}
         <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-6 rounded-lg shadow-md">
           {/* Hamburger Icon for Mobile View */}
