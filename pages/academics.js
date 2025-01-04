@@ -34,10 +34,10 @@ const Academics = () => {
       {/* Main Section */}
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[20px] sm:mt-[40px] lg:mt-[60px]">
         {/* Sidebar */}
-        <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-6 rounded-lg shadow-md">
+        <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
           {/* Hamburger Icon for Mobile View */}
           <button
-            className="lg:hidden text-white mb-4 flex items-center"
+            className="lg:hidden text-white mb-2 flex items-center"
             onClick={toggleSidebar}
           >
             <svg
@@ -54,7 +54,7 @@ const Academics = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Menu</span>
+            <span className="ml-2 text-lg font-medium">Academics Menu</span>
           </button>
 
           <div
