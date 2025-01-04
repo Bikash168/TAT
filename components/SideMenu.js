@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import { AiOutlineArrowLeft, AiOutlineClose } from "react-icons/ai"; // Import the left arrow and close icons
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai"; // Import right and left arrow icons
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,36 +12,24 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Floating Icon/Button to Trigger Side Menu */}
-      <div className="fixed top-1/2 transform -translate-y-1/2 right-4 z-50">
-        <button
-          onClick={toggleMenu}
-          className="bg-red-600 text-white p-4 rounded-full shadow-xl hover:bg-red-700 transition duration-300 focus:outline-none"
-          title="Open Menu"
-        >
-          <AiOutlineArrowLeft className="text-3xl" />
-        </button>
-      </div>
-
       {/* Side Menu */}
       <div
-        className={`fixed top-1/2 transform -translate-y-1/2 right-4 z-50 bg-red-600 text-white p-4 rounded-lg shadow-xl transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed top-1/2 transform -translate-y-1/2 right-4 z-50 bg-red-600 text-white p-4 rounded-lg shadow-xl transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
         style={{ width: "200px" }}
       >
-        {/* Close Button */}
-        <div className="flex justify-end">
+        {/* Open/Close Button */}
+        <div className="absolute top-0 right-0 p-2">
           <button
             onClick={toggleMenu}
             className="text-3xl text-white focus:outline-none"
           >
-            <AiOutlineClose />
+            {/* Show AiOutlineArrowLeft when menu is open to close it, else show AiOutlineArrowRight */}
+            {menuOpen ? <AiOutlineArrowLeft /> : <AiOutlineArrowRight />}
           </button>
         </div>
 
         {/* Menu Items */}
-        <ul className="space-y-6 px-4 mt-6">
+        <ul className="space-y-6 px-4 mt-10">
           <li className="text-lg hover:text-gray-300">
             <Link href="/">ADMISSION</Link>
           </li>
