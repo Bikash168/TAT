@@ -94,7 +94,7 @@ const CivilEngineering = () => {
                                 <Link href="/faculties">Faculties</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
+                                <Link href="/laboratories">Laboratories</Link>
                             </li>
                         </ul>
                     </div>
