@@ -47,24 +47,23 @@ const Navbar = () => {
         }}
       >
         {/* Menu Items */}
-<ul className="space-y-2">
-  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
-    <Link href="/">ADMISSION</Link>
-  </li>
-  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
-    <Link href="/about">APPOINTMENTS</Link>
-  </li>
-  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
-    <Link href="/services">NOTICE</Link>
-  </li>
-  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
-    <Link href="/contact">NIRF</Link>
-  </li>
-  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
-    <Link href="/contact">E-MAGAZINE</Link>
-  </li>
-</ul>
-
+        <ul className="space-y-2">
+          <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+            <Link href="/">ADMISSION</Link>
+          </li>
+          <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+            <Link href="/about">APPOINTMENTS</Link>
+          </li>
+          <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+            <Link href="/services">NOTICE</Link>
+          </li>
+          <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+            <Link href="/contact">NIRF</Link>
+          </li>
+          <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+            <Link href="/contact">E-MAGAZINE</Link>
+          </li>
+        </ul>
       </div>
     </>
   );
