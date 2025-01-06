@@ -88,7 +88,7 @@ const Departments = () => {
             <h2 className="text-2xl font-semibold mb-6">Departments Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Civil Engineering', link: '#civil-engineering' },
+                { name: 'Civil Engineering', link: '/civil-engineering' },
                 { name: 'Biotechnology Engineering', link: '#biotechnology-engineering' },
                 { name: 'Computer Science & Engineering', link: '#computer-science-engineering' },
                 { name: 'Computer Science & Engineering (AI & ML)', link: '#cs-ai-ml' },
