@@ -86,10 +86,8 @@ const Academics = () => {
             </ul>
           </div>
         </aside>
-
         {/* Main Content */}
-        <div className="w-full lg:w-3/4 space-y-12">
-          {/* Dynamic Sections */}
+        <div className="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {[
             {
               id: 'departments',
@@ -152,14 +150,25 @@ const Academics = () => {
                 'The institution adheres to the guidelines and regulations set by Biju Patnaik University of Technology (BPUT), ensuring that all academic policies and procedures are in line with the university’s standards and requirements.',
             },
           ].map((section) => (
-            <section id={section.id} key={section.id} className="space-y-4">
-              <h2 className="text-3xl font-semibold text-[#002147]">
-                {section.title}
-              </h2>
-              <p className="text-lg text-gray-700">{section.content}</p>
-            </section>
+            <div
+              key={section.id}
+              className="bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition"
+            >
+              <h2 className="text-2xl font-semibold text-[#002147] mb-4">{section.title}</h2>
+              <p className="text-gray-700 mb-6">
+                {section.content.length > 150
+                  ? section.content.substring(0, 150) + '...'
+                  : section.content}
+              </p>
+              <Link href={`#${section.id}`}>
+                <button className="text-white bg-[#004D73] px-4 py-2 rounded-lg hover:bg-[#002147] transition">
+                  Know More
+                </button>
+              </Link>
+            </div>
           ))}
         </div>
+
       </main>
 
       <Footer />
