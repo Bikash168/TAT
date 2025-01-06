@@ -79,10 +79,18 @@ const Courses = () => {
                     </li>
                     <li>/</li>
                     <li>
-                        <Link href="/courses" className="hover:underline">
-                            Courses
+                        <Link href="/departments" className="hover:underline">
+                            Departments
                         </Link>
                     </li>
+                    <li>/</li>
+                    <li>
+                        <Link href="/civil-engineering" className="hover:underline">
+                            Civil Engineering
+                        </Link>
+                    </li>
+                    <li>/</li>
+                    <li className="text-gray-600">Courses</li>
                 </ul>
             </nav>
 
