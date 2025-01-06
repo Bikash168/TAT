@@ -65,7 +65,7 @@ const Academics = () => {
             <h2 className="text-2xl font-semibold mb-6">Academics Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Departments', link: '#departments' },
+                { name: 'Departments', link: '/departments' },
                 { name: 'Learning Resources', link: '#learning-resources' },
                 { name: 'Academic Advisory Board', link: '#academic-advisory-board' },
                 { name: 'Academic Monitoring Council', link: '#academic-monitoring-council' },
