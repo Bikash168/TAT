@@ -1,60 +1,71 @@
 import { useState } from "react";
 import Link from "next/link";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai"; // Import right and left arrow icons
+import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle the menu open/close
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState);
   };
 
   return (
     <>
+      {/* Toggle Button */}
+      <button
+        onClick={toggleMenu}
+        style={{
+          position: "fixed",
+          top: "50%",
+          right: "0",
+          transform: "translateY(-50%)",
+          width: "30px",
+          height: "50px",
+          backgroundColor: "red",
+          border: "2px solid black",
+          zIndex: 9999,
+        }}
+        className="hover:bg-[#004D73] transition duration-300 ease-in-out text-white flex items-center justify-center"
+      >
+        {menuOpen ? <AiOutlineArrowLeft size={24} /> : <AiOutlineArrowRight size={24} />}
+      </button>
+
       {/* Side Menu */}
       <div
-        className={`fixed top-1/2 transform -translate-y-1/2 right-4 z-50 bg-red-600 text-white p-4 rounded-lg shadow-xl transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
-        style={{ width: "200px" }}
+        style={{
+          position: "fixed",
+          top: "50%",
+          right: menuOpen ? "0" : "-200px",
+          transform: "translateY(-50%)",
+          width: "200px",
+          height: "300px",
+          backgroundColor: "red",
+          color: "white",
+          transition: "right 0.3s ease-in-out",
+          zIndex: 9998,
+          padding: "20px",
+        }}
       >
-        {/* Open/Close Button */}
-        <div className="absolute top-0 right-0 p-2">
-          <button
-            onClick={toggleMenu}
-            className="text-3xl text-white focus:outline-none"
-          >
-            {/* Show AiOutlineArrowLeft when menu is open to close it, else show AiOutlineArrowRight */}
-            {menuOpen ? <AiOutlineArrowLeft /> : <AiOutlineArrowRight />}
-          </button>
-        </div>
-
         {/* Menu Items */}
-        <ul className="space-y-6 px-4 mt-10">
-          <li className="text-lg hover:text-gray-300">
-            <Link href="/">ADMISSION</Link>
-          </li>
-          <li className="text-lg hover:text-gray-300">
-            <Link href="/about">APPOINTMENTS</Link>
-          </li>
-          <li className="text-lg hover:text-gray-300">
-            <Link href="/services">NOTICE</Link>
-          </li>
-          <li className="text-lg hover:text-gray-300">
-            <Link href="/contact">NIRF</Link>
-          </li>
-          <li className="text-lg hover:text-gray-300">
-            <Link href="/contact">E-MAGAZINE</Link>
-          </li>
-        </ul>
-      </div>
+<ul className="space-y-2">
+  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+    <Link href="/">ADMISSION</Link>
+  </li>
+  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+    <Link href="/about">APPOINTMENTS</Link>
+  </li>
+  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+    <Link href="/services">NOTICE</Link>
+  </li>
+  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+    <Link href="/contact">NIRF</Link>
+  </li>
+  <li className="text-lg hover:bg-[#004D73] hover:text-white p-2 rounded-lg transition duration-300 ease-in-out">
+    <Link href="/contact">E-MAGAZINE</Link>
+  </li>
+</ul>
 
-      {/* Overlay */}
-      {menuOpen && (
-        <div
-          onClick={toggleMenu}
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
-        ></div>
-      )}
+      </div>
     </>
   );
 };
