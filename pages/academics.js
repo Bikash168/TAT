@@ -113,7 +113,7 @@ const Academics = () => {
               <p>
                 The institution offers a wide range of departments across multiple fields such as Engineering, Management, Biotechnology, and Social Work.
               </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
+              <a href="/departments" class="text-blue-500 hover:underline">Know More</a>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg">
               <h2 class="text-xl font-bold mb-4">Learning-resources</h2>
