@@ -44,6 +44,12 @@ const CivilEngineering = () => {
             </Link>
           </li>
           <li>/</li>
+          <li>
+            <Link href="/academics" className="hover:underline">
+              Academics
+            </Link>
+          </li>
+          <li>/</li>
           <li>Civil Engineering</li>
         </ul>
       </nav>
