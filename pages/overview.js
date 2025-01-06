@@ -68,8 +68,8 @@ const Overview = () => {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-10 sm:px-6 lg:px-12 py-4 flex flex-col lg:flex-row gap-8 mt-[20px] sm:mt-[20px] lg:mt-[20px] mb-10">
-                <ul className="flex space-x-2">
+            <nav className="container mx-auto px-6 sm:px-8 lg:px-12 py-4 flex flex-col lg:flex-row gap-8 mt-4 mb-8">
+                <ul className="flex flex-wrap space-x-2 text-sm">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
                             <span className="mr-1">🏠</span> Home
@@ -93,26 +93,27 @@ const Overview = () => {
             </nav>
 
             {/* Main Content */}
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-8 mt-[10px] sm:mt-[20px] lg:mt-[40px] mb-16">
+            <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex flex-col gap-8">
                 {/* Main Content Section */}
-                <div className="w-full  space-y-12">
+                <div className="w-full  space-y-8">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 id="overview" className="text-xl font-bold mb-4">Overview</h2>
-                        <p>
-                            The Department of Civil Engineering (CE) at Trident Academy of Technology (TAT), started in the year 2013 as an addition to the existing stream of technical degree courses. At present, it offers an undergraduate degree program of 204 credit points in Civil Engineering (B.Tech. in Civil) from Biju Pattnaik University of Technology (BPUT), Odisha. The program curricula, distributed over 8 semesters, is delivered under the able headship of Professor B. K. Mishra, an eminent professor fortified with vast field exposure and experience.
+                        <h2 id="overview" className="text-xl sm:text-2xl font-bold mb-4">Overview</h2>
+                        <p className="text-base sm:text-lg">
+                            The Department of Civil Engineering (CE) at Trident Academy of Technology (TAT), started in the year 2013 as an addition to the existing stream of technical degree courses. At present, it offers an undergraduate degree program of 204 credit points in Civil Engineering (B.Tech. in Civil) from Biju Pattnaik University of Technology (BPUT), Odisha.
                         </p>
-                        <p>
-                            The department focuses on providing a wide spectrum of knowledge and exposure on various key components of the civil engineering curricula, covering fundamental knowledge like mathematics, physics, chemistry, thermodynamics, metallurgy, and engineering drawing, as well as proficiency in specialized areas such as environmental engineering, structural engineering, and water resource engineering.
+                        <p className="text-base sm:text-lg">
+                            The department focuses on providing a wide spectrum of knowledge and exposure on various key components of the civil engineering curricula, covering fundamental knowledge like mathematics, physics, chemistry, thermodynamics, metallurgy, and engineering drawing.
                         </p>
-                        <p>
+                        <p className="text-base sm:text-lg">
                             The department is equipped with state-of-the-art laboratory infrastructure and is supported by highly experienced faculty members and field instructors. The aim is to develop strong, dependable proficiency in various structural design skills, boosting students' confidence in designing effective solutions to real-life problems.
                         </p>
-                        <p>
-                            Beyond academic rigor, the department emphasizes professional skills, communication skills, and ethical considerations in civil engineering. As part of the Trident culture, students follow a "Learn with Fun" approach to nurture their intellectual, technological, and personal skills, engaging in a variety of technical and intellectual clubs and professional societies. The academic environment at Trident fosters a mindset for lifelong learning, helping students succeed in industry, society, and research.
+                        <p className="text-base sm:text-lg">
+                            Beyond academic rigor, the department emphasizes professional skills, communication skills, and ethical considerations in civil engineering. As part of the Trident culture, students follow a "Learn with Fun" approach to nurture their intellectual, technological, and personal skills, engaging in a variety of technical and intellectual clubs and professional societies.
                         </p>
                     </div>
+
                     {/* Tabs Section */}
-                    <div className="flex flex-wrap justify-center gap-2 mb-8">
+                    <div className="flex flex-wrap justify-center gap-4 mb-8">
                         {tabs.map((tab) => (
                             <button
                                 key={tab}
@@ -127,10 +128,11 @@ const Overview = () => {
                         ))}
                     </div>
                 </div>
+
                 {/* Dynamic Content Section */}
                 <div className="bg-white p-6 rounded-lg shadow-lg">
-                    <h2 className="text-xl font-bold mb-4">{content[activeTab].title}</h2>
-                    <p>{content[activeTab].description}</p>
+                    <h2 className="text-xl sm:text-2xl font-bold mb-4">{content[activeTab].title}</h2>
+                    <p className="text-base sm:text-lg">{content[activeTab].description}</p>
                 </div>
             </main>
 
