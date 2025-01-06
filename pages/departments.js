@@ -33,8 +33,8 @@ const Departments = () => {
         </h1>
       </section>
       {/* Breadcrumb Navigation */}
-      <nav className="container mx-auto px-10 sm:px-6 lg:px-12 py-4 flex flex-col lg:flex-row gap-8 mt-[20px] sm:mt-[20px] lg:mt-[20px] mb-10">
-        <ul className="flex space-x-2">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 mb-8">
+        <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
           <li>
             <Link href="/" className="hover:underline flex items-center">
               <span className="mr-1">🏠</span> Home
@@ -47,15 +47,11 @@ const Departments = () => {
             </Link>
           </li>
           <li>/</li>
-          <li>
-
+          <li className="text-gray-600">
             Departments
-
           </li>
-
         </ul>
       </nav>
-
       {/* Main Section */}
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[10px] sm:mt-[20px] lg:mt-[40px] mb-16">
         {/* Sidebar */}

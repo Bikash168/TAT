@@ -30,7 +30,20 @@ const Academics = () => {
           Academics
         </h1>
       </section>
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 mb-8">
+        <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
+          <li>
+            <Link href="/" className="hover:underline flex items-center">
+              <span className="mr-1">🏠</span> Home
+            </Link>
+          </li>
+          <li>/</li>
+          <li className="text-gray-600">
+            Academics
+          </li>
 
+        </ul>
+      </nav>
       {/* Main Section */}
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[30px] sm:mt-[40px] lg:mt-[60px] mb-16">
         {/* Sidebar */}

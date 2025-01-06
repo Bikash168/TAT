@@ -68,8 +68,8 @@ const Overview = () => {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-6 sm:px-8 lg:px-12 py-4 flex flex-col lg:flex-row gap-8 mt-4 mb-8">
-                <ul className="flex flex-wrap space-x-2 text-sm">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-8">
+                <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
                             <span className="mr-1">🏠</span> Home
@@ -83,15 +83,20 @@ const Overview = () => {
                     </li>
                     <li>/</li>
                     <li>
+                        <Link href="/departments" className="hover:underline">
+                            Departments
+                        </Link>
+                    </li>
+                    <li>/</li>
+                    <li>
                         <Link href="/civil-engineering" className="hover:underline">
                             Civil Engineering
                         </Link>
                     </li>
                     <li>/</li>
-                    <li>Overview</li>
+                    <li className="text-gray-600">Overview</li>
                 </ul>
             </nav>
-
             {/* Main Content */}
             <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex flex-col gap-8">
                 {/* Main Content Section */}
@@ -119,8 +124,8 @@ const Overview = () => {
                                 key={tab}
                                 onClick={() => setActiveTab(tab)}
                                 className={`px-4 py-2 rounded font-medium transition border-b-2 ${activeTab === tab
-                                        ? "text-blue-600 border-blue-600"
-                                        : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                                    ? "text-blue-600 border-blue-600"
+                                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                                     }`}
                             >
                                 {tab}
