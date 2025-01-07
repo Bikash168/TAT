@@ -86,7 +86,7 @@ const Departments = () => {
               {[
                 { name: 'Civil Engineering', link: '/civil-engineering' },
                 { name: 'Biotechnology Engineering', link: '/biotechnology-engineering' },
-                { name: 'Computer Science & Engineering', link: '#computer-science-engineering' },
+                { name: 'Computer Science & Engineering', link: '/computer-science-engineering' },
                 { name: 'Computer Science & Engineering (AI & ML)', link: '#cs-ai-ml' },
                 { name: 'Computer Science & Engineering (Data Science)', link: '#cs-data-science' },
                 { name: 'Computer Science and Technology', link: '#cs-technology' },
