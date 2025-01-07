@@ -104,32 +104,44 @@ const BiotechnologyEngineering = () => {
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 id="overview" className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The Biotechnology department was established in 2018 with a student intake of 30 for the B.Tech. in Biotechnology program under the aegis of Trident Academy of Technology.
-                        </p>
-                        <p>
-                            The department aims to enhance students' skills by training them to excel in bioindustries through research and development. It seeks to inculcate the spirit of innovation and creativity in young minds to solve human problems with sound research aptitude.
+                            The Biotechnology department was established in 2018 with student intake of 30 for B.Tech. in Biotechnology program under the aegis of Trident Academy of Technology.
                         </p>
                     </div>
 
                     <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <p>
-                            The department provides theoretical and practical concepts to students in the field of biotechnology, enabling them to apply broad knowledge to serve society better. It prepares students for competitive exams like GATE, CSIR-NET, and IARI, and helps them secure jobs in leading biotechnology industries.
-                        </p>
+                        <div className="space-y-6">
+                            <div>
+                                <h3 className="font-semibold">1. B.Tech. in Biotechnology - 30 Seats</h3>
+                                <p>
+                                    A comprehensive program that focuses on equipping students with the theoretical and practical knowledge required to excel in various fields of biotechnology, including industrial, environmental, and healthcare applications.
+                                </p>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Faculties</h2>
                         <p>
-                            Presently, the department has six dedicated teaching faculty members specializing in areas like Recombinant DNA Technology, Environmental Biotechnology, Immunology, Bioprocess Technology, Industrial Microbiology, Bioinformatics, and Protein Engineering.
+                            Presently there are 6 dedicated and committed teaching faculty members in this department with various specializations like Recombinant DNA Technology, Environmental Biotechnology, Immunology and Immunotechnology, Bioprocess Technology, Industrial Microbiology, Bioinformatics, Protein Engineering, Enzyme Technology, Animal Biotechnology, Molecular Biology, and Biochemistry.
                         </p>
                     </div>
 
                     <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Laboratories</h2>
                         <p>
-                            The department features excellent infrastructure and laboratory facilities, offering hands-on training in frontier areas of biotechnology. The facilities include advanced equipment for DNA analysis, molecular biology, biochemistry, and more.
+                            The department has excellent infrastructure and laboratory facilities to provide hands-on training in frontier areas of biotechnology.
                         </p>
+                    </div>
+
+                    <div id="salient-features" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Salient Features</h2>
+                        <ul className="list-disc list-inside space-y-2">
+                            <li>Department is actively involved in maintaining corporate relationships for providing placement to the students.</li>
+                            <li>The academic performance of our students in University exams is outstanding.</li>
+                            <li>Department organizes workshops and seminars regularly for the interest of students and faculties.</li>
+                            <li>Professors and technical experts are invited from various universities and industries for providing additional advanced information in the field of biotechnology for the benefit of students.</li>
+                        </ul>
                     </div>
                 </div>
             </main>
