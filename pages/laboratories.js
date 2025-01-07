@@ -149,7 +149,139 @@ const Laboratories = () => {
                 },
             ],
         },
-        // Add additional laboratory cards here...
+        {
+            title: "TRANSPORTATION ENGINEERING LABORATORY",
+            description: "Focuses on testing and evaluation of materials and designs used in transportation infrastructure.",
+            details: [
+                {
+                    heading: "Experiment List",
+                    items: [
+                        "Determination of aggregate crushing value.",
+                        "Determination of Los Angeles abrasion value of aggregates.",
+                        "Determination of aggregate impact value.",
+                        "Determination of penetration value of bitumen.",
+                        "Determination of softening point value of bitumen.",
+                        "Determination of ductility value of bitumen.",
+                        "Determination of flash and fire point of bitumen.",
+                        "Determination of specific gravity of bitumen.",
+                        "Determination of stripping value of aggregate.",
+                        "Determination of flakiness index and elongation index of coarse aggregate.",
+                        "Determination of specific gravity and water absorption of coarse aggregate.",
+                        "Determination of CBR of soil subgrade.",
+                        "Design of GSB and WMM.",
+                        "Marshal method of mix design."
+                    ]
+                },
+                {
+                    heading: "Equipment List",
+                    items: [
+                        "Los Angeles Abrasion testing machine",
+                        "Ductility Testing machine",
+                        "Aggregate Impact testing machine",
+                        "Aggregate crushing value apparatus",
+                        "Universal Penetrometer",
+                        "Marshall Apparatus",
+                        "Clevoland flash",
+                        "CBR Apparatus",
+                        "Stripping value apparatus",
+                        "Deval attrition testing machine",
+                        "Thickness gauge",
+                        "Length gauge",
+                        "Ring and ball"
+                    ]
+                },
+                {
+                    heading: "Laboratory Gallery",
+                    images: [
+                        "/images/transportation_lab1.jpg",
+                        "/images/transportation_lab2.jpg",
+                        "/images/transportation_lab3.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            title: "CONCRETE AND STRUCTURAL LABORATORY",
+            description: "Provides essential testing facilities for concrete and structural components used in civil engineering projects.",
+            details: [
+                {
+                    heading: "Experiment List",
+                    items: [
+                        "Workability test of concrete: Slump test, Compaction factor test, Flow table test.",
+                        "Cube test of concrete.",
+                        "Cylinder test for concrete.",
+                        "Split tensile strength of concrete.",
+                        "Prism Test for determining modulus of rupture of concrete.",
+                        "Design of concrete Mix.",
+                        "Failure of RC beam in bending and shear."
+                    ]
+                },
+                {
+                    heading: "Equipment List",
+                    items: [
+                        "CTM machine",
+                        "Flexural testing machine",
+                        "Cube mould (150 X150X150 mm)",
+                        "Cube mould (70.6X 70.6X70.6 mm)",
+                        "Cylinder mould",
+                        "Slump test apparatus",
+                        "Compaction factor apparatus",
+                        "Flow table"
+                    ]
+                },
+                {
+                    heading: "Laboratory Gallery",
+                    images: [
+                        "/images/concrete_lab1.jpg",
+                        "/images/concrete_lab2.jpg",
+                        "/images/concrete_lab3.jpg"
+                    ]
+                }
+            ]
+        },
+        {
+            title: "HYDRAULICS LABORATORY",
+            description: "Specializes in studying fluid mechanics and hydraulic machines to support civil engineering education.",
+            details: [
+                {
+                    heading: "Experiment List",
+                    items: [
+                        "Proof of Bernoulli’s theorem.",
+                        "Friction flow through pipes.",
+                        "Determination of Reynolds number.",
+                        "Determination of metacentric height.",
+                        "Determination of coefficient of discharge for v-notch.",
+                        "Determination of coefficient of discharge for venturimeter.",
+                        "Impact of jet.",
+                        "Flow through orifice.",
+                        "Proof of stokes law.",
+                        "Work done by pelton wheel turbine.",
+                        "Efficiency of Francis turbine.",
+                        "Discharge through centrifugal pump."
+                    ]
+                },
+                {
+                    heading: "Equipment List",
+                    items: [
+                        "Impact of jet on vane apparatus",
+                        "Reciprocating pump test rig",
+                        "Centrifugal pump test rig",
+                        "Pelton wheel turbine test rig",
+                        "Francis turbine test rig",
+                        "Kaplan turbine test rig"
+                    ]
+                },
+                {
+                    heading: "Laboratory Gallery",
+                    images: [
+                        "/images/hydraulics_lab1.jpg",
+                        "/images/hydraulics_lab2.jpg",
+                        "/images/hydraulics_lab3.jpg"
+                    ]
+                }
+            ]
+        }
+        
     ];
 
     const toggleDetails = (labTitle) => {
@@ -172,11 +304,12 @@ const Laboratories = () => {
             </section>
 
             {/* Breadcrumbs */}
-            <nav className="container mx-auto px-6 sm:px-8 lg:px-12 py-4 text-sm text-gray-600">
-                <ul className="flex items-center space-x-2">
+           {/* Breadcrumb Navigation */}
+           <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-8">
+                <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
-                            <span>🏠</span> Home
+                            <span className="mr-1">🏠</span> Home
                         </Link>
                     </li>
                     <li>/</li>
@@ -188,17 +321,17 @@ const Laboratories = () => {
                     <li>/</li>
                     <li>
                         <Link href="/departments" className="hover:underline">
-                        Departments
+                            Departments
                         </Link>
                     </li>
                     <li>/</li>
                     <li>
                         <Link href="/civil-engineering" className="hover:underline">
-                        Civil Engineering
+                            Civil Engineering
                         </Link>
                     </li>
                     <li>/</li>
-                    <li>Laboratories</li>
+                    <li className="text-gray-600">Laboratories</li>
                 </ul>
             </nav>
 
