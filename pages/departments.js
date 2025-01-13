@@ -84,17 +84,17 @@ const Departments = () => {
             <h2 className="text-2xl font-semibold mb-6">Departments Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Civil Engineering', link: '/civil-engineering' },
                 { name: 'Biotechnology Engineering', link: '/biotechnology-engineering' },
+                { name: 'Civil Engineering', link: '/civil-engineering' },
+                { name: 'Mechanical Engineering', link: '/mechanical-engineering' },
+                { name: 'Electrical and Electronics Engineering', link: '/electrical-electronics' },
+                { name: 'Electronics and Telecommunication Engineering', link: '/electronics-telecommunication' },
+                { name: 'Electronics Engineering (VLSI Design Technology)', link: '/electronics-vlsi' },
                 { name: 'Computer Science & Engineering', link: '/computer-science-engineering' },
                 { name: 'Computer Science & Engineering (AI & ML)', link: '/cs-ai-ml' },
                 { name: 'Computer Science & Engineering (Data Science)', link: '/cs-data-science' },
                 { name: 'Computer Science and Technology', link: '/cs-technology' },
                 { name: 'Computer Science & Information Technology', link: '/cs-it' },
-                { name: 'Electronics and Telecommunication Engineering', link: '/electronics-telecommunication' },
-                { name: 'Electronics Engineering (VLSI Design Technology)', link: '/electronics-vlsi' },
-                { name: 'Electrical and Electronics Engineering', link: '/electrical-electronics' },
-                { name: 'Mechanical Engineering', link: '/mechanical-engineering' },
                 { name: 'Master in Business Administration', link: '/mba' },
                 { name: 'Master in Computer Application', link: '/mca' },
                 { name: 'Science & Humanities', link: '/science-humanities' },
