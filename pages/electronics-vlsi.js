@@ -25,7 +25,7 @@ const ElectronicsEngineeringVLSI = () => {
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-                    Computer Science & Information Technology Department
+                Electronics Engineering (VLSI Design Technology) Department
                 </h1>
             </section>
 

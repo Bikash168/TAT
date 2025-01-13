@@ -18,14 +18,14 @@ const ElectronicsTelecommEngineering = () => {
             <section
                 className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center"
                 style={{
-                    backgroundImage: "url('/images/ElectronicsTelecommEngineering.jpg')", // Replace with your image path
+                    backgroundImage: "url('/images/ElectronicsTelecommEngineering.jpg')",
                     backgroundPosition: "center center",
                     backgroundAttachment: "fixed",
                 }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-                Electronics & Telecomm Engineering Department
+                    Electronics & Telecomm Engineering Department
                 </h1>
             </section>
 
@@ -77,11 +77,11 @@ const ElectronicsTelecommEngineering = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+                        <span className="ml-2 text-lg font-medium">ETE Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
+                        <h2 className="text-2xl font-semibold mb-6">Electronics & Telecomm Engineering Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#overview">Overview</Link>
@@ -90,67 +90,66 @@ const ElectronicsTelecommEngineering = () => {
                                 <Link href="#courses">Courses</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
+                                <Link href="#labs">Laboratories</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
+                                <Link href="#achievements">Achievements</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
+                                <Link href="#faculty">Faculty</Link>
                             </li>
                         </ul>
                     </div>
                 </aside>
 
                 {/* Main Content Section */}
-                <div className="w-full lg:w-3/4 space-y-12">
+                <div className="w-full lg:w-3/4 space-y-6">
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            The Electronics and Telecommunication Engineering department focuses on cutting-edge technologies in communication systems, embedded systems, VLSI design, and more. With an emphasis on practical learning and research, students are prepared for both industry roles and higher studies.
                         </p>
                     </div>
 
                     <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
-                                <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
-                                </p>
-                            </div>
-                        </div>
+                        <ul className="list-disc pl-6 text-gray-700">
+                            <li>B.Tech in Electronics and Telecommunication Engineering</li>
+                            <li>M.Tech in Electronics and Telecommunication Engineering</li>
+                            <li>Specialized courses in VLSI Design, Embedded Systems, and Communication Technologies</li>
+                        </ul>
                     </div>
 
-                    <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Faculties</h2>
-                        <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                    <div id="labs" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Laboratory Facilities</h2>
+                        <p className="text-gray-700 leading-relaxed mb-4">
+                            Our department is equipped with state-of-the-art labs including:
                         </p>
+                        <ul className="list-disc pl-6 text-gray-700">
+                            <li>Advanced Communication Lab</li>
+                            <li>VLSI and Embedded Systems Lab</li>
+                            <li>Signal Processing Lab</li>
+                            <li>Microcontroller and Microprocessor Lab</li>
+                            <li>Wireless Communication and Antenna Lab</li>
+                        </ul>
                     </div>
 
-                    <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Laboratories</h2>
-                        <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
+                    <div id="achievements" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Achievements</h2>
+                        <p className="text-gray-700 leading-relaxed">
+                            Our students and faculty have achieved several milestones, including:
                         </p>
+                        <ul className="list-disc pl-6 text-gray-700">
+                            <li>Multiple national-level project competition wins</li>
+                            <li>Collaborations with leading companies for research and internships</li>
+                            <li>Publications in reputed journals and conferences</li>
+                        </ul>
                     </div>
 
-                    <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Question Bank</h2>
-                        <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
-                        </p>
-                    </div>
-
-                    <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
-                        <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                    <div id="faculty" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Faculty</h2>
+                        <p className="text-gray-700 leading-relaxed">
+                            Our experienced faculty members are dedicated to providing quality education and mentorship. They specialize in various domains including VLSI, Communication Systems, Embedded Systems, and Signal Processing.
                         </p>
                     </div>
                 </div>
