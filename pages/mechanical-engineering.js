@@ -25,7 +25,7 @@ const MechanicalEngineering = () => {
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-                Mechanical Engineering Department
+                    Mechanical Engineering Department
                 </h1>
             </section>
 
@@ -77,29 +77,26 @@ const MechanicalEngineering = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+                        <span className="ml-2 text-lg font-medium">ME Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
+                        <h2 className="text-2xl font-semibold mb-6">ME Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#overview">Overview</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
+                                <Link href="#labs">Laboratories</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
+                                <Link href="#clubs">Technical Clubs</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
+                                <Link href="#projects">Projects</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
+                                <Link href="#innovations">Innovations</Link>
                             </li>
                         </ul>
                     </div>
@@ -110,47 +107,35 @@ const MechanicalEngineering = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            An MoU has been signed with Capital Goods for the skill development of the mechanical students on CNC Programming and Operations.
                         </p>
                     </div>
 
-                    <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
-                                <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Faculties</h2>
+                    <div id="labs" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">State-of-the-Art Laboratories</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                            The department boasts a CAD Lab equipped with 36 systems featuring the latest design tools such as AutoCAD, Solidworks, CATIA, and MasterCAM, enabling hands-on training for industry readiness. Additionally, an advanced Automobile Workshop offers exposure to cutting-edge automotive technologies through live demonstrations.
                         </p>
                     </div>
 
-                    <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Laboratories</h2>
+                    <div id="clubs" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Technical Clubs</h2>
                         <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
+                            The department is home to two vibrant technical clubs: DESIGNERS Club and AUTOTRACK Club. These clubs enhance technical skills through industrial training, workshops, and seminars held beyond regular college hours.
                         </p>
                     </div>
 
-                    <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Question Bank</h2>
+                    <div id="projects" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Student Projects</h2>
                         <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
+                            Students engage in automotive design and development projects such as Go-karts, Quad Bikes, Effy Vehicles, and F1 Cars, guided by expert trainers like Mr. Sambit Mohanty. These projects provide hands-on experience with real-world applications.
                         </p>
                     </div>
 
-                    <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
+                    <div id="innovations" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Innovations</h2>
                         <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            The faculty have developed and installed three 6-ton Heat Pumps to recycle heat from cooking zones for kitchen water heating. Additionally, a hybrid 5kW windmill integrated with a 15kW solar model has been fabricated and installed on campus for educational purposes.
                         </p>
                     </div>
                 </div>

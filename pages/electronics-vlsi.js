@@ -18,14 +18,14 @@ const ElectronicsEngineeringVLSI = () => {
             <section
                 className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center"
                 style={{
-                    backgroundImage: "url('/images/ElectronicsEngineeringVLSI.jpg')", // Replace with your image path
+                    backgroundImage: "url('/images/ElectronicsEngineeringVLSI.jpg')",
                     backgroundPosition: "center center",
                     backgroundAttachment: "fixed",
                 }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-                Electronics Engineering (VLSI Design Technology) Department
+                    Electronics Engineering (VLSI Design Technology) Department
                 </h1>
             </section>
 
@@ -77,11 +77,11 @@ const ElectronicsEngineeringVLSI = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+                        <span className="ml-2 text-lg font-medium">Electronics Engineering (VLSI Design Technology) Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
+                        <h2 className="text-2xl font-semibold mb-6">Electronics Engineering (VLSI Design Technology) Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#overview">Overview</Link>
@@ -90,16 +90,10 @@ const ElectronicsEngineeringVLSI = () => {
                                 <Link href="#courses">Courses</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
+                                <Link href="#research">Research</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
+                                <Link href="#careers">Career Prospects</Link>
                             </li>
                         </ul>
                     </div>
@@ -110,47 +104,39 @@ const ElectronicsEngineeringVLSI = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            The Department of Electronics Engineering (VLSI Design Technology) at Trident Academy of Technology is dedicated to creating skilled engineers who excel in integrated circuit design, system architectures, and semiconductor technologies. Our programs are tailored to address the evolving demands of the VLSI industry and contribute to India's semiconductor ecosystem.
                         </p>
                     </div>
 
                     <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
+                        <ul className="space-y-4">
+                            <li>
+                                <h3 className="font-semibold">B.Tech. in Electronics Engineering (VLSI Design Technology) - 60 Seats</h3>
                                 <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
+                                    A 4-year program focused on chip design, semiconductor devices, and EDA tools, preparing graduates for leading roles in the VLSI domain.
                                 </p>
-                            </div>
-                        </div>
+                            </li>
+                            <li>
+                                <h3 className="font-semibold">M.Tech. in VLSI Design - 18 Seats</h3>
+                                <p>
+                                    A comprehensive 2-year postgraduate program covering algorithms, low-power designs, and verification techniques, aimed at equipping students with advanced skills in VLSI systems.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Faculties</h2>
+                    <div id="research" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Research Areas</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                            The department actively engages in cutting-edge research in areas like FPGA design, system-on-chip development, and low-power VLSI systems, fostering innovation and industry collaboration.
                         </p>
                     </div>
 
-                    <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Laboratories</h2>
+                    <div id="careers" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Career Prospects</h2>
                         <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
-                        </p>
-                    </div>
-
-                    <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Question Bank</h2>
-                        <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
-                        </p>
-                    </div>
-
-                    <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
-                        <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            Graduates from our programs find opportunities in industries like telecommunications, high-performance computing, consumer electronics, and space research. The demand for VLSI engineers continues to grow with advancements in IC design and semiconductor technologies.
                         </p>
                     </div>
                 </div>
