@@ -84,9 +84,7 @@ const Footer = () => {
   {/* Logo and About the College Section */}
   <div>
     <div className="flex items-center space-x-4">
-      {/* Logo */}
-      <img src="/logo.png" alt="College Logo" className="w-16 h-16 object-contain" />
-      {/* College Name */}
+     {/* College Name */}
       <h3 className="font-bold text-xl">Trident Academy of Technology</h3>
     </div>
     <p className="mt-4 text-lg text-white">
