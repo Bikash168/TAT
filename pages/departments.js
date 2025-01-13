@@ -90,14 +90,14 @@ const Departments = () => {
                 { name: 'Computer Science & Engineering (AI & ML)', link: '/cs-ai-ml' },
                 { name: 'Computer Science & Engineering (Data Science)', link: '/cs-data-science' },
                 { name: 'Computer Science and Technology', link: '/cs-technology' },
-                { name: 'Computer Science & Information Technology', link: '#cs-it' },
-                { name: 'Electronics and Telecommunication Engineering', link: '#electronics-telecommunication' },
-                { name: 'Electronics Engineering (VLSI Design Technology)', link: '#electronics-vlsi' },
-                { name: 'Electrical and Electronics Engineering', link: '#electrical-electronics' },
-                { name: 'Mechanical Engineering', link: '#mechanical-engineering' },
-                { name: 'Master in Business Administration', link: '#mba' },
-                { name: 'Master in Computer Application', link: '#mca' },
-                { name: 'Science & Humanities', link: '#science-humanities' },
+                { name: 'Computer Science & Information Technology', link: '/cs-it' },
+                { name: 'Electronics and Telecommunication Engineering', link: '/electronics-telecommunication' },
+                { name: 'Electronics Engineering (VLSI Design Technology)', link: '/electronics-vlsi' },
+                { name: 'Electrical and Electronics Engineering', link: '/electrical-electronics' },
+                { name: 'Mechanical Engineering', link: '/mechanical-engineering' },
+                { name: 'Master in Business Administration', link: '/mba' },
+                { name: 'Master in Computer Application', link: '/mca' },
+                { name: 'Science & Humanities', link: '/science-humanities' },
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
                   <Link href={item.link}>
