@@ -13,7 +13,6 @@ const MBA = () => {
 
     return (
         <Layout title="MBA | Trident Academy of Technology">
-
             {/* Background Image Section */}
             <section
                 className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center"
@@ -25,7 +24,7 @@ const MBA = () => {
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-                Master in Business Administration Department
+                    Master in Business Administration Department
                 </h1>
             </section>
 
@@ -56,7 +55,6 @@ const MBA = () => {
 
             {/* Main Content */}
             <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[10px] sm:mt-[20px] lg:mt-[40px] mb-16">
-
                 {/* Sidebar */}
                 <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
                     <button
@@ -77,29 +75,20 @@ const MBA = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+                        <span className="ml-2 text-lg font-medium">MBA Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
+                        <h2 className="text-2xl font-semibold mb-6">MBA Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#overview">Overview</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
+                                <Link href="#initiatives">Key Initiatives</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
+                                <Link href="#facilities">Facilities</Link>
                             </li>
                         </ul>
                     </div>
@@ -110,47 +99,33 @@ const MBA = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            Trident School of Business is one of the reputed B-Schools of the city. It offers a two-year full-time MBA program approved by AICTE and Govt. of Odisha and affiliated to BPUT. 
+                            Since its commencement in 2008, the school has focused on grooming a new generation of business leaders capable of building sustainable and profitable businesses.
                         </p>
                     </div>
 
-                    <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
-                                <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
-                                </p>
-                            </div>
-                        </div>
+                    <div id="initiatives" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Key Initiatives</h2>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>
+                                Centrally Air-Conditioned Academic Block with spacious lecture theaters equipped with audio-visual teaching aids and wireless laptops for students.
+                            </li>
+                            <li>
+                                Pedagogic innovation including fieldwork, case study analysis, and instrumented feedback with a strong emphasis on theoretical and conceptual learning.
+                            </li>
+                            <li>
+                                Focused attention on core areas such as Marketing, Finance, HR, Operations, and Information Management.
+                            </li>
+                            <li>
+                                Involvement of students in co-curricular activities such as Inter B-School competitions, paper presentations, budget analysis, and fieldwork.
+                            </li>
+                        </ul>
                     </div>
 
-                    <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Faculties</h2>
+                    <div id="facilities" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Facilities</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
-                        </p>
-                    </div>
-
-                    <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Laboratories</h2>
-                        <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
-                        </p>
-                    </div>
-
-                    <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Question Bank</h2>
-                        <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
-                        </p>
-                    </div>
-
-                    <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
-                        <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            The school provides modern infrastructure, cutting-edge facilities, and an environment conducive to learning and development, ensuring students are equipped with the skills needed for future challenges.
                         </p>
                     </div>
                 </div>

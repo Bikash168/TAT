@@ -81,51 +81,51 @@ const Footer = () => {
 
         {/* Links Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-  {/* Logo and About the College Section */}
-  <div>
-    <div className="flex items-center space-x-4">
-     {/* College Name */}
-      <h3 className="font-bold text-xl">Trident Academy of Technology</h3>
-    </div>
-    <p className="mt-4 text-lg text-white">
-      Trident Academy of Technology is a leading institution dedicated to providing world-class education in a variety of fields. Our mission is to foster innovation, creativity, and a sustainable future for all students.
-    </p>
-  </div>
+          {/* Logo and About the College Section */}
+          <div>
+            <div className="flex items-center justify-center space-x-4">
+              {/* College Name */}
+              <h3 className="font-bold text-xl text-center">Trident Academy of Technology</h3>
+            </div>
+            <p className="mt-4 text-lg text-white">
+              Trident Academy of Technology is a leading institution dedicated to providing world-class education in a variety of fields. Our mission is to foster innovation, creativity, and a sustainable future for all students.
+            </p>
+          </div>
 
-  {/* Trident Group Websites */}
-  <div>
-    <h3 className="font-bold text-xl">Trident Group Websites</h3>
-    <ul className="mt-4 space-y-2 text-lg">
-      {[
-        "Trident Group of Institutions",
-        "Trident Academy of Creative Technology",
-        "Trident Academy of Professional Studies",
-        "Trident School of Biotech Sciences",
-        "DF Group",
-      ].map((site) => (
-        <li key={site}>
-          <a href="/" className="hover:text-gray-300 transition-all underline">
-            {site} ↗
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
+          {/* Trident Group Websites */}
+          <div>
+            <h3 className="font-bold text-xl">Trident Group Websites</h3>
+            <ul className="mt-4 space-y-2 text-lg">
+              {[
+                "Trident Group of Institutions",
+                "Trident Academy of Creative Technology",
+                "Trident Academy of Professional Studies",
+                "Trident School of Biotech Sciences",
+                "DF Group",
+              ].map((site) => (
+                <li key={site}>
+                  <a href="/" className="hover:text-gray-300 transition-all underline">
+                    {site} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-  {/* Quick Links */}
-  <div>
-    <h3 className="font-bold text-xl">Quick Links</h3>
-    <ul className="mt-4 space-y-2 text-lg">
-      {["About TAT", "Library", "Workshop"].map((link) => (
-        <li key={link}>
-          <a href="/" className="hover:text-gray-300 transition-all underline">
-            {link} ↗
-          </a>
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+          {/* Quick Links */}
+          <div>
+            <h3 className="font-bold text-xl">Quick Links</h3>
+            <ul className="mt-4 space-y-2 text-lg">
+              {["About TAT", "Library", "Workshop"].map((link) => (
+                <li key={link}>
+                  <a href="/" className="hover:text-gray-300 transition-all underline">
+                    {link} ↗
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
 
         {/* Bottom Section */}
