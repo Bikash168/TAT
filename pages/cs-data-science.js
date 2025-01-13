@@ -84,16 +84,19 @@ const DataScienceEngineering = () => {
                         <h2 className="text-2xl font-semibold mb-6">CSE (Data Science) Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview">Overview</Link>
+                                <Link href="#overview">Overview</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/courses">Courses</Link>
+                                <Link href="#courses">Courses</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/laboratories">Laboratories</Link>
+                                <Link href="#faculties">Faculties</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/question-bank">Question Bank</Link>
+                                <Link href="#laboratories">Laboratories</Link>
+                            </li>
+                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
+                                <Link href="#question-bank">Question Bank</Link>
                             </li>
                         </ul>
                     </div>

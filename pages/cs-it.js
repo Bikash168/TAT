@@ -110,7 +110,10 @@ const ComputerScienceIT = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            B.Tech in Computer Science & Information Technology (CSIT) is an undergraduate course focused on the practical application of computing and information management. The program equips students with the skills required for roles in IT, covering areas such as programming, networking, and information security.
+                        </p>
+                        <p>
+                            This program offers a comprehensive understanding of core IT concepts, including database management systems, Java programming, information security, and cloud computing. Students gain theoretical and practical knowledge to meet the demands of the IT industry.
                         </p>
                     </div>
 
@@ -120,7 +123,7 @@ const ComputerScienceIT = () => {
                             <div>
                                 <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
                                 <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
+                                    This four-year program prepares students for diverse roles in the IT sector. It includes topics such as e-commerce, system development, software engineering, and cloud computing, providing a strong foundation for a career in IT.
                                 </p>
                             </div>
                         </div>
@@ -129,28 +132,28 @@ const ComputerScienceIT = () => {
                     <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Faculties</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                            The Department of Computer Science & IT is supported by a team of highly qualified faculty members, most of whom hold M.Tech or Ph.D. qualifications. Their expertise spans software engineering, artificial intelligence, and information systems.
                         </p>
                     </div>
 
                     <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Laboratories</h2>
                         <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
+                            The department boasts modern laboratories equipped with advanced tools and technology for hands-on learning. These labs support practical sessions in programming, networking, and system design.
                         </p>
                     </div>
 
                     <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Question Bank</h2>
                         <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
+                            Students can access a collection of previous year question papers and practice problems to enhance their academic performance.
                         </p>
                     </div>
 
                     <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
                         <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            A repository of previous year BPUT questions is available to help students prepare effectively for their exams.
                         </p>
                     </div>
                 </div>

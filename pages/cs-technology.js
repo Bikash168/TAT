@@ -110,7 +110,7 @@ const ComputerScienceTechnology = () => {
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 id="overview" className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science and Technology program integrates a comprehensive study of the theoretical foundations of computer science and the practical applications in technology fields. Students learn programming, networking, software engineering, and hardware development to address global IT industry demands.
+                            The B.Tech. in Computer Science and Technology is designed to align with the growing demands of the IT industry. It combines the theoretical and technological aspects of Computer Science, emphasizing innovation and intrapreneurship. Students gain expertise in programming, software development, networking, and intelligent applications.
                         </p>
                     </div>
 
@@ -118,9 +118,9 @@ const ComputerScienceTechnology = () => {
                         <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
                         <div className="space-y-6">
                             <div>
-                                <h3 className="font-semibold">1. B.Tech. in Computer Science & Technology - 120 Seats</h3>
+                                <h3 className="font-semibold">B.Tech. in Computer Science and Technology - 120 Seats</h3>
                                 <p>
-                                    A four-year program that covers computer programming, networking, computer hardware, software engineering, and embedded systems, focusing on technological innovation and entrepreneurship.
+                                    This program integrates computer science fundamentals and advanced technologies. The curriculum focuses on fostering innovation, collaboration, and entrepreneurial skills through hands-on learning and partnerships like Cisco's thingQbator project.
                                 </p>
                             </div>
                         </div>
@@ -129,28 +129,28 @@ const ComputerScienceTechnology = () => {
                     <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Faculties</h2>
                         <p>
-                            The Department of Computer Science and Technology has experienced faculty members with expertise in areas like programming languages, artificial intelligence, software engineering, and embedded systems.
+                            The department comprises highly qualified faculty members with M.Tech/Ph.D. degrees. They bring expertise in various domains, including AI, software engineering, and system design.
                         </p>
                     </div>
 
                     <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Laboratories</h2>
                         <p>
-                            The department is equipped with state-of-the-art laboratories for hands-on learning in programming, computer networking, hardware, and artificial intelligence.
+                            Equipped with cutting-edge technology, the laboratories provide hands-on experience in programming, hardware, artificial intelligence, and real-time systems, fostering innovative problem-solving skills.
                         </p>
                     </div>
 
                     <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Question Bank</h2>
                         <p>
-                            Access a repository of important questions, previous years' papers, and sample papers to assist in exam preparation.
+                            Access a comprehensive collection of previous years' question papers and sample problems to aid in academic preparation.
                         </p>
                     </div>
 
                     <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
                         <p>
-                            Previous year questions (PY) from BPUT exams are available for students to practice and prepare for the exams effectively.
+                            A repository of past BPUT examination papers is available for students to prepare effectively for upcoming assessments.
                         </p>
                     </div>
                 </div>
