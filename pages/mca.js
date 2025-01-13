@@ -110,47 +110,45 @@ const MCA = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            Set up in 2005 by some brilliant NRIs as one of the oldest technical institutes of the state, Trident provides world-class education opportunities to students who want to translate their dreams into cherished realities. Trident MCA has a successful track record of two decades in imparting technical education.
+                        </p>
+                        <p className="mt-4">
+                            The Trident brand, which offers the undisputed No.1 MCA courses of the state under BPUT, has also consistently figured in the top 100 list of engineering colleges of India as per <strong>DataQuest CMR</strong>. To be ranked alongside IITs, NITs, and Deemed Universities of the country is a remarkable honor.
                         </p>
                     </div>
 
                     <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
-                                <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
-                                </p>
-                            </div>
-                        </div>
+                        <h2 className="text-xl font-bold mb-4">Campus & Environment</h2>
+                        <p>
+                            Sprawled over a campus of 11 acres situated in the heart of the city and surrounded by IT corporate giants such as Infosys, TCS, Wipro, and Mindtree, Trident commands respect as one of the leading technical institutions of Eastern India. The MCA department offers an ideal environment for great ideas to flourish and innovation to become a way of life.
+                        </p>
                     </div>
 
                     <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Faculties</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                            The department has a dedicated and highly qualified team of faculty members with expertise in software engineering, artificial intelligence, and database management. They are committed to nurturing the academic and professional growth of students.
                         </p>
                     </div>
 
                     <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Laboratories</h2>
                         <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
+                            Trident MCA boasts state-of-the-art laboratories equipped with cutting-edge tools and software to support hands-on learning in networking, programming, and hardware systems.
                         </p>
                     </div>
 
                     <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Question Bank</h2>
                         <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
+                            Access a collection of previous year question papers and practice problems designed to help students excel in their academics and technical skills.
                         </p>
                     </div>
 
                     <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
                         <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            A repository of BPUT's previous year question papers is available to help students prepare effectively for their examinations.
                         </p>
                     </div>
                 </div>

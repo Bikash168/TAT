@@ -77,11 +77,11 @@ const ScienceHumanities = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+                        <span className="ml-2 text-lg font-medium">Science & Humanities Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
+                        <h2 className="text-2xl font-semibold mb-6">Science & Humanities Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#overview">Overview</Link>
@@ -105,52 +105,38 @@ const ScienceHumanities = () => {
                     </div>
                 </aside>
 
-                {/* Main Content Section */}
-                <div className="w-full lg:w-3/4 space-y-12">
+               {/* Main Content Section */}
+               <div className="w-full lg:w-3/4 space-y-12">
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            The B.Tech. in Computer Science & Information Technology program integrates theoretical knowledge and practical applications in computing and information technology. It focuses on developing skills in programming, networking, database management, and information security.
+                            The prime objective of the Department of Science and Humanities is to provide students with deep insights into basic sciences and lay a solid foundation for engineering students throughout their four years of study. TAT is renowned for its professional teaching approach, strategic direction, and goal-oriented academic delivery. The department emphasizes academic excellence while nurturing students' creative skills, self-image, communication abilities, and public speaking through debates, group discussions, and personal development sessions.
                         </p>
                     </div>
 
-                    <div id="courses" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Courses Offered</h2>
-                        <div className="space-y-6">
-                            <div>
-                                <h3 className="font-semibold">B.Tech. in Computer Science & IT - 60 Seats</h3>
-                                <p>
-                                    A four-year undergraduate program covering areas such as software engineering, cloud computing, and system development. This course prepares students for various roles in the IT industry.
-                                </p>
-                            </div>
-                        </div>
+                    <div id="departments" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Departments</h2>
+                        <ul className="list-disc list-inside space-y-2">
+                            <li>Department of Mathematics</li>
+                            <li>Department of Physics</li>
+                            <li>Department of Chemistry</li>
+                            <li>Department of English</li>
+                            <li>Department of Economics</li>
+                            <li>Department of Management Studies</li>
+                        </ul>
                     </div>
 
-                    <div id="faculties" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Faculties</h2>
+                    <div id="faculty" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Faculty</h2>
                         <p>
-                            The department has highly qualified faculty members with expertise in software engineering, artificial intelligence, and database management.
+                            The department comprises sincere and dedicated faculty members, many of whom hold PhDs or are actively pursuing their doctoral degrees. They specialize in their respective fields and are committed to enriching students' learning experiences through strong conceptual clarity in both theoretical and practical aspects.
                         </p>
                     </div>
 
-                    <div id="laboratories" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Laboratories</h2>
+                    <div id="facilities" className="bg-white p-6 rounded-lg shadow-lg">
+                        <h2 className="text-xl font-bold mb-4">Facilities</h2>
                         <p>
-                            Modern laboratories equipped with advanced tools for practical learning in networking, programming, and hardware systems.
-                        </p>
-                    </div>
-
-                    <div id="question-bank" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">Question Bank</h2>
-                        <p>
-                            Access a collection of previous year question papers and practice problems to excel in academics.
-                        </p>
-                    </div>
-
-                    <div id="bput-questions" className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-xl font-bold mb-4">BPUT Questions (PY)</h2>
-                        <p>
-                            A repository of previous year BPUT questions is available to aid in effective exam preparation.
+                            The department boasts well-equipped laboratories with state-of-the-art equipment for experiments aligned with the Biju Patnaik University of Technology syllabus. The English Department features a modern Language Lab with advanced software and hardware to enhance students' English communication skills. Periodic guest lectures by eminent faculty and industry experts further bridge academic gaps.
                         </p>
                     </div>
                 </div>
