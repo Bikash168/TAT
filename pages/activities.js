@@ -59,14 +59,14 @@ const Activities = () => {
             <h2 className="text-2xl font-semibold mb-6">Activities Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Co-Curricular', link: '#co-curricular' },
-                { name: 'Extra-Curricular', link: '#extra-curricular' },
-                { name: 'Innovation & Entrepreneurship', link: '#innovation-entrepreneurship' },
-                { name: 'Sports and Games', link: '#sports-games' },
-                { name: 'TRILOGY: The Annual Magazine', link: '#trilogy-magazine' },
-                { name: 'IEDC', link: '#iedc' },
-                { name: 'IEDC Projects', link: '#iedc-projects' },
-                { name: 'Incubation Cell', link: '#incubation-cell' },
+                { name: 'Co-Curricular', link: '/co-curricular' },
+                { name: 'Extra-Curricular', link: '/extra-curricular' },
+                { name: 'Innovation & Entrepreneurship', link: '/innovation-entrepreneurship' },
+                { name: 'Sports and Games', link: '/sports-games' },
+                { name: 'TRILOGY: The Annual Magazine', link: '/trilogy-magazine' },
+                { name: 'IEDC', link: '/iedc' },
+                { name: 'IEDC Projects', link: '/iedc-projects' },
+                { name: 'Incubation Cell', link: '/incubation-cell' },
               ].map((item) => (
                 <li
                   key={item.name}
