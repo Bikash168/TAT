@@ -60,12 +60,12 @@ const Placement = () => {
             <h2 className="text-2xl font-semibold mb-6">Placement</h2>
             <ul className="space-y-3">
               {[ 
-                { name: 'Placement Overview', link: '#placement-overview' },
-                { name: 'Placement Infrastructure', link: '#placement-infrastructure' },
-                { name: 'Alumni Mentoring', link: '#alumni-mentoring' },
-                { name: 'Placement Statistics', link: '#placement-statistics' },
-                { name: 'Recruiters Speak', link: '#recruiters-speak' },
-                { name: 'Placement Notices', link: '#placement-notices' },
+                { name: 'The Department', link: '/placement-overview' },
+                { name: 'Placement Infrastructure', link: '/placement-infrastructure' },
+                { name: 'Alumni Mentoring', link: '/alumni-mentoring' },
+                { name: 'Placement Statistics', link: '/placement-statistics' },
+                { name: 'Recruiters Speak', link: '/recruiters-speak' },
+                { name: 'Placement Notices', link: '/placement-notices' },
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
                   <Link href={item.link}>{item.name}</Link>
