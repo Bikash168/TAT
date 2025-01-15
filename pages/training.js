@@ -59,15 +59,14 @@ export default function Training() {
             <h2 className="text-2xl font-semibold mb-6">Training Programs</h2>
             <ul className="space-y-3">
               {[ 
-                { name: 'Attitude is Everything', link: '#attitude' },
-                { name: 'Industry Institute Partnership Cell (IIPC)', link: '#iipc' },
-                { name: 'Cisco', link: '#cisco' },
-                { name: 'thingQbator', link: '#thingq' },
-                { name: 'Communication Confidence', link: '#communication' },
-                { name: 'Other Softskills', link: '#softskills' },
-                { name: 'Analytical Reasoning', link: '#reasoning' },
-                { name: 'Winter & Summer Training Extravaganza', link: '#skills' },
-                { name: 'Technical Augmentation', link: '#technical' },
+                { name: 'Attitude is Everything', link: '/attitude' },
+                { name: 'Industry Institute Partnership Cell (IIPC)', link: '/iipc' },
+                { name: 'Cisco thingQbator ', link: '/cisco' },
+                { name: 'Communication Confidence: Speak Your Way to Success', link: '/communication' },
+                { name: 'Other Softskills', link: '/softskills' },
+                { name: 'Analytical Reasoning', link: '/reasoning' },
+                { name: 'Winter & Summer Training Extravaganza', link: '/skills' },
+                { name: 'Technical Augmentation', link: '/technical' },
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
                   <Link href={item.link}>{item.name}</Link>
