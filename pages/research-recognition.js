@@ -49,7 +49,7 @@ const ResearchRecognition = () => {
                         The Trident Group was able to build in-house research and development on new technologies, products, processes, designs, quality, ranges, etc., thanks to this important accreditation. Additionally, it makes it possible for us to obtain financial Research and Development grants from numerous funding organizations, including DST, CSIR, DBT, TDB, ICMR, and ICAR.
                     </p>
                     <a
-                        href="/downloads/SIRO_Recognition_2023.pdf"
+                        href="/pdfs/11-750-2017-TU-V-Recognition-Letter-1.pdf"
                         className="text-blue-500 hover:underline"
                         download
                     >
@@ -77,7 +77,7 @@ const ResearchRecognition = () => {
                         <li>To promote and enhance the reputation of faculty members in academic as well as quality of research.</li>
                     </ul>
                     <a
-                        href="/downloads/BPUT_NCR_Letter.pdf"
+                        href="/pdfs/List-of-approved-BPUT-NCR-for-the-year-2022-232023-24-2024-25.pdf"
                         className="text-blue-500 hover:underline"
                         download
                     >

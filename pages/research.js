@@ -85,18 +85,18 @@ export default function Research() {
             <h2 className="text-2xl font-semibold mb-6">Research Menu</h2>
             <ul className="space-y-3">
               {[
-                 { name: 'Objective', link: '/objective' },
-                 { name: 'Research Recognition', link: '/research-recognition' },
-                 { name: 'Research Committee', link: '/research-committee' },
-                 { name: 'Empowerment', link: '/empowerment' },
-                 { name: 'Research Linkage', link: '/research-linkage' },
-                 { name: 'Extramural Funding (TEFR)', link: '/extramural-funding' },
-                 { name: 'Intramural Funding (TIFR)', link: '/intramural-funding' },
-                 { name: 'Domain Research Hubs', link: '/domain-research-hubs' },
-                 { name: 'Patents', link: '/patents' },
-                 { name: 'Consultancy', link: '/consultancy' },
-                 { name: 'Research and Consultancy Policy 2013', link: '/research-consultancy-policy-2013' },
-                 { name: 'Research and Development Policy 2024', link: '/research-development-policy-2024' },
+                { name: 'Objective', link: '/objective' },
+                { name: 'Research Recognition', link: '/research-recognition' },
+                { name: 'Research Committee', link: '/research-committee' },
+                { name: 'Empowerment', link: '/empowerment' },
+                { name: 'Research Linkage', link: '/research-linkage' },
+                { name: 'Extramural Funding (TEFR)', link: '/extramural-funding' },
+                { name: 'Intramural Funding (TIFR)', link: '/intramural-funding' },
+                { name: 'Domain Research Hubs', link: '/domain-research-hubs' },
+                { name: 'Patents', link: '/patents' },
+                { name: 'Consultancy', link: '/consultancy' },
+                { name: 'Research and Consultancy Policy 2013', link: '/research-consultancy-policy-2013' },
+                { name: 'Research and Development Policy 2024', link: '/research-development-policy-2024' },
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
                   <Link href={item.link}>{item.name}</Link>
