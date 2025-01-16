@@ -79,15 +79,15 @@ const Academics = () => {
             <ul className="space-y-3">
               {[
                 { name: 'Departments', link: '/departments' },
-                { name: 'Learning Resources', link: '#learning-resources' },
-                { name: 'Academic Advisory Board', link: '#academic-advisory-board' },
-                { name: 'Academic Monitoring Council', link: '#academic-monitoring-council' },
-                { name: 'Peer Evaluation', link: '#peer-evaluation' },
-                { name: 'Chapters', link: '#chapters' },
-                { name: 'Programme & Course Outcomes', link: '#programme-course-outcomes' },
-                { name: 'Calendar', link: '#calendar' },
-                { name: 'Time Table', link: '#time-table' },
-                { name: 'BPUT Regulation', link: '#bput-regulation' }
+                { name: 'Learning Resources', link: '/learning-resources' },
+                { name: 'Academic Advisory Board', link: '/academic-advisory-board' },
+                { name: 'Academic Monitoring Council', link: '/academic-monitoring-council' },
+                { name: 'Peer Evaluation', link: '/peer-evaluation' },
+                { name: 'Chapters', link: '/chapters' },
+                { name: 'Programme & Course Outcomes', link: '/programme-course-outcomes' },
+                { name: 'Calendar', link: '/calendar' },
+                { name: 'Time Table', link: '/time-table' },
+                { name: 'BPUT Regulation', link: '/bput-regulation' }
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition ">
                   <Link href={item.link}>
