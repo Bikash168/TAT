@@ -59,9 +59,9 @@ export default function Grievance() {
             <h2 className="text-2xl font-semibold mb-6">Grievance Redressal Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'General', link: '#general' },
-                { name: 'Women', link: '#women' },
-                { name: 'SC/ST', link: '#scst' }
+                { name: 'General', link: '/general' },
+                { name: 'Women', link: '/women' },
+                { name: 'SC/ST', link: '/scst' }
               ].map((item) => (
                 <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
                   <Link href={item.link}>{item.name}</Link>
