@@ -5,7 +5,7 @@ import {
   faFacebook,
   faTwitter,
   faYoutube,
-  faRss,
+  
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -156,7 +156,7 @@ const Footer = () => {
             { icon: faFacebook, label: "Facebook" },
             { icon: faTwitter, label: "Twitter" },
             { icon: faYoutube, label: "YouTube" },
-            { icon: faRss, label: "RSS" },
+           
           ].map(({ icon, label }) => (
             <a key={label} href="/" className="hover:text-gray-300 transition-all" aria-label={label}>
               <FontAwesomeIcon icon={icon} />
