@@ -81,7 +81,7 @@ const LearningResources = () => {
                                 <Link href="/about-learning-resources">About</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#vision-mission">Vision & Mission</Link>
+                                <Link href="/vision-mission-learning-resources">Vision & Mission</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#catalogue-search">Catalogue Search</Link>
