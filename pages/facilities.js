@@ -58,9 +58,9 @@ const Facilities = () => {
             <h2 className="text-2xl font-semibold mb-6">Facilities</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Infrastructure', link: '#infrastructure' },
-                { name: 'Hostels', link: '#hostels' },
-                { name: 'Transport', link: '#transport' },
+                { name: 'Infrastructure', link: '/infrastructure' },
+                { name: 'Hostels', link: '/hostels' },
+                { name: 'Transport', link: '/transport' },
                 { name: 'Food Centers', link: '#food-centers' },
                 { name: 'Healthcare', link: '#healthcare' },
                 { name: 'Power Backups', link: '#power-backups' },
