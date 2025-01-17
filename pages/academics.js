@@ -30,7 +30,7 @@ const Academics = () => {
       </section>
 
 
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 ">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6 ">
         <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
           <li>
             <Link href="/" className="hover:underline flex items-center">
@@ -45,7 +45,7 @@ const Academics = () => {
         </ul>
       </nav>
       {/* Main Section */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[2.5px] sm:mt-[5px] lg:mt-[10px] mb-16">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[1 px] sm:mt-[2.5px] lg:mt-[5px] mb-16">
         {/* Sidebar */}
         <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
 
