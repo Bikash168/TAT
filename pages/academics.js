@@ -15,22 +15,22 @@ const Academics = () => {
     <Layout title="Academics | Trident Academy of Technology">
       {/* Background Image Section with Improved Contrast */}
       <section
-        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-24 sm:mt-0"
         style={{
-          backgroundImage: "url('/images/Academics.jpg')", // Replace with your image path
-          backgroundPosition: "center center", // Center the image horizontally and vertically
-          backgroundAttachment: "fixed", // Keeps the background fixed while scrolling
+          backgroundImage: "url('/images/Academics.jpg')", // Ensure the path is correct
         }}
       >
-        {/* Optional overlay for better text visibility */}
-        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+        {/* Overlay for better visibility */}
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
-        {/* Title */}
-        <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
+        {/* Title Section */}
+        <h1 className="relative text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
           Academics
         </h1>
       </section>
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 mb-8">
+
+
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 ">
         <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
           <li>
             <Link href="/" className="hover:underline flex items-center">
@@ -45,7 +45,7 @@ const Academics = () => {
         </ul>
       </nav>
       {/* Main Section */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[30px] sm:mt-[40px] lg:mt-[60px] mb-16">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[5px] sm:mt-[10px] lg:mt-[20px] mb-16">
         {/* Sidebar */}
         <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
 
