@@ -30,7 +30,7 @@ const Academics = () => {
       </section>
 
 
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 ">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-2 sm:gap-4 lg:gap-6 mt-4 sm:mt-6 lg:mt-8 ">
         <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
           <li>
             <Link href="/" className="hover:underline flex items-center">
