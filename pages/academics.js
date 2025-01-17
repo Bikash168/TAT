@@ -15,7 +15,7 @@ const Academics = () => {
     <Layout title="Academics | Trident Academy of Technology">
       {/* Background Image Section with Improved Contrast */}
       <section
-        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-24 sm:mt-0"
+        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
         style={{
           backgroundImage: "url('/images/Academics.jpg')", // Ensure the path is correct
         }}
