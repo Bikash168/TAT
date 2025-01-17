@@ -52,7 +52,7 @@ const Academics = () => {
 
           {/* Hamburger Icon for Mobile View */}
           <button
-            className="lg:hidden text-white mb-2 flex items-center"
+            className="lg:hidden text-white mb-1 flex items-center"
             onClick={toggleSidebar}
           >
             <svg
