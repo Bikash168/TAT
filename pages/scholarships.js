@@ -101,7 +101,7 @@ const Scholarships = () => {
         <Layout title="Scholarships | Trident Academy of Technology">
             {/* Hero Section */}
             <section
-                className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center"
+                className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
                 style={{
                     backgroundImage: "url('/images/security-hero.jpg')", // Replace with your image path
                     backgroundPosition: "center center",

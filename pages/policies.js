@@ -40,7 +40,7 @@ const PoliciesPage = () => {
         <Layout>
             {/* Hero Section */}
             <section
-                className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center"
+                className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
                 style={{
                     backgroundImage: "url('/images/policies-hero.jpg')",
                     backgroundPosition: 'center center',
@@ -53,8 +53,8 @@ const PoliciesPage = () => {
                 </h1>
             </section>
 
-{/* Breadcrumb Navigation */}
-<nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-10">
+            {/* Breadcrumb Navigation */}
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-10">
                 <ul className="flex items-center space-x-2 text-sm sm:text-base lg:text-lg">
                     <li>
                         <a href="/" className="hover:underline flex items-center">

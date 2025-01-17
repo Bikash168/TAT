@@ -6,7 +6,7 @@ const ResearchGroups = () => {
         <Layout title="Research Groups | Trident Academy of Technology">
             {/* Background Image Section */}
             <section
-                className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center"
+                className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
                 style={{
                     backgroundImage: "url('/images/research-groups.jpg')", // Replace with your image path
                     backgroundPosition: "center center",

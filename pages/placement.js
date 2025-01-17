@@ -14,19 +14,19 @@ const Placement = () => {
     <Layout title="Placement | Trident Academy of Technology">
       {/* Hero Section */}
       <section
-  className="relative w-full h-[200px] sm:h-[250px] md:h-[300px] bg-cover bg-center flex items-center justify-center"
-  style={{
-    backgroundImage: "url('/images/Placement.webp')", // Replace with your image path
-    backgroundPosition: "center center",
-    backgroundSize: "cover",  // Ensures the image covers the entire section
-    backgroundAttachment: "fixed",
-  }}
->
-  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
-    Placement at Trident Academy of Technology
-  </h1>
-</section>
+        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
+        style={{
+          backgroundImage: "url('/images/Placement.webp')", // Replace with your image path
+          backgroundPosition: "center center",
+          backgroundSize: "cover",  // Ensures the image covers the entire section
+          backgroundAttachment: "fixed",
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
+          Placement at Trident Academy of Technology
+        </h1>
+      </section>
 
 
       {/* Main Section */}
@@ -59,7 +59,7 @@ const Placement = () => {
           >
             <h2 className="text-2xl font-semibold mb-6">Placement</h2>
             <ul className="space-y-3">
-              {[ 
+              {[
                 { name: 'The Department', link: '/placement-overview' },
                 { name: 'Placement Infrastructure', link: '/placement-infrastructure' },
                 { name: 'Alumni Mentoring', link: '/alumni-mentoring' },
