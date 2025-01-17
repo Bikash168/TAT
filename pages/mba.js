@@ -29,7 +29,7 @@ const MBA = () => {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-10">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <ul className="flex items-center space-x-2 text-sm sm:text-base lg:text-lg">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
@@ -54,7 +54,7 @@ const MBA = () => {
             </nav>
 
             {/* Main Content */}
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[10px] sm:mt-[20px] lg:mt-[40px] mb-16">
+            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[1 px] sm:mt-[2.5px] lg:mt-[5px] mb-16">
                 {/* Sidebar */}
                 <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
                     <button
