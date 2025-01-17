@@ -15,7 +15,7 @@ const AnalyticalReasoning = () => {
                 }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-                <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4">
+                <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
                     Analytical Reasoning: Ace Your Aptitude Test
                 </h1>
             </section>
