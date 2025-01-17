@@ -45,7 +45,7 @@ const Academics = () => {
         </ul>
       </nav>
       {/* Main Section */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[5px] sm:mt-[10px] lg:mt-[20px] mb-16">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[2.5px] sm:mt-[5px] lg:mt-[10px] mb-16">
         {/* Sidebar */}
         <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
 
