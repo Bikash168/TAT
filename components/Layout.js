@@ -1,7 +1,7 @@
 // components/Layout.js
 import Head from 'next/head';
 import Navbar from './Navbar';
-import SideMenu from './SideMenu';
+
 
 const Layout = ({ children, title, description, keywords }) => {
   return (
@@ -17,7 +17,7 @@ const Layout = ({ children, title, description, keywords }) => {
       <Navbar />
       <main className="flex-grow pt-32">
         {children}
-        <SideMenu />
+     
       </main>
     
     </div>
