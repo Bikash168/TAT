@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from "react";
+import Link from "next/link";
 import {
   FaFacebook,
   FaTwitter,
@@ -9,38 +9,53 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-} from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+  FaRegClone,
+} from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev);
+  };
+
   const handleMenuItemClick = () => {
-    setIsMenuOpen(false); // Close the menu when a menu item is clicked
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
   };
 
   const menuItems = [
-    { name: 'Academics', href: '/academics' },
-    { name: 'Research', href: '/research' },
-    { name: 'Activities', href: '/activities' },
-    { name: 'Training', href: '/training' },
-    { name: 'Placement', href: '/placement' },
-    { name: 'Best Practices', href: '/best-practices' },
-    { name: 'Facilities', href: '/facilities' },
+    { name: "Academics", href: "/academics" },
+    { name: "Research", href: "/research" },
+    { name: "Activities", href: "/activities" },
+    { name: "Training", href: "/training" },
+    { name: "Placement", href: "/placement" },
+    { name: "Best Practices", href: "/best-practices" },
+    { name: "Facilities", href: "/facilities" },
   ];
 
   const topBarMenu = [
-    { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Alumni', href: '/alumni' },
-    { name: 'Grievance', href: '/grievance' },
-    { name: 'Careers', href: '/career' },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
+    { name: "Alumni", href: "/alumni" },
+    { name: "Grievance", href: "/grievance" },
+    { name: "Careers", href: "/career" },
+  ];
+
+  const dropdownItems = [
+    { name: "Admission", href: "/admission" },
+    { name: "Appointments", href: "/appointments" },
+    { name: "Notice", href: "/notice" },
+    { name: "NIRF", href: "/nirf" },
+    { name: "E-Magazine", href: "/e-magazine" },
   ];
 
   return (
@@ -50,11 +65,21 @@ export default function Navbar() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
           {/* Left: Social Media Icons */}
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-blue-500"><FaFacebook /></a>
-            <a href="#" className="text-gray-600 hover:text-pink-500"><FaInstagram /></a>
-            <a href="#" className="text-gray-600 hover:text-blue-700"><FaLinkedin /></a>
-            <a href="#" className="text-gray-600 hover:text-red-500"><FaYoutube /></a>
-            <a href="#" className="text-gray-600 hover:text-blue-400"><FaTwitter /></a>
+            <a href="#" className="text-gray-600 hover:text-blue-500">
+              <FaFacebook />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-pink-500">
+              <FaInstagram />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-blue-700">
+              <FaLinkedin />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-red-500">
+              <FaYoutube />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-blue-400">
+              <FaTwitter />
+            </a>
           </div>
 
           {/* Search Bar */}
@@ -122,25 +147,51 @@ export default function Navbar() {
 
             <ul className="hidden md:flex space-x-6 uppercase text-base font-semibold ml-auto">
               {menuItems.map((item) => (
-                <li key={item.name} className="hover:text-gray-300 cursor-pointer">
+                <li
+                  key={item.name}
+                  className="hover:text-gray-300 cursor-pointer"
+                >
                   <Link href={item.href}>
                     <span>{item.name}</span>
                   </Link>
                 </li>
               ))}
             </ul>
+
+            {/* FaTh Dropdown */}
+            <div className="relative px-4">
+              <FaRegClone
+                className="text-3xl md:text-4xl cursor-pointer hover:text-gray-300"
+                onClick={toggleDropdown}
+              />
+              {isDropdownOpen && (
+                <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-4 z-50">
+                  <ul className="flex flex-col space-y-2">
+                    {dropdownItems.map((item) => (
+                      <li key={item.name}>
+                        <Link href={item.href}>
+                          <span className="block text-[#002147] hover:text-blue-500 font-bold text-lg py-2 px-4">
+                            {item.name}
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
         {/* Mobile Navbar Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg">
-            <ul className="flex flex-col space-y-2 p-4">
+            <ul className="flex flex-col space-y-3 p-6">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
                   <Link href={item.href}>
                     <span
-                      className="block bg-white text-[#002147] hover:bg-gray-100 font-semibold text-sm py-3 px-4 rounded shadow-md transition-all duration-300 ease-in-out"
+                      className="block bg-white text-[#002147] hover:bg-gray-100 font-bold text-lg py-4 px-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
                       onClick={handleMenuItemClick}
                     >
                       {item.name}
