@@ -84,7 +84,7 @@ const ElectronicsTelecommEngineering = () => {
                         <h2 className="text-2xl font-semibold mb-6">Electronics & Telecomm Engineering Menu</h2>
                         <ul className="space-y-3">
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#overview">Overview</Link>
+                                <Link href="/overview-electronics-telecommunication">Overview</Link>
                             </li>
                             <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
                                 <Link href="#courses">Courses</Link>
