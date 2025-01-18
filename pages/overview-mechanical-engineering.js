@@ -56,14 +56,14 @@ const Overview = () => {
             <section
                 className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
                 style={{
-                    backgroundImage: "url('/images/Civil-Engineering.jpg')", // Replace with your image path
+                    backgroundImage: "url('/images/overview-mechanical-engineering.jpg')", // Replace with your image path
                     backgroundPosition: "center center",
                     backgroundAttachment: "fixed",
                 }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
-                    Civil Engineering Department Overview
+                Mechanical Engineering Department Overview
                 </h1>
             </section>
 
@@ -104,17 +104,22 @@ const Overview = () => {
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 id="overview" className="text-xl sm:text-2xl font-bold mb-4">Overview</h2>
                         <p className="text-base sm:text-lg">
-                            The Department of Civil Engineering (CE) at Trident Academy of Technology (TAT), started in the year 2013 as an addition to the existing stream of technical degree courses. At present, it offers an undergraduate degree program of 204 credit points in Civil Engineering (B.Tech. in Civil) from Biju Pattnaik University of Technology (BPUT), Odisha.
+                        An MoU has been signed with Capital Goods for the skill development of the mechanical students on CNC Programming and Operations.                        </p>
+                        <p className="text-base sm:text-lg">
+                        The Department is equipped with a state-of-the-art CAD Lab with 36 systems having the latest version of design tools Auto CAD, Solidworks CATIA and Master CAM for hands-on training of  the students to make them industry fit.
                         </p>
                         <p className="text-base sm:text-lg">
-                            The department focuses on providing a wide spectrum of knowledge and exposure on various key components of the civil engineering curricula, covering fundamental knowledge like mathematics, physics, chemistry, thermodynamics, metallurgy, and engineering drawing.
-                        </p>
+                        A state-of-the-art Automobile Workshop has been set up to provide the mechanical students with training on cutting edge technology off automotive industry with life DEMO.                        </p>
                         <p className="text-base sm:text-lg">
-                            The department is equipped with state-of-the-art laboratory infrastructure and is supported by highly experienced faculty members and field instructors. The aim is to develop strong, dependable proficiency in various structural design skills, boosting students' confidence in designing effective solutions to real-life problems.
-                        </p>
+                        Students are regularly trained on CNC Programming and Operations at CTTC, Bhubaneswar .                        </p>
                         <p className="text-base sm:text-lg">
-                            Beyond academic rigor, the department emphasizes professional skills, communication skills, and ethical considerations in civil engineering. As part of the Trident culture, students follow a "Learn with Fun" approach to nurture their intellectual, technological, and personal skills, engaging in a variety of technical and intellectual clubs and professional societies.
-                        </p>
+                        Students regularly undertake one or two Automobile projects work on design and development of automotive vehicles like Gokart, Quad Bike, Effy Vehicle  and F1 Car through specific training by dept. trainer Mr. Sambit Mohanty every year.                        </p>
+                        <p className="text-base sm:text-lg">
+                        The Department is well equipped with two Technical Clubs named DESIGNERS Club  and  AUTOTRACK  Club to impart technical skill through relevant  industrial training, workshop and seminar as club activities beyond the college hours.              </p>
+                        <p className="text-base sm:text-lg">
+                        The department faculty have designed and developed three 6 ton Heat Pumps and installed them in the college hostel kitchen to restore heat from the six cooking zones and utilize it in  heating the kitchen water for cooking purpose.              </p>
+                        <p className="text-base sm:text-lg">
+                        The faculty members have designed and fabricated a hybrid demo model of 5 kwatt  wind mill integrated with 15kwatt solar demo model which are installed in the campus for students project learning purpose.              </p>
                     </div>
 
                     {/* Tabs Section */}
