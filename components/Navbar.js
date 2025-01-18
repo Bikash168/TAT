@@ -161,7 +161,7 @@ export default function Navbar() {
             {/* FaTh Dropdown */}
             <div className="relative px-4">
               <FaRegClone
-                className="text-3xl md:text-4xl cursor-pointer hover:text-gray-300"
+                className="text-2xl md:text-3xl cursor-pointer hover:text-gray-300"
                 onClick={toggleDropdown}
               />
               {isDropdownOpen && (
