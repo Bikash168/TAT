@@ -20,7 +20,7 @@ const AboutResearchCommittee = () => {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-8">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
                     <li>
                         <a href="/" className="hover:underline flex items-center">
