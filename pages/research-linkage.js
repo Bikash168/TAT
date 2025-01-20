@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const ResearchLinkage = () => {
     return (
-        <Layout>
+        <Layout title="Research Linkage | Trident Academy of Technology">
             {/* Hero Section */}
             <section
                 className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
@@ -22,7 +22,7 @@ const ResearchLinkage = () => {
                 </h1>
             </section>
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-10">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <ul className="flex items-center space-x-2 text-sm sm:text-base lg:text-lg">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
@@ -39,7 +39,7 @@ const ResearchLinkage = () => {
                     <li className="text-gray-600">Research Linkage</li>
                 </ul>
             </nav>
-            <div className="container mx-auto p-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <section className="text-center">
 
                     <p className="text-xl text-gray-600 mb-8">
