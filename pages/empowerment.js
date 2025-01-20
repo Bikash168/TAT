@@ -21,7 +21,7 @@ export default function Empowerment() {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-10">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <ul className="flex items-center space-x-2 text-sm sm:text-base lg:text-lg">
                     <li>
                         <Link href="/" className="hover:underline flex items-center">
@@ -40,7 +40,7 @@ export default function Empowerment() {
             </nav>
 
             {/* Main Section */}
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-8 mt-[20px] sm:mt-[40px] lg:mt-[60px] mb-16">
+            <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex flex-col gap-8">
                 {/* Main Content */}
                 <div className="w-full space-y-12">
                     {/* Introduction Section */}
