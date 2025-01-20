@@ -51,7 +51,7 @@ export default function ResearchCommittee() {
         {/* Sidebar */}
         <aside className="lg:w-1/4 w-full bg-[#002147] text-white p-4 rounded-lg shadow-md">
           <button
-            className="lg:hidden text-white mb-2 flex items-center"
+            className="lg:hidden text-white mb-4 flex items-center"
             onClick={toggleSidebar}
           >
             <svg
@@ -59,7 +59,7 @@ export default function ResearchCommittee() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="w-8 h-8"
+              className="w-6 h-6"
             >
               <path
                 strokeLinecap="round"
@@ -72,7 +72,7 @@ export default function ResearchCommittee() {
           </button>
 
           <div
-            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}
+            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} w-full lg:w-auto`}
           >
             <h2 className="text-2xl font-semibold mb-6">Research Menu</h2>
             <ul className="space-y-3">
@@ -82,8 +82,11 @@ export default function ResearchCommittee() {
                 { name: 'Research Groups', link: '/research-groups' },
                 { name: 'Research Committee Members', link: '/research-committee-members' },
               ].map((item) => (
-                <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                  <Link href={item.link}>{item.name}</Link>
+                <li
+                  key={item.name}
+                  className="hover:bg-[#004D73] p-2 rounded-lg transition"
+                >
+                  <a href={item.link}>{item.name}</a>
                 </li>
               ))}
             </ul>
