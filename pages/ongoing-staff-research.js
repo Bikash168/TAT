@@ -41,7 +41,7 @@ export default function OngoingResearch() {
             </Link>
           </li>
           <li>/</li>
-          <li className="text-gray-600">Ongoing Research</li>
+          <li className="text-gray-600">Ongoing Staff Research</li>
         </ul>
       </nav>
 
