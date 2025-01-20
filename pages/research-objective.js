@@ -20,7 +20,7 @@ const ResearchObjectives = () => {
             </section>
 
             {/* Breadcrumb Navigation */}
-            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-4 mb-8">
+            <nav className="container mx-auto px-4 sm:px-6 lg:px-12 py-2 flex flex-wrap items-center gap-4 sm:gap-6 lg:gap-8 mt-6">
                 <ul className="flex flex-wrap items-center text-sm sm:text-base lg:text-lg space-x-2">
                     <li>
                         <a href="/" className="hover:underline flex items-center">
@@ -39,7 +39,7 @@ const ResearchObjectives = () => {
             </nav>
 
             {/* Main Content */}
-            <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex flex-col gap-8">
+            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[1 px] sm:mt-[2.5px] lg:mt-[5px] mb-16">
                 <div className="bg-white p-6 rounded-lg shadow-lg">
                     <h2 className="text-xl sm:text-2xl font-bold mb-4">Core Objectives of Trident Research</h2>
                     <ul className="list-disc pl-6 text-base sm:text-lg space-y-4">

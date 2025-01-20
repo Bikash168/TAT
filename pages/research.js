@@ -100,7 +100,7 @@ export default function Research() {
             <h2 className="text-2xl font-semibold mb-6">Research Menu</h2>
             <ul className="space-y-3">
               {[
-                { name: 'Objective', link: '/objective' },
+                { name: 'Objective', link: '/research-objective' },
                 { name: 'Research Recognition', link: '/research-recognition' },
                 { name: 'Research Committee', link: '/research-committee' },
                 { name: 'Empowerment', link: '/empowerment' },
