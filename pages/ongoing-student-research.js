@@ -5,75 +5,46 @@ import Link from 'next/link';
 export default function OngoingResearch() {
   const projects = [
     {
-      sn: 1,
-      title: 'Performance Improvement of Antenna Using Metamaterial Applicable for Triband UWB',
-      investigator: 'Mr. Satyanarayan Rath',
-      status: 'PI',
-      designation: 'Asst. Professor',
-      dept: 'ETC',
-      proposalMode: 'Inter-Departmental',
-      duration: '2 Years',
+      slNo: 1,
+      studentNames: [
+        'Babysradha Sinha (4th yr)',
+        'Priyanka Priya (4th yr)',
+        'Ananya Nayak (4th yr)',
+        'Aarti Kumari (4th yr)',
+      ],
+      facultyGuides: ['Rina Mahakud', 'Satyanarayan Rath', 'Minu Samantaray'],
+      researchTitle: 'Energy Management in wireless sensor network using PEGASIS',
+      publication: '2nd International Conference on Intelligent Computing, Communication and Convergence (ICCC-16), Elsevier, ISBN: 978-93-82208-66-14, 24th-25th Jan 2016',
     },
     {
-      sn: 2,
-      title: 'Reliability Analysis of High K Dielectric in IC Designs',
-      investigator: 'Mr. Lalit Kumar Kanoje',
-      status: 'PI',
-      designation: 'Asst. Professor',
-      dept: 'ETC',
-      proposalMode: 'Intra-Departmental',
-      duration: '1 Year',
+      slNo: 2,
+      studentNames: ['Debasis Mohanta (Ph.D Scholar)', 'Pranab Ku. Behari (M.Tech, 2nd yr)'],
+      facultyGuides: ['Sakuntala Mahapatra', 'Prasant Mohanty', 'Santanu Ku. Nayak (Berhampur University)'],
+      researchTitle: 'A Neuro-fuzzy based model for analysis of an ECG signal using Wavelet Packet Tree',
+      publication: 'Procedia Computer Science (Elsevier), ICCC-2016',
     },
     {
-      sn: 3,
-      title: 'IoT Based Approach for Pilot Study of the Design of a Decision Support System (DSS) Framework for Implementing Climate Smart Agriculture in Odisha',
-      investigator: 'Dr. Abhaya Kumar Samal',
-      status: 'PI',
-      designation: 'Professor',
-      dept: 'CSE',
-      proposalMode: 'Departmental',
-      duration: '1 Year',
+      slNo: 3,
+      studentNames: ['Shubhashree Ray (3rd yr)'],
+      facultyGuides: ['Sumant Kumar Mohapatra', 'Sushil Kumar Mohapatra', 'Sukant Behera'],
+      researchTitle: 'Heatworm tracking using FGMP algorithm in dogs intestine',
+      publication: '2015 IEEE International Conference on Computer Graphics, Vision and Information Security (IEEE-CGVIS-2016), KIIT University, Bhubaneswar, 2-3 Nov 2015, DOI: 10.1109/CGVIS.2015.7449905 (Available in IEEE Xplore)',
     },
     {
-      sn: 4,
-      title: 'WSN Based Weather Station for Environmental Data Monitoring, Logging and Analysis',
-      investigator: 'Mr. Dakshya Prasd Pati',
-      status: 'PI',
-      designation: 'Asst. Professor',
-      dept: 'MCA',
-      proposalMode: 'Intra-Departmental',
-      duration: '1 Year',
+      slNo: 4,
+      studentNames: ['Sumit Ghosh (3rd yr)', 'Smruti Ranjan Dash (3rd yr)'],
+      facultyGuides: ['Sumant Kumar Mohapatra', 'Sushil Kumar Mohapatra'],
+      researchTitle: 'Green Aspects And Solutions For 5G Mobile Network Design',
+      publication: 'AISC series Springer publications (under process)',
     },
     {
-      sn: 5,
-      title: 'Tight Binding Model of CMR Property of the Antiferromagnetically Ordered Manganites',
-      investigator: 'Dr. Saswati Panda',
-      status: 'PI',
-      designation: 'Asst. Professor',
-      dept: 'Physics',
-      proposalMode: 'Departmental',
-      duration: '2 Years',
+      slNo: 5,
+      studentNames: ['Sumit Ghosh (3rd yr)'],
+      facultyGuides: ['Sumant Kumar Mohapatra', 'Sushil Kumar Mohapatra', 'Sakuntala Mahapatra'],
+      researchTitle: 'A Gynecology Problem Solution By Tracing Multi Moving Human Sperm Using Wavelet Based Mixture Of Gaussian Approach',
+      publication: 'In proceedings of IEEE-MICROCOM 2016, NIT Durgapur (will be indexed in IEEE-Xplore)',
     },
-    {
-      sn: 6,
-      title: 'Water Quality Monitoring In Bhubaneswar- A Smart City',
-      investigator: 'Dr. Manas Ranjan Senapati',
-      status: 'PI',
-      designation: 'Professor',
-      dept: 'Chemistry',
-      proposalMode: 'Inter-Departmental',
-      duration: '2 Years',
-    },
-    {
-      sn: 7,
-      title: 'Soft-Computing based Approach for Stock Market Prediction using Artificial Neural Network',
-      investigator: 'Mr. Kaustuva Hota',
-      status: 'PI',
-      designation: 'Asso. Professor',
-      dept: 'MBA',
-      proposalMode: 'Intra-Departmental',
-      duration: '1 Year',
-    },
+    // Additional projects can be added here...
   ];
 
   return (
@@ -116,14 +87,16 @@ export default function OngoingResearch() {
       {/* Main Section */}
       <main className="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex flex-col gap-8 mb-16">
         <section id="ongoing-research" className="space-y-4">
-          <h2 className="text-3xl font-semibold text-[#002147]">Ongoing Intramural Funded Research Projects</h2>
+          <h2 className="text-3xl font-semibold text-[#002147]">
+            Ongoing Intramural Funded Research Projects
+          </h2>
           <div className="overflow-x-auto">
-            <table className="min-w-full table-auto border-collapse text-lg text-gray-700">
+            <table className="min-w-full table-auto border-collapse text-sm sm:text-base text-gray-700">
               <thead>
                 <tr className="bg-[#002147] text-white">
-                  {['SN', 'Title', 'Investigator', 'Status', 'Designation', 'Dept.', 'Proposal Mode', 'Duration'].map(
+                  {['SN', 'Name of the Student(s)', 'Faculty Guide(s)', 'Research Projects', 'Publication/Showcase'].map(
                     (heading) => (
-                      <th key={heading} className="px-4 py-4 text-left text-xs sm:text-base">
+                      <th key={heading} className="px-4 py-4 text-left">
                         {heading}
                       </th>
                     )
@@ -132,12 +105,12 @@ export default function OngoingResearch() {
               </thead>
               <tbody>
                 {projects.map((project, index) => (
-                  <tr key={`${project.sn}-${index}`} className="border-b">
-                    {Object.values(project).map((value, i) => (
-                      <td key={i} className="px-4 py-4 text-xs sm:text-base">
-                        {value}
-                      </td>
-                    ))}
+                  <tr key={index} className="border-b">
+                    <td className="px-4 py-4">{project.slNo}</td>
+                    <td className="px-4 py-4">{project.studentNames.join(', ')}</td>
+                    <td className="px-4 py-4">{project.facultyGuides.join(', ')}</td>
+                    <td className="px-4 py-4">{project.researchTitle}</td>
+                    <td className="px-4 py-4">{project.publication}</td>
                   </tr>
                 ))}
               </tbody>
