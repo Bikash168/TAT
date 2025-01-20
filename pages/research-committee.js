@@ -78,7 +78,7 @@ export default function ResearchCommittee() {
             <ul className="space-y-3">
               {[
                 { name: 'About Research Committee', link: '/about-research-committee' },
-                { name: 'Objectives', link: '/research-objectives' },
+                { name: 'Objectives', link: '/research-committee-objectives' },
                 { name: 'Research Groups', link: '/research-groups' },
                 { name: 'Research Committee Members', link: '/research-committee-members' },
               ].map((item) => (
