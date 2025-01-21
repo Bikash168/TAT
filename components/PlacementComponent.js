@@ -6,7 +6,7 @@ import styles from '../pages/PlacementComponent.module.css'; // Correct path to 
 
 const companies = [
   { name: "Mindtree", image: "/images/mindtree.png" },
-  { name: "Mindfire", image: "/images/mindfire.png" },
+  { name: "Mindfire", image: "/images/mindfire.webp" },
   { name: "Infosys", image: "/images/infosys-logo.jpg" },
   { name: "Tata Consultancy Services", image: "/images/TCS-Logo.png" },
   { name: "Accenture", image: "/images/Accenture-logo.png" },
