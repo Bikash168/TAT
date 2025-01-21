@@ -90,7 +90,7 @@ export default function RenenClub() {
                         </p>
                         <div className="text-center">
                             <Link
-                                href="/club-presentation.pdf"
+                                href="pdfs/Solar-Energy-Presentation.pdf"
                                 className="inline-block py-3 px-6 bg-[#002147] text-white text-lg font-medium rounded-lg hover:bg-[#003a72] transition-colors duration-300"
                                 target="_blank"
                                 rel="noopener noreferrer"
