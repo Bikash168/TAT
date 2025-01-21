@@ -82,17 +82,17 @@ function EnergyCenterPage() {
                         <h2 className="text-3xl font-semibold text-[#002147] text-center mb-6">Useful Links</h2>
                         <ul className="space-y-4 text-lg text-gray-700">
                             <li className="hover:bg-gray-100 rounded-lg transition-colors duration-300">
-                                <Link href="/pdfs/Publications-from-Energy-Center.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
+                                <Link href="/pdfs/Energy_Center_Publ.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
                                     Publications from Center
                                 </Link>
                             </li>
                             <li className="hover:bg-gray-100 rounded-lg transition-colors duration-300">
-                                <Link href="/pdfs/Trainings-Conferences.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
+                                <Link href="/pdfs/sem_work.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
                                     Trainings/Conferences
                                 </Link>
                             </li>
                             <li className="hover:bg-gray-100 rounded-lg transition-colors duration-300">
-                                <Link href="/pdfs/BTech-Projects.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
+                                <Link href="/pdfs/btechprojectsec.pdf" className="block py-3 px-5 rounded-lg hover:text-blue-600 font-medium">
                                     B.Tech Projects
                                 </Link>
                             </li>
