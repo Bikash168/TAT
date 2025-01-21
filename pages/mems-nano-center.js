@@ -14,7 +14,7 @@ function MEMSAndNanoCenterPage() {
     <Layout title="MEMS & Nano Center | Trident Academy of Technology">
       {/* Hero Section */}
       <section
-        className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
+        className="relative w-full h-[200px] sm:h-[300px] md:h-[350px] bg-cover bg-center flex items-center justify-center mt-28 sm:mt-0"
         style={{
           backgroundImage: "url('/images/mems-nano-center.jpg')", // Replace with your image path
           backgroundPosition: "center center",
@@ -22,7 +22,7 @@ function MEMSAndNanoCenterPage() {
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
+        <h1 className="relative text-lg sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
           MEMS & Nano Center
         </h1>
       </section>
@@ -42,14 +42,20 @@ function MEMSAndNanoCenterPage() {
             </Link>
           </li>
           <li>/</li>
+          <li>
+            <Link href="/domain-research-hubs" className="hover:underline">
+            Domain Research Hubs
+            </Link>
+          </li>
+          <li>/</li>
           <li className="text-gray-600">MEMS & Nano Center</li>
         </ul>
       </nav>
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col gap-8 mt-[1px] sm:mt-[10px] lg:mt-[15px] mb-16 min-h-screen">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-[1 px] sm:mt-[2.5px] lg:mt-[5px] mb-16">
         {/* Content Area */}
-        <div className="w-full lg:w-3/4 space-y-12">
+        <div className="w-full lg:w-4/4 space-y-12">
           {/* Sections */}
           <section id="introduction" className="space-y-4">
             <h2 className="text-3xl font-semibold text-[#002147]">Introduction</h2>
