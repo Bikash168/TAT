@@ -12,8 +12,15 @@ export default function Home() {
     <>
       <div className="nopadding">
         <HeroSection />
+        {/* Announcements Section */}
+        <div className="bg-[#002147] p-4 text-sm text-white overflow-hidden">
+          <div className="whitespace-nowrap animate-marquee">
+            <span>⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
+            <span className="mx-8">⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
+          </div>
+        </div>
 
-        <section className="bg-white text-[#002147] py-16">
+        <section className="bg-white text-[#002147] py-2">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             {/* Grid Section for Certifications/Partnerships */}
             <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
