@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="bg-white text-[#002147] py-2">
+        <section className="bg-white text-[#002147] py-2 mb-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
             {/* Grid Section for Certifications/Partnerships */}
             <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
