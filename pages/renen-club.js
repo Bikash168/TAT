@@ -59,7 +59,7 @@ export default function RenenClub() {
             </nav>
 
             {/* Main Content */}
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-6 mb-16">
+            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 mt-2 mb-16">
                 <div className="w-full lg:w-4/4 space-y-12">
                     {/* Club Details */}
                     <section className="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg">
