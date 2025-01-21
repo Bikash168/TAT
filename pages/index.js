@@ -6,6 +6,7 @@ import Program from "../components/Program";
 import AboutSection from "../components/AboutSection";
 import HighlightSection from "../components/HighlightSection";
 import Footer from "../components/Footer";
+import PlacementComponent from "../components/PlacementComponent";
 
 export default function Home() {
   return (
@@ -164,6 +165,7 @@ export default function Home() {
       </div>
 
       <div className="px-2 sm:px-4 lg:px-6">
+        <PlacementComponent />
         <NewsEvents />
         <Tatoffer />
         <Program />
