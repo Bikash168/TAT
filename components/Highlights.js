@@ -6,7 +6,7 @@ const Highlights = () => (
         {/* Card 1 */}
         <div className="p-6 bg-white shadow rounded">
           <img
-            src="../images/Faculty.jpg" // Replace with the actual image path
+            src="../images/Faculty10.jpg" // Replace with the actual image path
             alt="World-Class Faculty"
             className="w-full h-60 object-cover rounded mb-4"
           />
