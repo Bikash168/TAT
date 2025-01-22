@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 const DegreeProgramsSection = () => {
   const router = useRouter();
 
-  // Sample degree programs with IDs or slugs and respective images
   const degreePrograms = [
     { name: "Computer Science & Engineering", slug: "cse-btech", image: "/images/Computer-Science-Engineering.jpg", link: "computer-science-engineering" },
     { name: "Electronics and Telecomm Engineering", slug: "ete-btech", image: "/images/ElectronicsTelecommEngineering.jpg", link: "electronics-telecommunication" },
@@ -19,25 +18,23 @@ const DegreeProgramsSection = () => {
     { name: "Biotechnology Engineering", slug: "be-bech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
     { name: "Master in Business Administration", slug: "mba", image: "/images/mba.jpg", link: "mba" },
     { name: "Master in Computer Application", slug: "mca", image: "/images/mca.jpg", link: "mca" },
-    // Add more programs as needed
   ];
 
   const handleProgramSelect = (link) => {
-    // Redirect to the program details page using the provided static link
     router.push(link);
   };
 
   return (
     <section id="degree-programs" className="py-10 bg-gray-50">
-      <div className="w-full max-w-6xl mx-auto mt-10">
-        <h2 className="text-2xl font-bold text-gray-700 mb-6">Our Degree Programs</h2>
+      <div className="w-full max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-gray-700 mb-6 text-center">Our Degree Programs</h2>
 
-        {/* Degree Programs Grid */}
-        <div className="grid grid-cols-4 gap-8">
+        {/* Responsive Grid for Programs */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {degreePrograms.map((program, index) => (
             <div
               key={index}
-              className="text-center p-4 border rounded-md cursor-pointer hover:bg-blue-100"
+              className="text-center p-4 border rounded-md shadow-sm cursor-pointer hover:bg-blue-100 transition-colors"
               onClick={() => handleProgramSelect(program.link)}
             >
               <img
@@ -45,13 +42,13 @@ const DegreeProgramsSection = () => {
                 alt={program.name}
                 className="mx-auto mb-4 h-32 w-32 object-cover rounded-full"
               />
-              <h5 className="text-gray-700 text-lg">{program.name}</h5>
+              <h5 className="text-gray-700 text-lg font-medium">{program.name}</h5>
             </div>
           ))}
         </div>
 
         {/* Optional: See All Programs Link */}
-        <div className="mt-6 pb-6 text-center">
+        <div className="mt-8 text-center">
           <a
             href="/departments"
             className="text-blue-600 font-medium hover:underline inline-flex items-center group"

@@ -23,81 +23,72 @@ const NewsEvents = () => {
       description:
         "Learn to bring ideas to life, discover new possibilities, work in teams and build networks.",
       img: "../images/Prospective-Students.jpg",
-      bgColor: "bg-yellow-400",
-      borderColor: "border-yellow-400",
-      tabColor: "text-yellow-400",
+      bgColor: "bg-yellow-500",
+      borderColor: "border-yellow-500",
     },
     Students: {
       title: "Students",
       description:
         "Explore opportunities for growth and gain valuable hands-on experiences in diverse fields.",
       img: "../images/Students.jpg",
-      bgColor: "bg-red-400",
-      borderColor: "border-red-400",
-      tabColor: "text-red-400",
+      bgColor: "bg-red-500",
+      borderColor: "border-red-500",
     },
     Researchers: {
       title: "Researchers",
       description:
         "Engage in cutting-edge research and innovation, pushing boundaries in your chosen field.",
       img: "../images/Researchers.jpg",
-      bgColor: "bg-green-400",
-      borderColor: "border-green-400",
-      tabColor: "text-green-400",
+      bgColor: "bg-green-600",
+      borderColor: "border-green-600",
     },
     Employees: {
       title: "Employees",
       description:
         "Be a part of an empowering environment, contributing to impactful projects and initiatives.",
       img: "../images/employee.jpg",
-      bgColor: "bg-blue-400",
-      borderColor: "border-blue-400",
-      tabColor: "text-blue-400",
+      bgColor: "bg-blue-700",
+      borderColor: "border-blue-700",
     },
     Alumni: {
       title: "Alumni",
       description:
         "Stay connected with your alma mater and contribute to the growing legacy of excellence.",
       img: "../images/alumni2.jpg",
-      bgColor: "bg-gray-400",
-      borderColor: "border-gray-400",
-      tabColor: "text-gray-400",
+      bgColor: "bg-gray-600",
+      borderColor: "border-gray-600",
     },
     "Executives and professionals": {
       title: "Executives and Professionals",
       description:
         "Harness your expertise and join a community of forward-thinking leaders and innovators.",
       img: "../images/Professionals.jpg",
-      bgColor: "bg-orange-400",
-      borderColor: "border-orange-400",
-      tabColor: "text-orange-400",
+      bgColor: "bg-orange-600",
+      borderColor: "border-orange-600",
     },
     Founders: {
       title: "Founders",
       description:
         "Collaborate with visionaries and entrepreneurs to bring groundbreaking ideas to life.",
       img: "../images/Founders.jpg",
-      bgColor: "bg-purple-400",
-      borderColor: "border-purple-400",
-      tabColor: "text-purple-400",
+      bgColor: "bg-purple-700",
+      borderColor: "border-purple-700",
     },
     Cooperations: {
       title: "Cooperations",
       description:
         "Build strong partnerships and explore synergies to create meaningful impacts.",
       img: "../images/Cooperations.jpg",
-      bgColor: "bg-teal-400",
-      borderColor: "border-teal-400",
-      tabColor: "text-teal-400",
+      bgColor: "bg-teal-700",
+      borderColor: "border-teal-700",
     },
     "Press and media": {
       title: "Press and Media",
       description:
         "Stay updated on the latest news, events, and milestones achieved by our community.",
       img: "../images/Media.jpg",
-      bgColor: "bg-pink-400",
-      borderColor: "border-pink-400",
-      tabColor: "text-pink-400",
+      bgColor: "bg-pink-600",
+      borderColor: "border-pink-600",
     },
   };
 
@@ -119,11 +110,12 @@ const NewsEvents = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`px-4 py-2 rounded font-medium transition border-b-2 ${
-                activeTab === tab
-                  ? `${newsContent[tab].tabColor} border-current`
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-4 py-2 rounded font-medium transition border-b-2 
+                ${
+                  activeTab === tab
+                    ? `bg-gradient-to-r from-gray-800 via-gray-700 to-gray-900 text-white border-gray-500`
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
             >
               {tab}
             </button>
