@@ -1,47 +1,74 @@
-/* ProgramsOfferedSection.module.css */
-
 .carousel {
   position: relative;
   width: 100%;
-  overflow: hidden; /* Hide overflow */
+  overflow: hidden; /* Hide overflowing cards */
+  white-space: nowrap; /* Prevent line breaks */
 }
 
 .cardWrapper {
   display: flex;
-  transition: transform 0.5s ease;
+  animation: scroll 20s linear infinite; /* Smooth infinite scrolling animation */
 }
 
 .card {
-  min-height: 300px;
-  flex: 1 0 calc(20% - 20px); /* Default to 5 cards for larger screens */
+  flex: 0 0 calc(20% - 20px); /* Ensure 5 cards are visible by default */
   padding: 20px;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 0 10px; /* Space between cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: normal; /* Reset for text wrapping */
+}
+
+.card img {
+  max-height: 120px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* Keyframes for Continuous Scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start from the initial position */
+  }
+  100% {
+    transform: translateX(-100%); /* Slide the entire width of the wrapper */
+  }
+}
+
+/* Clone the Wrapper for Seamless Loop */
+.cardWrapper::after {
+  content: '';
+  display: flex;
 }
 
 /* Media Queries */
 @media (max-width: 1200px) {
   .card {
-    flex: 1 0 calc(25% - 20px); /* 4 cards for medium screens */
+    flex: 0 0 calc(25% - 20px); /* Adjust to 4 cards */
   }
 }
 
 @media (max-width: 900px) {
   .card {
-    flex: 1 0 calc(33.33% - 20px); /* 3 cards for smaller screens */
+    flex: 0 0 calc(33.33% - 20px); /* Adjust to 3 cards */
   }
 }
 
 @media (max-width: 600px) {
   .card {
-    flex: 1 0 calc(50% - 20px); /* 2 cards for mobile screens */
+    flex: 0 0 calc(50% - 20px); /* Adjust to 2 cards */
   }
 }
 
 @media (max-width: 400px) {
   .card {
-    flex: 1 0 calc(100% - 20px); /* 1 card for very small screens */
+    flex: 0 0 calc(100% - 20px); /* Adjust to 1 card */
   }
 }

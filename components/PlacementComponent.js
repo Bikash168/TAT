@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import styles from '../pages/PlacementComponent.module.css'; // Correct path to pages
- // Adjusted to the correct relative path
- // Adjusted path to 'pages'
- // Ensure to adjust path if needed
+import React from 'react';
+import styles from '../pages/PlacementComponent.module.css';
 
 const companies = [
   { name: "Mindtree", image: "/images/mindtree.png" },
@@ -13,36 +10,7 @@ const companies = [
 ];
 
 export default function PlacementComponent() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsToShow = 5; // Adjust number of cards visible at a time
-  const totalSlides = companies.length;
-
-  // Function to automatically change the index every few seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000); // Change to your desired timing
-
-    return () => clearInterval(interval);
-  }, [currentIndex]);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex >= totalSlides - 1) {
-        return 0; // Reset to the first company
-      }
-      return prevIndex + 1;
-    });
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex <= 0) {
-        return totalSlides - 1; // Reset to the last company
-      }
-      return prevIndex - 1;
-    });
-  };
+  const duplicatedCompanies = [...companies, ...companies]; // Duplicate array for seamless loop
 
   return (
     <section className="py-20 bg-gray-100" id="placement">
@@ -52,16 +20,11 @@ export default function PlacementComponent() {
           Meet the top recruiters who trust our talent. Our students are placed with leading companies, shaping successful careers worldwide.
         </p>
 
-        {/* Carousel */}
-        <div className={`${styles.carousel} overflow-hidden`}>
-          <div
-            className={`${styles.cardWrapper} flex transition-transform duration-500`}
-            style={{
-              transform: `translateX(-${(currentIndex * 100) / cardsToShow}%)`,
-            }}
-          >
-            {companies.map((company, index) => (
-              <div key={index} className={`${styles.card} flex-shrink-0 mx-2`}>
+        {/* Continuous Carousel */}
+        <div className={styles.carousel}>
+          <div className={styles.cardWrapper}>
+            {duplicatedCompanies.map((company, index) => (
+              <div key={index} className={styles.card}>
                 <img
                   src={company.image}
                   alt={company.name}
@@ -71,8 +34,6 @@ export default function PlacementComponent() {
             ))}
           </div>
         </div>
-
-       
       </div>
     </section>
   );
