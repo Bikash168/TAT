@@ -149,7 +149,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col md:flex-row items-center md:items-start md:space-x-6">
               <div className="w-full md:w-1/3">
                 <img
-                  src="/images/student-development.jpg"
+                  src="/images/student-development.JPG"
                   alt="Student Development"
                   className="rounded-lg w-full object-cover"
                   loading="lazy"
