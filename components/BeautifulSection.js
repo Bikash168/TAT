@@ -1,7 +1,7 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
-import { useSpring, animated } from '@react-spring/web';  // Correct import from @react-spring/web
+import { useSpring, animated } from '@react-spring/web'; // Correct import from @react-spring/web
 
 const ProgramsAndFeaturesSection = () => {
     const router = useRouter();
@@ -55,7 +55,7 @@ const ProgramsAndFeaturesSection = () => {
                             onClick={() => handleProgramSelect(program.link)}
                         >
                             <Image
-                                src={program.image}
+                                src={program.image} // Ensure the image path is correct
                                 alt={program.name}
                                 width={128}
                                 height={128}
@@ -157,8 +157,8 @@ const ProgramsAndFeaturesSection = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
                     {metrics.map((metric, index) => {
-                        const springProps = useSpring({ 
-                            from: { number: 0 }, 
+                        const springProps = useSpring({
+                            from: { number: 0 },
                             to: { number: metric.number },
                             config: { mass: 1, tension: 150, friction: 30 },
                         });
@@ -166,13 +166,14 @@ const ProgramsAndFeaturesSection = () => {
                         return (
                             <div key={index} className={`${metric.color} text-white py-8 px-6 rounded-lg shadow-lg`}>
                                 <animated.h3 className="text-4xl font-bold">
-                                    {springProps.number.to(n => n.toFixed(0))}
+                                    {springProps.number.to(n => `${n.toFixed(0)}+`)}
                                 </animated.h3>
                                 <p className="text-lg">{metric.label}</p>
                             </div>
                         );
                     })}
                 </div>
+
             </div>
         </section>
     );
