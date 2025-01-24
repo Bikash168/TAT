@@ -65,7 +65,7 @@ const ProgramsAndFeaturesSection = () => {
                     {/* Feature 1 */}
                     <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp">
                         <Image
-                            src="/images/Faculty.jpg"
+                            src="/images/Dedicated-Faculty.jpg"
                             alt="Dedicated Faculty"
                             className="rounded-lg mb-4"
                             width={400}
