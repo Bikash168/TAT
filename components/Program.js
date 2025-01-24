@@ -16,8 +16,8 @@ const DegreeProgramsSection = () => {
     { name: "Mechanical Engineering", slug: "me-bech", image: "/images/MechanicalEngineering.jpg", link: "mechanical-engineering" },
     { name: "Civil Engineering", slug: "ce-bech", image: "/images/Civil-Engineering.jpg", link: "civil-engineering" },
     { name: "Biotechnology Engineering", slug: "be-bech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
-    { name: "Master in Business Administration", slug: "mba", image: "/images/mba.jpg", link: "mba" },
-    { name: "Master in Computer Application", slug: "mca", image: "/images/mca.jpg", link: "mca" },
+    { name: "Master in Business Administration", slug: "mba", image: "/images/MBA.jpg", link: "mba" },
+    { name: "Master in Computer Application", slug: "mca", image: "/images/MCA.jpg", link: "mca" },
   ];
 
   const handleProgramSelect = (link) => {
