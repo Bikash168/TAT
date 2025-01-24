@@ -138,6 +138,36 @@ const ProgramsAndFeaturesSection = () => {
                         </p>
                     </div>
                 </div>
+
+                {/* Key Metrics Section */}
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-extrabold text-gray-800 mb-4">Key Metrics</h2>
+                    <p className="text-lg text-gray-600">
+                        Our achievements and the impact we’ve made in the community.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div className="bg-blue-500 text-white py-8 px-6 rounded-lg shadow-lg">
+                        <h3 className="text-4xl font-bold">30</h3>
+                        <p className="text-lg">Departments</p>
+                    </div>
+
+                    <div className="bg-teal-500 text-white py-8 px-6 rounded-lg shadow-lg">
+                        <h3 className="text-4xl font-bold">200+</h3>
+                        <p className="text-lg">Faculties</p>
+                    </div>
+
+                    <div className="bg-blue-400 text-white py-8 px-6 rounded-lg shadow-lg">
+                        <h3 className="text-4xl font-bold">4000+</h3>
+                        <p className="text-lg">Students</p>
+                    </div>
+
+                    <div className="bg-green-500 text-white py-8 px-6 rounded-lg shadow-lg">
+                        <h3 className="text-4xl font-bold">1 Lac</h3>
+                        <p className="text-lg">Alumni</p>
+                    </div>
+                </div>
             </div>
         </section>
     );
