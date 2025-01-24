@@ -1,35 +1,19 @@
+/* Carousel for Companies */
 .carousel {
-  overflow: hidden;
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
-.cardWrapper {
+.carouselTrack {
   display: flex;
   animation: scroll 20s linear infinite;
 }
 
-.card {
+.carouselItem {
   flex-shrink: 0;
-  width: 200px; /* Adjust this width as needed */
-  margin-right: 20px; /* Add some space between cards */
-}
-
-.testimonialWrapper {
-  overflow: hidden;
-  position: relative;
-}
-
-.testimonialCardWrapper {
-  display: flex;
-  animation: scrollTestimonials 20s linear infinite;
-}
-
-.testimonialCard {
-  flex-shrink: 0;
-  width: 300px; /* Adjust this width for testimonials */
-  margin-right: 20px;
-  padding: 15px;
+  width: 200px; /* Adjust based on your image size */
+  margin-right: 30px;
 }
 
 @keyframes scroll {
@@ -41,11 +25,28 @@
   }
 }
 
+/* Testimonials - Student and Recruiter */
+.testimonialWrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.testimonialCardWrapper {
+  display: flex;
+  animation: scrollTestimonials 20s linear infinite; /* Speed of scrolling */
+}
+
+.testimonialCard {
+  flex-shrink: 0;
+  width: 300px; /* Adjust this value based on your card width */
+  margin-right: 30px;
+}
+
 @keyframes scrollTestimonials {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%); /* Move to the left by 100% */
   }
 }

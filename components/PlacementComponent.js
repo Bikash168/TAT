@@ -12,7 +12,7 @@ const companies = [
 const testimonials = [
   {
     role: "Student",
-    name: "Aarav Kumar",
+    name: "Rohit Kumar",
     testimonial: "The placement opportunities at Trident helped me secure my dream job. The hands-on projects and training made all the difference.",
   },
   {
@@ -27,7 +27,7 @@ const testimonials = [
   },
   {
     role: "Recruiter",
-    name: "Mr. Rohit Sharma",
+    name: "Mr. Vabesh Kumar",
     testimonial: "We trust Trident’s talent pool. Their students are not only technically proficient but also prepared to handle real-world challenges.",
   },
   {
@@ -53,30 +53,28 @@ export default function PlacementComponent() {
 
         {/* Continuous Carousel for Companies */}
         <div className={styles.carousel}>
-          <div className={styles.cardWrapper}>
+          <div className={styles.carouselTrack}>
             {companies.map((company, index) => (
-              <div key={index} className={`${styles.card} hover:scale-110 transition-transform duration-300`}>
+              <div key={index} className={styles.carouselItem}>
                 <img
                   src={company.image}
-                  alt={company.name}
-                  className="w-full h-50 object-contain mx-auto rounded-lg shadow-xl transition-shadow duration-300 hover:shadow-2xl"
+                  alt={`${company.name} logo`}
+                  className="w-32 h-32 object-contain mx-auto rounded-lg shadow-xl transition-shadow duration-300 hover:shadow-2xl"
                 />
               </div>
             ))}
             {/* Duplicate the content for seamless looping */}
             {companies.map((company, index) => (
-              <div key={`dup-${index}`} className={`${styles.card} hover:scale-110 transition-transform duration-300`}>
+              <div key={`dup-${index}`} className={styles.carouselItem}>
                 <img
                   src={company.image}
-                  alt={company.name}
-                  className="w-full h-24 object-contain mx-auto rounded-lg shadow-xl transition-shadow duration-300 hover:shadow-2xl"
+                  alt={`${company.name} logo`}
+                  className="w-32 h-32 object-contain mx-auto rounded-lg shadow-xl transition-shadow duration-300 hover:shadow-2xl"
                 />
-
               </div>
             ))}
           </div>
         </div>
-
         {/* Students' Viewpoint - Carousel */}
         <div className="mt-16 space-y-12">
           <h3 className="text-3xl font-semibold mb-6">What Our Students Say</h3>
@@ -93,11 +91,12 @@ export default function PlacementComponent() {
                     </div>
                   </div>
                 ))}
-              {/* Duplicate the content for seamless looping */}
+
+              {/* Duplicate the testimonials to ensure continuous scroll */}
               {testimonials
                 .filter((t) => t.role === "Student")
                 .map((testimonial, index) => (
-                  <div key={`dup-${index}`} className={styles.testimonialCard}>
+                  <div key={`copy-${index}`} className={styles.testimonialCard}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
@@ -125,11 +124,12 @@ export default function PlacementComponent() {
                     </div>
                   </div>
                 ))}
-              {/* Duplicate the content for seamless looping */}
+
+              {/* Duplicate the recruiters' testimonials to ensure continuous scroll */}
               {testimonials
                 .filter((t) => t.role === "Recruiter")
                 .map((testimonial, index) => (
-                  <div key={`dup-${index}`} className={styles.testimonialCard}>
+                  <div key={`copy-${index}`} className={styles.testimonialCard}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
@@ -144,4 +144,3 @@ export default function PlacementComponent() {
     </section>
   );
 }
-
