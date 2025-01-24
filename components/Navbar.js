@@ -11,6 +11,7 @@ import {
   FaMapMarkerAlt,
   FaRegClone,
 } from "react-icons/fa";
+import { CgMenuGridO } from "react-icons/cg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -160,7 +161,7 @@ export default function Navbar() {
 
             {/* FaTh Dropdown */}
             <div className="relative px-4">
-              <FaRegClone
+              <CgMenuGridO
                 className="text-2xl md:text-3xl cursor-pointer hover:text-gray-300"
                 onClick={toggleDropdown}
               />
