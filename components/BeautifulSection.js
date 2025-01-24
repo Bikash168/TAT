@@ -26,7 +26,7 @@ const ProgramsAndFeaturesSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 to-green-50">
+    <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-16">
         {/* Header Section */}
         <div className="text-center">
@@ -64,21 +64,21 @@ const ProgramsAndFeaturesSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Feature 1 */}
           <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp">
-            <Image
-              src="/images/faculty.jpg"
-              alt="Dedicated Faculty"
-              className="rounded-lg mb-4"
-              width={400}
-              height={300}
-              priority
-            />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Dedicated Faculty
-            </h3>
-            <p className="text-gray-600">
-              Experienced educators committed to delivering valuable learning experiences with a blend of traditional and modern teaching methods.
-            </p>
-          </div>
+    <Image
+      src="/images/faculty.jpg"
+      alt="Dedicated Faculty"
+      className="rounded-lg mb-4"
+      width={400}
+      height={300}
+      priority
+    />
+    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+      Dedicated Faculty
+    </h3>
+    <p className="text-gray-600">
+      Experienced educators committed to delivering valuable learning experiences with a blend of traditional and modern teaching methods.
+    </p>
+  </div>
 
           {/* Feature 2 */}
           <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp delay-150">
