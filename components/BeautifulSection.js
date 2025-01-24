@@ -1,9 +1,17 @@
 import React from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import { useSpring, animated } from '@react-spring/web';  // Correct import from @react-spring/web
 
 const ProgramsAndFeaturesSection = () => {
     const router = useRouter();
+
+    const metrics = [
+        { number: 30, label: "Departments", color: "bg-blue-500" },
+        { number: 200, label: "Faculties", color: "bg-teal-500" },
+        { number: 4000, label: "Students", color: "bg-blue-400" },
+        { number: 100000, label: "Alumni", color: "bg-green-500" },
+    ];
 
     const degreePrograms = [
         { name: "Computer Science & Engineering", slug: "cse-btech", image: "/images/Computer-Science-Engineering.jpg", link: "computer-science-engineering" },
@@ -30,10 +38,10 @@ const ProgramsAndFeaturesSection = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-16">
                 {/* Header Section */}
                 <div className="text-center">
-                    <h2 className="text-4xl font-extrabold text-gray-800 mb-4 animate-fadeInUp">
+                    <h2 className="text-4xl font-extrabold text-gray-800 mb-4 animate__fadeInUp">
                         Our Programs & Features
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-600 animate-fadeInUp delay-150">
+                    <p className="text-lg sm:text-xl text-gray-600 animate__fadeInUp delay-150">
                         Explore our wide range of degree programs and exceptional facilities.
                     </p>
                 </div>
@@ -43,7 +51,7 @@ const ProgramsAndFeaturesSection = () => {
                     {degreePrograms.map((program, index) => (
                         <div
                             key={index}
-                            className="text-center p-4 border rounded-lg shadow-lg transition-transform transform hover:scale-105 cursor-pointer bg-white animate-fadeInUp"
+                            className="text-center p-4 border rounded-lg shadow-lg transition-transform transform hover:scale-105 cursor-pointer bg-white animate__fadeInUp"
                             onClick={() => handleProgramSelect(program.link)}
                         >
                             <Image
@@ -51,7 +59,7 @@ const ProgramsAndFeaturesSection = () => {
                                 alt={program.name}
                                 width={128}
                                 height={128}
-                                className="rounded-full mx-auto mb-4"
+                                className="rounded-full mx-auto mb-4 object-cover"
                                 placeholder="blur"
                                 blurDataURL="/images/placeholder.jpg"
                             />
@@ -85,7 +93,7 @@ const ProgramsAndFeaturesSection = () => {
                 {/* Features Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Feature 1 */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp">
+                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate__fadeInUp">
                         <Image
                             src="/images/Dedicated-Faculty.jpg"
                             alt="Dedicated Faculty"
@@ -103,7 +111,7 @@ const ProgramsAndFeaturesSection = () => {
                     </div>
 
                     {/* Feature 2 */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp delay-150">
+                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate__fadeInUp delay-150">
                         <Image
                             src="/images/Laboratories.jpg"
                             alt="Excellent Laboratory Facilities"
@@ -121,7 +129,7 @@ const ProgramsAndFeaturesSection = () => {
                     </div>
 
                     {/* Feature 3 */}
-                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp delay-300">
+                    <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate__fadeInUp delay-300">
                         <Image
                             src="/images/student-development1.jpg"
                             alt="Student Development Programs"
@@ -148,25 +156,22 @@ const ProgramsAndFeaturesSection = () => {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                    <div className="bg-blue-500 text-white py-8 px-6 rounded-lg shadow-lg">
-                        <h3 className="text-4xl font-bold">30</h3>
-                        <p className="text-lg">Departments</p>
-                    </div>
+                    {metrics.map((metric, index) => {
+                        const springProps = useSpring({ 
+                            from: { number: 0 }, 
+                            to: { number: metric.number },
+                            config: { mass: 1, tension: 150, friction: 30 },
+                        });
 
-                    <div className="bg-teal-500 text-white py-8 px-6 rounded-lg shadow-lg">
-                        <h3 className="text-4xl font-bold">200+</h3>
-                        <p className="text-lg">Faculties</p>
-                    </div>
-
-                    <div className="bg-blue-400 text-white py-8 px-6 rounded-lg shadow-lg">
-                        <h3 className="text-4xl font-bold">4000+</h3>
-                        <p className="text-lg">Students</p>
-                    </div>
-
-                    <div className="bg-green-500 text-white py-8 px-6 rounded-lg shadow-lg">
-                        <h3 className="text-4xl font-bold">1 Lac</h3>
-                        <p className="text-lg">Alumni</p>
-                    </div>
+                        return (
+                            <div key={index} className={`${metric.color} text-white py-8 px-6 rounded-lg shadow-lg`}>
+                                <animated.h3 className="text-4xl font-bold">
+                                    {springProps.number.to(n => n.toFixed(0))}
+                                </animated.h3>
+                                <p className="text-lg">{metric.label}</p>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
         </section>
