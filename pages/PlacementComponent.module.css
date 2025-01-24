@@ -21,7 +21,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%); /* Move by 100% of the container's width */
   }
 }
 
@@ -47,6 +47,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move to the left by 100% */
+    transform: translateX(-100%); /* Move to the left by 100% of the container's width */
   }
 }

@@ -44,8 +44,8 @@ const testimonials = [
 
 export default function PlacementComponent() {
   return (
-    <section className="py-20 bg-white" id="placement">
-      <div className="container mx-auto text-center">
+    <section className="py-20 bg-white w-full" id="placement">
+      <div className="w-full text-center px-4">
         <h2 className="text-4xl font-extrabold mb-4">Top Recruiters</h2>
         <p className="text-lg mb-10">
           Meet the top recruiters who trust our talent. Our students are placed with leading companies, shaping successful careers worldwide.
@@ -53,9 +53,9 @@ export default function PlacementComponent() {
 
         {/* Continuous Carousel for Companies */}
         <div className={styles.carousel}>
-          <div className={styles.carouselTrack}>
+          <div className={`${styles.carouselTrack} flex`}>
             {companies.map((company, index) => (
-              <div key={index} className={styles.carouselItem}>
+              <div key={index} className={`${styles.carouselItem} mx-4`}>
                 <img
                   src={company.image}
                   alt={`${company.name} logo`}
@@ -65,7 +65,7 @@ export default function PlacementComponent() {
             ))}
             {/* Duplicate the content for seamless looping */}
             {companies.map((company, index) => (
-              <div key={`dup-${index}`} className={styles.carouselItem}>
+              <div key={`dup-${index}`} className={`${styles.carouselItem} mx-4`}>
                 <img
                   src={company.image}
                   alt={`${company.name} logo`}
@@ -75,15 +75,16 @@ export default function PlacementComponent() {
             ))}
           </div>
         </div>
+        
         {/* Students' Viewpoint - Carousel */}
         <div className="mt-16 space-y-12">
           <h3 className="text-3xl font-semibold mb-6">What Our Students Say</h3>
           <div className={styles.testimonialWrapper}>
-            <div className={styles.testimonialCardWrapper}>
+            <div className={`${styles.testimonialCardWrapper} flex flex-wrap justify-center`}>
               {testimonials
                 .filter((t) => t.role === "Student")
                 .map((testimonial, index) => (
-                  <div key={index} className={styles.testimonialCard}>
+                  <div key={index} className={`${styles.testimonialCard} m-4`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
@@ -96,7 +97,7 @@ export default function PlacementComponent() {
               {testimonials
                 .filter((t) => t.role === "Student")
                 .map((testimonial, index) => (
-                  <div key={`copy-${index}`} className={styles.testimonialCard}>
+                  <div key={`copy-${index}`} className={`${styles.testimonialCard} m-4`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
@@ -112,11 +113,11 @@ export default function PlacementComponent() {
         <div className="mt-16 space-y-12">
           <h3 className="text-3xl font-semibold mb-6">What Our Recruiters Say</h3>
           <div className={styles.testimonialWrapper}>
-            <div className={styles.testimonialCardWrapper}>
+            <div className={`${styles.testimonialCardWrapper} flex flex-wrap justify-center`}>
               {testimonials
                 .filter((t) => t.role === "Recruiter")
                 .map((testimonial, index) => (
-                  <div key={index} className={styles.testimonialCard}>
+                  <div key={index} className={`${styles.testimonialCard} m-4`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
@@ -129,7 +130,7 @@ export default function PlacementComponent() {
               {testimonials
                 .filter((t) => t.role === "Recruiter")
                 .map((testimonial, index) => (
-                  <div key={`copy-${index}`} className={styles.testimonialCard}>
+                  <div key={`copy-${index}`} className={`${styles.testimonialCard} m-4`}>
                     <div className="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
                       <p className="italic text-gray-600">"{testimonial.testimonial}"</p>
                       <p className="font-bold mt-4">{testimonial.name}</p>
