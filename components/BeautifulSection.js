@@ -65,7 +65,7 @@ const ProgramsAndFeaturesSection = () => {
                     {/* Feature 1 */}
                     <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp">
                         <Image
-                            src="/images/faculty.jpg"
+                            src="/images/Faculty.jpg"
                             alt="Dedicated Faculty"
                             className="rounded-lg mb-4"
                             width={400}
@@ -83,7 +83,7 @@ const ProgramsAndFeaturesSection = () => {
                     {/* Feature 2 */}
                     <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp delay-150">
                         <Image
-                            src="/images/laboratories.jpg"
+                            src="/images/Laboratories.jpg"
                             alt="Excellent Laboratory Facilities"
                             className="rounded-lg mb-4"
                             width={400}
@@ -101,7 +101,7 @@ const ProgramsAndFeaturesSection = () => {
                     {/* Feature 3 */}
                     <div className="bg-white rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 animate-fadeInUp delay-300">
                         <Image
-                            src="/images/student-development.jpg"
+                            src="/images/student-development1.jpg"
                             alt="Student Development Programs"
                             className="rounded-lg mb-4"
                             width={400}
