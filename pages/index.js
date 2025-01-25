@@ -22,115 +22,104 @@ export default function Home() {
             <span className="mx-8">⭐ Announcement: Upcoming Admission Dates are Now Open!</span>
           </div>
         </div>
+        <section className="bg-white text-[#002147] py-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Two-column layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
+              {/* Left Box - Content Section */}
+              <div className="bg-white p-4 rounded-md shadow-md space-y-4">
+                {/* Institution Description */}
+                <p className="text-xs sm:text-sm lg:text-base">
+                  Trident Academy of Technology is a leading institution focused on developing talent and excellence across a wide range of disciplines. Our approach emphasizes combining practical experience, analytical skills, and creative thinking, ensuring students gain a strong understanding of their chosen fields. We offer thoughtfully organized programs, practical learning experiences, and a curriculum aligned with industry trends, ensuring our students are well-equipped for success in their careers. With modern infrastructure, a dedicated faculty, and a focus on overall development, we ensure our students are prepared to excel in their fields and adapt to the evolving demands of the global landscape.
+                </p>
 
-        <section className="bg-white text-[#002147] py-2 mb-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-            {/* Grid Section for Certifications/Partnerships */}
-            <div className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-              {/* Left Side Boxes */}
-              <div className="bg-white p-6 rounded-md shadow-md grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Vision Section */}
+                <div className="space-y-2">
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold">Our Vision</h3>
+                  <p className="text-xs sm:text-sm lg:text-base">
+                    Trident Academy of Technology aspires to be a leading institution that nurtures innovative thinkers and responsible leaders, equipped with the knowledge, skills, and values to drive positive change and contribute to the advancement of society and a sustainable future.
+                  </p>
+                </div>
 
+                {/* Mission Section */}
+                <div className="space-y-2">
+                  <h3 className="text-base sm:text-lg lg:text-xl font-semibold">Our Mission</h3>
+                  <p className="text-xs sm:text-sm lg:text-base">
+                    Trident Academy of Technology is committed to providing high-quality education that combines academic learning with practical skills and problem-solving. Our focus is on developing students who are ready to think strategically, address challenges, and act with integrity in their careers. Through a comprehensive curriculum, applied learning experiences, and industry-relevant knowledge, we prepare students to excel in a dynamic world and make a meaningful impact.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right Box - Image Section */}
+              <div className="bg-white p-4 sm:p-5 rounded-md shadow-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-3">
                 {/* ISO Certified Institution */}
-                <div className="text-center border border-red-600 rounded-md p-6 w-full">
-                  <img src="/images/ISO-Logo.png" alt="ISO Certified Institution logo" className="mx-auto mb-4 w-48 h-auto" />
-                  <h4 className="text-lg text-black font-semibold">ISO CERTIFIED INSTITUTION</h4>
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-20 h-auto" />
+                  <h4 className="text-xs font-semibold text-black">ISO CERTIFIED INSTITUTION</h4>
                 </div>
 
                 {/* DSIR SIRO Center */}
-                <div className="text-center border border-red-600 rounded-md p-6 w-full">
-                  <img src="/images/dsir-siro.png" alt="DSIR SIRO Center logo" className="mx-auto mb-4 w-48 h-auto" />
-                  <h4 className="text-lg text-black font-semibold">DSIR SIRO CENTER</h4>
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-1 w-20 h-auto" />
+                  <h4 className="text-xs font-semibold text-black">DSIR SIRO CENTER</h4>
                 </div>
 
                 {/* Cisco ThingQbator */}
-                <div className="text-center border border-red-600 rounded-md p-6 w-full">
-                  <img
-                    src="/images/thingQbator.png"
-                    alt="Cisco ThingQbator logo"
-                    className="mx-auto mb-4 w-64 h-auto" // Increased width to w-64 for better visibility
-                  />
-                  <h4 className="text-lg font-semibold text-black">INCUBATORS</h4>
-                  <p className="text-sm text-black">Cisco ThingQbator</p>
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/thingQbator.png" alt="Cisco ThingQbator" className="mx-auto mb-1 w-28 h-auto" />
+                  <h4 className="text-xs font-semibold text-black">INCUBATORS</h4>
+                  <p className="text-[10px] text-black">Cisco ThingQbator</p>
                 </div>
 
                 {/* HESI Member */}
-                <div className="text-center border border-red-600 rounded-md p-6 w-full">
-                  <img
-                    src="/images/HESI-logo-horizontal.png"
-                    alt="Higher Education Sustainability Initiative logo"
-                    className="mx-auto mb-4 w-64 h-auto" // Increased width to w-64 and set height to auto
-                  />
-                  <h4 className="text-lg font-semibold text-black">MEMBER OF</h4>
-                  <p className="text-sm text-black">Higher Education Sustainability Initiative</p>
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/HESI-logo-horizontal.png" alt="HESI Member" className="mx-auto mb-1 w-28 h-auto" />
+                  <h4 className="text-xs font-semibold text-black">MEMBER OF</h4>
+                  <p className="text-[10px] text-black">Higher Education Sustainability Initiative</p>
                 </div>
 
-              </div>
+                {/* NAAC Accreditation */}
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/NAACAlogo-1.png" alt="NAAC Accreditation" className="mx-auto mb-1 w-20 h-14" />
+                  <h4 className="text-xs font-semibold text-black">NAAC (National Assessment & Accreditation Council)</h4>
+                </div>
 
-              {/* Center Writeup */}
-              <div className="bg-white p-8 rounded-md shadow-md text-center">
-                <p className="text-base sm:text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
-                Trident Academy of Technology is a leading institution focused on developing talent and excellence across a wide range of disciplines. Our approach emphasizes combining practical experience, analytical skills, and creative thinking, ensuring students gain a strong understanding of their chosen fields. We offer thoughtfully organized programs, practical learning experiences, and a curriculum aligned with industry trends, ensuring our students are well-equipped for success in their careers. With modern infrastructure, a dedicated faculty, and a focus on overall development, we ensure our students are prepared to excel in their fields and adapt to the evolving demands of the global landscape.
-                </p>
-              </div>
+                {/* National Board of Accreditation */}
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-14 h-14" />
+                  <h4 className="text-xs font-semibold text-black">National Board of Accreditation</h4>
+                </div>
 
-              {/* Right Side Boxes */}
-              <div className="bg-white p-6 rounded-md shadow-md grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {/* Example 1 */}
-                <div className="text-center border border-red-600 rounded-md p-4">
-                  <img src="/images/NAACAlogo-1.png" alt="Example 1 logo" className="mx-auto mb-4 w-25 h-20" />
-                  <h4 className="text-lg text-black font-semibold">NAAC (National Assessment & Accreditation Council)</h4>
+                {/* BPUT Affiliation */}
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/bput-logo.png" alt="BPUT Affiliation" className="mx-auto mb-1 w-20 h-14" />
+                  <h4 className="text-xs font-semibold text-black">Biju Patnaik University of Technology</h4>
                 </div>
-                {/* Example 2 */}
-                <div className="text-center border border-red-600 rounded-md p-4">
-                  <img src="/images/National_Board_of_Accreditation.svg.png" alt="Example 2 logo" className="mx-auto mb-4 w-20 h-20" />
-                  <h4 className="text-lg text-black font-semibold">National Board of Accreditation</h4>
-                </div>
-                {/* Example 3 */}
-                <div className="text-center border border-red-600 rounded-md p-4">
-                  <img src="/images/bput-logo.png" alt="Example 3 logo" className="mx-auto mb-4 w-30 h-20" />
-                  <h4 className="text-lg font-semibold text-black">Biju Patnaik University of Technology</h4>
-                  <p className="text-sm text-black"></p>
-                </div>
-                {/* Example 4 */}
-                <div className="text-center border border-red-600 rounded-md p-4">
-                  <img src="/images/National_Institutional_Ranking_Framework_logo.png" alt="Example 4 logo" className="mx-auto mb-4 w-30 h-20" />
-                  <h4 className="text-lg font-semibold text-black">NIRF</h4>
-                  <p className="text-sm text-black">National Institutional Ranking Framework</p>
+
+                {/* NIRF Ranking */}
+                <div className="text-center border border-red-600 rounded-md p-2">
+                  <img src="/images/National_Institutional_Ranking_Framework_logo.png" alt="NIRF Ranking" className="mx-auto mb-1 w-20 h-14" />
+                  <h4 className="text-xs font-semibold text-black">NIRF</h4>
+                  <p className="text-[10px] text-black">National Institutional Ranking Framework</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#002147] py-16">
-          {/* Vision and Mission Section */}
-          <div className="text-center space-y-12">
-            <div className="space-y-4">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Vision</h3>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-              Trident Academy of Technology aspires to be a leading institution that nurtures innovative thinkers and responsible leaders, equipped with the knowledge, skills, and values to drive positive change and contribute to the advancement of society and a sustainable future.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Mission</h3>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-              Trident Academy of Technology is committed to providing high-quality education that combines academic learning with practical skills and problem-solving. Our focus is on developing students who are ready to think strategically, address challenges, and act with integrity in their careers. Through a comprehensive curriculum, applied learning experiences, and industry-relevant knowledge, we prepare students to excel in a dynamic world and make a meaningful impact.
-              </p>
-            </div>
-          </div>
-        </section>
+
 
         <NewsEvents />
 
-    <BeautifulSection />
-<ResearchSpotlight />
+        <BeautifulSection />
+        <ResearchSpotlight />
       </div>
 
       <div className="px-2 sm:px-4 lg:px-6">
         <PlacementComponent />
-      
+
         <Tatoffer />
-     
+
         <AboutSection />
         <HighlightSection />
         <Highlights />
