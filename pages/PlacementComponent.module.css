@@ -7,13 +7,14 @@
 
 .carouselTrack {
   display: flex;
-  animation: scroll 20s linear infinite;
+  gap: 10px;
+  animation: scroll 30s linear infinite;
 }
 
 .carouselItem {
   flex-shrink: 0;
-  width: 200px; /* Adjust based on your image size */
-  margin-right: 30px;
+  width: 150px;
+  margin-right: 10px;
 }
 
 @keyframes scroll {
@@ -21,25 +22,31 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move by 100% of the container's width */
+    transform: translateX(-100%);
   }
 }
 
-/* Testimonials - Student and Recruiter */
+/* Testimonials */
 .testimonialWrapper {
-  display: flex;
+  position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .testimonialCardWrapper {
   display: flex;
-  animation: scrollTestimonials 20s linear infinite; /* Speed of scrolling */
+  gap: 15px;
+  animation: scrollTestimonials 40s linear infinite;
 }
 
 .testimonialCard {
   flex-shrink: 0;
-  width: 300px; /* Adjust this value based on your card width */
-  margin-right: 30px;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
 }
 
 @keyframes scrollTestimonials {
@@ -47,6 +54,19 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move to the left by 100% of the container's width */
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carouselItem,
+  .testimonialCard {
+    width: 120px;
+  }
+
+  .carouselTrack,
+  .testimonialCardWrapper {
+    animation-duration: 50s; /* Slower on smaller screens */
   }
 }
