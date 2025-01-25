@@ -69,7 +69,7 @@ export default function Home() {
               {/* Center Writeup */}
               <div className="bg-white p-8 rounded-md shadow-md text-center">
                 <p className="text-base sm:text-lg lg:text-xl mb-8 max-w-3xl mx-auto">
-                  Trident Academy of Technology is a renowned name in technical education, celebrated for its high standards of quality and excellence. We aim to provide an environment brimming with energy and enthusiasm where our students can grow both academically and personally. With cutting-edge facilities, a committed faculty, and a focus on innovation, we emphasize hands-on experience alongside theoretical learning to ensure our students are prepared for successful careers.
+                Trident Academy of Technology is a leading institution focused on developing talent and excellence across a wide range of disciplines. Our approach emphasizes combining practical experience, analytical skills, and creative thinking, ensuring students gain a strong understanding of their chosen fields. We offer thoughtfully organized programs, practical learning experiences, and a curriculum aligned with industry trends, ensuring our students are well-equipped for success in their careers. With modern infrastructure, a dedicated faculty, and a focus on overall development, we ensure our students are prepared to excel in their fields and adapt to the evolving demands of the global landscape.
                 </p>
               </div>
 
@@ -108,13 +108,13 @@ export default function Home() {
             <div className="space-y-4">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Vision</h3>
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-                Our vision is to become the leading institution in Eastern India, continuously developing skilled professionals through excellence in education and training practices.
+              Trident Academy of Technology aspires to be a leading institution that nurtures innovative thinkers and responsible leaders, equipped with the knowledge, skills, and values to drive positive change and contribute to the advancement of society and a sustainable future.
               </p>
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-100">Our Mission</h3>
               <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto">
-                Our mission is to help students achieve excellence by fostering creativity, positive thinking, and a passion for lifelong learning. We aim to contribute meaningfully to society by conducting impactful research and driving innovation in emerging technologies.
+              Trident Academy of Technology is committed to providing high-quality education that combines academic learning with practical skills and problem-solving. Our focus is on developing students who are ready to think strategically, address challenges, and act with integrity in their careers. Through a comprehensive curriculum, applied learning experiences, and industry-relevant knowledge, we prepare students to excel in a dynamic world and make a meaningful impact.
               </p>
             </div>
           </div>

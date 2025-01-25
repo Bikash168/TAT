@@ -7,22 +7,22 @@
 
 .carouselTrack {
   display: flex;
-  gap: 10px;
-  animation: scroll 30s linear infinite;
+  animation: scrollCompanies 20s linear infinite;
+  will-change: transform;
 }
 
 .carouselItem {
   flex-shrink: 0;
-  width: 150px;
+  width: 150px; /* Adjust as needed */
   margin-right: 10px;
 }
 
-@keyframes scroll {
+@keyframes scrollCompanies {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% + 150px));
   }
 }
 
@@ -35,18 +35,18 @@
 
 .testimonialCardWrapper {
   display: flex;
-  gap: 15px;
-  animation: scrollTestimonials 40s linear infinite;
+  animation: scrollTestimonials 30s linear infinite;
+  will-change: transform;
 }
 
 .testimonialCard {
   flex-shrink: 0;
-  width: 250px;
+  width: 300px;
+  margin-right: 15px;
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 16px;
-  text-align: center;
 }
 
 @keyframes scrollTestimonials {
@@ -54,7 +54,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% + 300px));
   }
 }
 
@@ -63,10 +63,11 @@
   .carouselItem,
   .testimonialCard {
     width: 120px;
+    margin-right: 8px;
   }
 
   .carouselTrack,
   .testimonialCardWrapper {
-    animation-duration: 50s; /* Slower on smaller screens */
+    animation-duration: 40s; /* Slower on smaller screens */
   }
 }

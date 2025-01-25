@@ -49,9 +49,9 @@ const HeroSection = () => {
             Welcome to Trident Academy Of Technology
           </h1>
 
-          {/* Subheading with responsive font sizes */}
+          {/* Subheading with responsive font sizes  Creating impactful solutions for a sustainable future.*/}
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-2 sm:mt-4">
-            Creating impactful solutions for a sustainable future.
+          Leading with Innovation, Growing with Sustainability.
           </p>
 
           {/* Button */}
