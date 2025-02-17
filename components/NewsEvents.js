@@ -25,7 +25,7 @@ const NewsEvents = () => (
             <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
               World Meditation day
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2 text-justify">
               On 21st December 2024, our college celebrated World Meditation Day with lively participation from students, faculty, and staff. The event focused on the positive effects of meditation on mental clarity, emotional balance, and overall health.
             </p>
             <div className="mt-3 text-xs text-gray-400 flex justify-between">
@@ -49,7 +49,7 @@ const NewsEvents = () => (
             <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
               How to Make MBA Learning Rewarding from a Career Perspective
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2 text-justify">
               A session on "How to Make MBA Learning Rewarding from a Career Perspective" was conducted by Rakesh Kumar, where he guided students on aligning their academic journey with their career goals. The session offered valuable insights on leveraging an MBA to enhance career prospects and achieve long-term success.
             </p>
             <div className="mt-3 text-xs text-gray-400 flex justify-between">
@@ -73,7 +73,7 @@ const NewsEvents = () => (
             <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
               BPUT Carnival
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2 text-justify">
               The BPUT Tech Carnival featured exciting competitions like the AI Project Competition, Social Entrepreneurship Competition, and Rangoli Jhoti Competition, where ideas and creativity merged. These events highlighted the talent and energy of the participants, leaving a strong impression of their skills and creativity.
             </p>
             <div className="mt-3 text-xs text-gray-400 flex justify-between">
@@ -97,7 +97,7 @@ const NewsEvents = () => (
             <h3 className="mt-2 text-lg font-bold text-gray-800 hover:text-blue-600 cursor-pointer">
               FDP on application of Mathematics in data science
             </h3>
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2 text-justify">
               An FDP on the "Application of Mathematics in Data Science" was conducted, focusing on the essential role mathematics plays in analyzing and interpreting data. The session covered key mathematical concepts and techniques used in data science, helping participants understand how to apply these principles to solve complex problems and make data-driven decisions effectively.
             </p>
             <div className="mt-3 text-xs text-gray-400 flex justify-between">
