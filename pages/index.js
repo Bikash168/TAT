@@ -106,25 +106,17 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-
-
         <NewsEvents />
-
         <BeautifulSection />
         <ResearchSpotlight />
       </div>
-
       <div className="px-2 sm:px-4 lg:px-6">
         <PlacementComponent />
-
         <Tatoffer />
-
         <AboutSection />
         <HighlightSection />
         <Highlights />
       </div>
-
       <Footer />
     </>
   );
