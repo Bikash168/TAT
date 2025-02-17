@@ -39,7 +39,7 @@ const HeroSection = () => {
       </div>
 
       {/* Black Filter Film (Overlay on top of video) */}
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
 
       {/* Content Overlay */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-6 mt-24 sm:mt-16 lg:mt-32 z-20">
