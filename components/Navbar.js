@@ -162,7 +162,7 @@ export default function Navbar() {
             {/* FaTh Dropdown */}
             <div className="relative px-4">
               <CgMenuGridO
-                className="text-2xl md:text-3xl cursor-pointer hover:text-gray-300"
+                className="text-3xl sm:text-4xl md:text-3xl cursor-pointer hover:text-gray-300"
                 onClick={toggleDropdown}
               />
               {isDropdownOpen && (
