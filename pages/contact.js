@@ -50,13 +50,13 @@ const Contact = () => {
                 <strong>Address:</strong> Trident Academy of Technology, Bhubaneswar, Odisha
               </li>
               <li>
-                <strong>Email:</strong> contact@tat.ac.in
+                <strong>Email:</strong> info@trident.ac.in
               </li>
               <li>
-                <strong>Phone:</strong> +91 123 456 7890
+                <strong>Tel:</strong> 0674-3530517
               </li>
               <li>
-                <strong>Fax:</strong> +91 123 456 7891
+                <strong>Mob:</strong> 9861191195
               </li>
             </ul>
           </div>
@@ -67,7 +67,7 @@ const Contact = () => {
             <div className="w-full h-80">
               <iframe
                 title="Trident Academy Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15009.445179624082!2d85.83112246080486!3d20.29416451602485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19f3f7f477b519%3A0xd0c24e7f73c6e0f5!2sTrident%20Academy%20of%20Technology!5e0!3m2!1sen!2sin!4v1692277889033!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7482.0614668432645!2d85.807754!3d20.340349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190902b2a59ce5%3A0xdfb554a4e0bafffb!2sTrident%20Academy%20of%20Technology!5e0!3m2!1sen!2sus!4v1738245957890!5m2!1sen!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
