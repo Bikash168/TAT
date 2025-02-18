@@ -48,7 +48,7 @@ export default function HighlightSection() {
           {/* Image Section */}
           <div className="w-full md:w-1/2 bg-black">
             <img
-              src="/images/ALUMNI1.jpg"
+              src="/images/ALUMNI12.jpg"
               alt="TAT Alumni"
               className="w-full h-full object-contain"
             />

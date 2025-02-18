@@ -1,43 +1,28 @@
-const Highlights = () => (
-  <section id="highlights" className="py-10 bg-gray-100">
-    <div className="container mx-auto text-center">
-      <h2 className="text-3xl font-bold mb-6">Key Highlights</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Card 1 */}
-        <div className="p-6 bg-white shadow rounded">
-          <img
-            src="../images/Faculty10.jpg" // Replace with the actual image path
-            alt="World-Class Faculty"
-            className="w-full h-60 object-cover rounded mb-4"
-          />
-          <h3 className="font-bold text-lg mb-2">World-Class Faculty</h3>
-          <p>Learn from the best educators and industry professionals.</p>
-        </div>
+const SDGSection = () => {
+  return (
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between">
+          {/* Text Section */}
+          <div className="w-2/3">
+            <h2 className="text-4xl font-bold text-black-600">Shaping the Future through Innovation</h2>
+            <p className="mt-4 text-lg text-gray-600">
+              At Trident Academy of Technology, we are deeply committed to fostering technological excellence, sustainable development, and social well-being. We align our efforts with the United Nations’ Sustainable Development Goals (SDGs), empowering students to create meaningful, positive impacts across communities.
+            </p>
+          </div>
 
-        {/* Card 2 */}
-        <div className="p-6 bg-white shadow rounded">
-          <img
-            src="../images/Facilities.jpeg" // Replace with the actual image path
-            alt="State-of-the-Art Facilities"
-            className="w-full h-60 object-cover rounded mb-4"
-          />
-          <h3 className="font-bold text-lg mb-2">State-of-the-Art Facilities</h3>
-          <p>Access cutting-edge labs and research centers.</p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="p-6 bg-white shadow rounded">
-          <img
-            src="../images/Industry.jpg" // Replace with the actual image path
-            alt="Strong Industry Partnerships"
-            className="w-full h-60 object-cover rounded mb-4"
-          />
-          <h3 className="font-bold text-lg mb-2">Strong Industry Partnerships</h3>
-          <p>Collaborate with leading companies and organizations.</p>
+          {/* SDGs Icons Section */}
+          <div className="w-1/3">
+            <img
+              src="/images/sdgs.png"
+              alt="Sustainable Development Goals"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
-export default Highlights;
+export default SDGSection;
