@@ -11,7 +11,8 @@ import {
   FaMapMarkerAlt,
   FaRegClone,
 } from "react-icons/fa";
-import { CgMenuGridO } from "react-icons/cg";
+import { AiFillCaretDown } from "react-icons/ai";
+import { AiFillCaretUp } from "react-icons/ai";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -164,10 +165,16 @@ export default function Navbar() {
 
             {/* FaTh Dropdown */}
             <div className="relative px-4 py-2">
-              <CgMenuGridO
-                className="text-3xl sm:text-4xl md:text-3xl cursor-pointer hover:text-gray-300"
-                onClick={toggleDropdown}
-              />
+              {/* Toggle Icon */}
+              <div onClick={toggleDropdown} className="cursor-pointer">
+                {isDropdownOpen ? (
+                  <AiFillCaretUp className="text-3xl sm:text-4xl md:text-3xl hover:text-gray-300" />
+                ) : (
+                  <AiFillCaretDown className="text-3xl sm:text-4xl md:text-3xl hover:text-gray-300" />
+                )}
+              </div>
+
+              {/* Dropdown Menu */}
               {isDropdownOpen && (
                 <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-2 z-50">
                   <ul className="flex flex-col space-y-2">
