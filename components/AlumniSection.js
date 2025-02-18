@@ -25,7 +25,7 @@ export default function HighlightSection() {
           {/* Image Section */}
           <div className="w-full md:w-1/2 h-72 md:h-auto">
             <img
-              src="/images/alumni-success.jpg"
+              src="/images/ALUMNI1.jpg"
               alt="TAT Alumni"
               className="w-full h-full object-cover"
             />
