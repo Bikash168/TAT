@@ -169,7 +169,7 @@ export default function Navbar() {
                 onClick={toggleDropdown}
               />
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-4 z-50">
+                <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-2 z-50">
                   <ul className="flex flex-col space-y-2">
                     {dropdownItems.map((item) => (
                       <li key={item.name}>
