@@ -32,7 +32,7 @@ export default function PlacementComponent() {
 
   return (
     <motion.section
-      className="py-20 bg-white w-full"
+      className="py-10 bg-white w-full"
       id="placement"
       initial="hidden"
       animate="visible"
