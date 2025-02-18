@@ -57,7 +57,7 @@ export default function AboutSection() {
           >
             {/* ISO Certified Institution */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-28 h-auto" />
+              <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-40 h-auto" />
               <h4 className="text-xs font-semibold text-black">ISO CERTIFIED INSTITUTION</h4>
             </div>
             {/* DSIR SIRO Center */}
@@ -70,7 +70,7 @@ export default function AboutSection() {
               <img
                 src="/images/HESI-logo-horizontal.png"
                 alt="HESI Member"
-                className="mx-auto mb-1 w-28 h-36 object-contain"
+                className="mx-auto mb-1 w-30 h-36 object-contain"
               />
               <h4 className="text-xs font-semibold text-black">MEMBER OF</h4>
               <p className="text-[10px] text-black">Higher Education Sustainability Initiative</p>
@@ -80,13 +80,13 @@ export default function AboutSection() {
               <img
                 src="/images/NAAC.png"
                 alt="NAAC Accreditation"
-                className="mx-auto mb-1 w-28 h-36 object-contain"
+                className="mx-auto mb-1 w-44 h-36 object-contain"
               />
               <h4 className="text-xs font-semibold text-black">NAAC (National Assessment & Accreditation Council)</h4>
             </div>
             {/* National Board of Accreditation */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-28 h-auto" />
+              <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-32 h-auto" />
               <h4 className="text-xs font-semibold text-black">National Board of Accreditation</h4>
             </div>
             {/* BPUT Affiliation */}
