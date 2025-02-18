@@ -1,20 +1,10 @@
 import { useState } from "react";
 import Link from "next/link";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-  FaRegClone,
-} from "react-icons/fa";
-import { AiFillCaretDown } from "react-icons/ai";
-import { AiFillCaretUp } from "react-icons/ai";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faLinkedin, faFacebook, faXTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
+import { faBars, faTimes, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -66,21 +56,21 @@ export default function Navbar() {
       <div className="bg-gray-100 py-2 px-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
           {/* Left: Social Media Icons */}
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-blue-500">
-              <FaFacebook />
+          <div className="flex space-x-4 text-gray-600">
+            <a href="https://www.facebook.com/tridentcollege/" className="text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-pink-500">
-              <FaInstagram />
+            <a href="https://www.instagram.com/trident_tat/" className="text-gray-600 hover:text-pink-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-700">
-              <FaLinkedin />
+            <a href="https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" className="text-gray-600 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-red-500">
-              <FaYoutube />
+            <a href="https://www.youtube.com/@trident_tat" className="text-gray-600 hover:text-red-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-400">
-              <FaTwitter />
+            <a href="https://x.com/Trident_tat" className="text-gray-600 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faXTwitter} />
             </a>
           </div>
 
@@ -162,7 +152,7 @@ export default function Navbar() {
               ))}
             </ul>
 
-            {/* FaTh Dropdown */}
+            {/* Dropdown */}
             <div className="relative px-2 py-2">
               {/* Toggle Icon */}
               <div onClick={toggleDropdown} className="cursor-pointer">
