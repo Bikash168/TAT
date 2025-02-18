@@ -51,7 +51,7 @@ const DegreePrograms = () => {
       { name: "Mechanical Engineering", slug: "me-btech", image: "/images/MechanicalEngineering.jpg", link: "mechanical-engineering" },
       { name: "Civil Engineering", slug: "ce-btech", image: "/images/Civil-Engineering.jpg", link: "civil-engineering" },
       { name: "Electrical & Electronics Engineering", slug: "ee-btech", image: "/images/ElectricalElectronicsEngineering.jpg", link: "electrical-electronics" },
-          ],
+    ],
     Management: [
       { name: "Master in Business Administration", slug: "mba", image: "/images/MBA.jpg", link: "mba" },
     ],
@@ -87,7 +87,15 @@ const DegreePrograms = () => {
         {/* Dynamic Content */}
         <div className={`flex flex-col border-4 ${programContent[activeTab].borderColor} p-6 rounded-lg`}>
           {/* Grid Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div
+            className={
+              degreePrograms[activeTab]?.length === 1
+                ? // If there's only 1 program in the tab
+                "grid grid-cols-1 gap-4 place-items-center"
+                : // Default layout for multiple programs
+                "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4"
+            }
+          >
             {degreePrograms[activeTab]?.map((program) => (
               <div
                 key={program.slug}
@@ -95,13 +103,13 @@ const DegreePrograms = () => {
                 onClick={() => router.push(`/programs/${program.link}`)}
               >
                 <div className="h-48">
-                  <Image 
-                    src={program.image} 
-                    alt={program.name} 
-                    width={500} 
-                    height={300} 
-                    className="w-full h-full object-cover" 
-                    priority // Ensure images load quickly
+                  <Image
+                    src={program.image}
+                    alt={program.name}
+                    width={500}
+                    height={300}
+                    className="w-full h-full object-cover"
+                    priority
                   />
                 </div>
                 <div className="p-3 flex flex-col justify-between h-full">
@@ -110,7 +118,6 @@ const DegreePrograms = () => {
               </div>
             ))}
           </div>
-
           {/* Description Section */}
           <div className={`w-full mt-6 p-6 text-white rounded-lg ${programContent[activeTab].bgColor}`}>
             <h2 className="text-2xl font-bold">{programContent[activeTab].title}</h2>
