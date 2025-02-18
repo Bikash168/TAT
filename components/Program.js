@@ -41,17 +41,17 @@ const DegreePrograms = () => {
 
   const degreePrograms = {
     Engineering: [
-      { name: "Electronics and Telecomm Engineering", slug: "ete-btech", image: "/images/ElectronicsTelecommEngineering.jpg", link: "electronics-telecommunication" },
-      { name: "Electrical & Electronics Engineering", slug: "ee-btech", image: "/images/ElectricalElectronicsEngineering.jpg", link: "electrical-electronics" },
+      { name: "Biotechnology Engineering", slug: "be-btech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
       { name: "Computer Science & Engineering (AI & ML)", slug: "cse-ai-ml-btech", image: "/images/Computer-Science-AI-ML.jpg", link: "cs-ai-ml" },
       { name: "Computer Science & Information Technology", slug: "csit-btech", image: "/images/ComputerScienceIT.jpg", link: "cs-it" },
       { name: "Computer Science and Technology", slug: "cst-btech", image: "/images/ComputerScienceTechnology.jpg", link: "cs-technology" },
       { name: "Computer Science & Engineering (Data Science)", slug: "csedt-btech", image: "/images/Data-Science.jpg", link: "cs-data-science" },
       { name: "Electronics Engineering", slug: "eee-btech", image: "/images/ElectronicsEngineeringVLSI.jpg", link: "electronics-vlsi" },
+      { name: "Electronics and Telecomm Engineering", slug: "ete-btech", image: "/images/ElectronicsTelecommEngineering.jpg", link: "electronics-telecommunication" },
       { name: "Mechanical Engineering", slug: "me-btech", image: "/images/MechanicalEngineering.jpg", link: "mechanical-engineering" },
       { name: "Civil Engineering", slug: "ce-btech", image: "/images/Civil-Engineering.jpg", link: "civil-engineering" },
-      { name: "Biotechnology Engineering", slug: "be-btech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
-    ],
+      { name: "Electrical & Electronics Engineering", slug: "ee-btech", image: "/images/ElectricalElectronicsEngineering.jpg", link: "electrical-electronics" },
+          ],
     Management: [
       { name: "Master in Business Administration", slug: "mba", image: "/images/MBA.jpg", link: "mba" },
     ],
