@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import Image from "next/image"; // Import the Image component
 
 const DegreePrograms = () => {
   const [activeTab, setActiveTab] = useState("Engineering");
   const router = useRouter();
 
-  const tabs = ["Engineering", "Management", "Biotechnology", "Social Work & Public Health"];
+  const tabs = ["Engineering", "Management", "Biotechnology", "IT & Science"];
 
   const programContent = {
     Engineering: {
@@ -29,8 +30,8 @@ const DegreePrograms = () => {
       bgColor: "bg-purple-700",
       borderColor: "border-purple-700",
     },
-    "Social Work & Public Health": {
-      title: "Social Work & Public Health",
+    "IT & Science": {
+      title: "IT & Science",
       description: "Develop skills to drive social change and improve public health through dedicated programs in community engagement.",
       img: "/images/social-work.jpg",
       bgColor: "bg-red-600",
@@ -53,10 +54,12 @@ const DegreePrograms = () => {
     ],
     Management: [
       { name: "Master in Business Administration", slug: "mba", image: "/images/MBA.jpg", link: "mba" },
-      { name: "Master in Computer Application", slug: "mca", image: "/images/MCA.jpg", link: "mca" },
     ],
     Biotechnology: [
       { name: "Biotechnology Engineering", slug: "be-btech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
+    ],
+    "IT & Science": [
+      { name: "Master in Computer Application", slug: "mca", image: "/images/MCA.jpg", link: "mca" },
     ],
   };
 
@@ -84,16 +87,25 @@ const DegreePrograms = () => {
         {/* Dynamic Content */}
         <div className={`flex flex-col border-4 ${programContent[activeTab].borderColor} p-6 rounded-lg`}>
           {/* Grid Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
             {degreePrograms[activeTab]?.map((program) => (
               <div
                 key={program.slug}
-                className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl transition"
+                className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-lg transition max-w-sm mx-auto h-full"
                 onClick={() => router.push(`/programs/${program.link}`)}
               >
-                <img src={program.image} alt={program.name} className="w-full h-40 object-cover" />
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-800">{program.name}</h3>
+                <div className="h-48">
+                  <Image 
+                    src={program.image} 
+                    alt={program.name} 
+                    width={500} 
+                    height={300} 
+                    className="w-full h-full object-cover" 
+                    priority // Ensure images load quickly
+                  />
+                </div>
+                <div className="p-3 flex flex-col justify-between h-full">
+                  <h3 className="text-base font-semibold text-gray-800">{program.name}</h3>
                 </div>
               </div>
             ))}
@@ -105,10 +117,6 @@ const DegreePrograms = () => {
             <p className="mt-4">{programContent[activeTab].description}</p>
           </div>
         </div>
-
-
-        {/* Degree Programs List */}
-
       </div>
     </section>
   );
