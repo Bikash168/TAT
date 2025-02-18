@@ -141,7 +141,7 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-10 relative mt-8">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-5">
             <button
               className="text-white text-3xl md:hidden px-4"
               onClick={toggleMenu}
@@ -163,7 +163,7 @@ export default function Navbar() {
             </ul>
 
             {/* FaTh Dropdown */}
-            <div className="relative px-4">
+            <div className="relative px-4 py-2">
               <CgMenuGridO
                 className="text-3xl sm:text-4xl md:text-3xl cursor-pointer hover:text-gray-300"
                 onClick={toggleDropdown}
