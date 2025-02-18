@@ -1,14 +1,6 @@
 import React from 'react';
 import styles from '../pages/PlacementComponent.module.css';
 
-const companies = [
-  { name: "Mindtree", image: "/images/mindtree.png" },
-  { name: "Mindfire", image: "/images/mindfire.webp" },
-  { name: "Infosys", image: "/images/infosys-logo.jpg" },
-  { name: "TCS", image: "/images/TCS-Logo.png" },
-  { name: "Accenture", image: "/images/Accenture-logo.png" },
-];
-
 const testimonials = [
   {
     role: "Student",
@@ -34,32 +26,26 @@ export default function PlacementComponent() {
   return (
     <section className="py-20 bg-white w-full" id="placement">
       <div className="w-full text-center px-4">
-        <h2 className="text-4xl font-extrabold mb-4">Top Recruiters</h2>
-        <p className="text-lg mb-10">
-          Meet the top recruiters who trust our talent. Our students are placed with leading companies, shaping successful careers worldwide.
+        <h2 className="text-4xl font-extrabold mb-4">Training & Placement</h2>
+        <p className="text-lg mb-10 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-gray-500 pr-4">
+          "Shaping careers through industry-aligned training & global opportunities."
         </p>
 
-        {/* Continuous Carousel for Companies */}
-        <div className={styles.carousel}>
-          <div className={styles.carouselTrack}>
-            {companies.map((company, index) => (
-              <div key={index} className={styles.carouselItem}>
-                <img
-                  src={company.image}
-                  alt={`${company.name} logo`}
-                  className="w-full h-full object-contain mx-auto rounded-lg"
-                />
-              </div>
-            ))}
-          </div>
+        {/* Image Section */}
+        <div className="flex justify-center mb-10">
+          <img
+            src="/images/Trident-Placement-1.jpeg"
+            alt="Training and Placement"
+            className="w-3/4 md:w-1/2 rounded-lg shadow-lg"
+          />
         </div>
 
-        {/* Testimonials Carousel */}
+        {/* Continuous Scrolling Testimonials */}
         <div className="mt-16 space-y-12">
           <h3 className="text-3xl font-semibold mb-6">What People Say</h3>
           <div className={styles.testimonialWrapper}>
-            <div className={styles.testimonialCardWrapper}>
-              {testimonials.map((t, index) => (
+            <div className={styles.testimonialTrack}>
+              {testimonials.concat(testimonials).map((t, index) => (
                 <div key={index} className={styles.testimonialCard}>
                   <p className="italic text-gray-600">"{t.testimonial}"</p>
                   <p className="font-bold mt-4">{t.name}</p>
