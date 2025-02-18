@@ -144,7 +144,7 @@ export default function Navbar() {
         <div className="bg-[#002147] text-white flex-1">
           <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-5">
             <button
-              className="text-white text-3xl md:hidden px-4"
+              className="text-white text-3xl md:hidden px-2"
               onClick={toggleMenu}
             >
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
@@ -164,7 +164,7 @@ export default function Navbar() {
             </ul>
 
             {/* FaTh Dropdown */}
-            <div className="relative px-4 py-2">
+            <div className="relative px-2 py-2">
               {/* Toggle Icon */}
               <div onClick={toggleDropdown} className="cursor-pointer">
                 {isDropdownOpen ? (
@@ -196,7 +196,7 @@ export default function Navbar() {
 
         {/* Mobile Navbar Menu */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg">
+          <div className="text-3xl sm:text-4xl md:text-3xl md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg">
             <ul className="flex flex-col space-y-3 p-6">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
