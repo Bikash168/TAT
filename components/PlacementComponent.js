@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../pages/PlacementComponent.module.css';
+import { motion } from 'framer-motion';
 
 const testimonials = [
   {
@@ -23,8 +24,20 @@ const testimonials = [
 ];
 
 export default function PlacementComponent() {
+  // Define a variant for sliding in from the left.
+  const slideInVariant = {
+    hidden: { x: '-100%', opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { duration: 0.7, ease: "easeOut" } },
+  };
+
   return (
-    <section className="py-20 bg-white w-full" id="placement">
+    <motion.section
+      className="py-20 bg-white w-full"
+      id="placement"
+      initial="hidden"
+      animate="visible"
+      variants={slideInVariant}
+    >
       <div className="w-full text-center px-4">
         <h2 className="text-4xl font-extrabold mb-4">Training & Placement</h2>
         <p className="text-lg mb-10 animate-typing overflow-hidden whitespace-nowrap border-r-4 border-gray-500 pr-4">
@@ -56,6 +69,6 @@ export default function PlacementComponent() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
