@@ -124,14 +124,17 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
-        <div className="bg-white text-[#002147] flex items-center py-2 px-6">
+        <div className="bg-white text-[#002147] flex items-center py-2 px-4 md:px-10">
           <Link href="/">
-            <div className="flex items-center cursor-pointer">
-              <img src="/logo.png" alt="Trident Logo" className="h-20 mr-6" />
-              <div>
-                <h1 className="text-md font-semibold leading-tight">TRIDENT</h1>
-                <h1 className="text-md font-semibold leading-tight">ACADEMY</h1>
-                <h1 className="text-md font-semibold leading-tight">OF TECHNOLOGY</h1>
+            <div className="flex items-center cursor-pointer space-x-4">
+              {/* Responsive Logo */}
+              <img src="/logo.png" alt="Trident Logo" className="h-14 md:h-20" />
+
+              {/* Text Section */}
+              <div className="text-left leading-tight">
+                <h1 className="text-sm md:text-md font-semibold">TRIDENT</h1>
+                <h1 className="text-sm md:text-md font-semibold">ACADEMY</h1>
+                <h1 className="text-sm md:text-md font-semibold">OF TECHNOLOGY</h1>
               </div>
             </div>
           </Link>
