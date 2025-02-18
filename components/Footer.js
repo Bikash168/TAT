@@ -3,9 +3,9 @@ import {
   faInstagram,
   faLinkedin,
   faFacebook,
-  faTwitter,
+  faXTwitter,
   faYoutube,
-  
+
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -151,18 +151,25 @@ const Footer = () => {
         {/* Social Media */}
         <div className="flex justify-center w-full mt-4 sm:mt-0 space-x-4 text-2xl pt-4">
           {[
-            { icon: faInstagram, label: "Instagram" },
-            { icon: faLinkedin, label: "LinkedIn" },
-            { icon: faFacebook, label: "Facebook" },
-            { icon: faTwitter, label: "Twitter" },
-            { icon: faYoutube, label: "YouTube" },
-           
-          ].map(({ icon, label }) => (
-            <a key={label} href="/" className="hover:text-gray-300 transition-all" aria-label={label}>
+            { icon: faInstagram, label: "Instagram", url: "https://www.instagram.com/trident_tat/" },
+            { icon: faLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" },
+            { icon: faFacebook, label: "Facebook", url: "https://www.facebook.com/tridentcollege/" },
+            { icon: faXTwitter, label: "Twitter", url: "https://x.com/Trident_tat" },
+            { icon: faYoutube, label: "YouTube", url: "https://www.youtube.com/@trident_tat" },
+          ].map(({ icon, label, url }) => (
+            <a
+              key={label}
+              href={url}
+              className="hover:text-gray-300 transition-all"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+            >
               <FontAwesomeIcon icon={icon} />
             </a>
           ))}
         </div>
+
 
         {/* Copyright */}
         <div className="mt-8 text-center text-sm">
