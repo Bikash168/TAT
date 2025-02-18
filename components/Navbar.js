@@ -124,10 +124,10 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
-        <div className="bg-white text-[#002147] flex items-center py-2 px-4">
+        <div className="bg-white text-[#002147] flex items-center py-2 px-6">
           <Link href="/">
             <div className="flex items-center cursor-pointer">
-              <img src="/logo.png" alt="Trident Logo" className="h-20 mr-4" />
+              <img src="/logo.png" alt="Trident Logo" className="h-20 mr-6" />
               <div>
                 <h1 className="text-md font-semibold leading-tight">TRIDENT</h1>
                 <h1 className="text-md font-semibold leading-tight">ACADEMY</h1>
@@ -138,7 +138,7 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-12 relative mt-8">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-10 relative mt-8">
             <button
               className="text-white text-3xl md:hidden px-4"
               onClick={toggleMenu}
