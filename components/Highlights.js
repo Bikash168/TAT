@@ -6,7 +6,7 @@ const SDGSection = () => {
           {/* Text Section */}
           <div className="w-2/3">
             <h2 className="text-4xl font-bold text-black-600">Shaping the Future through Innovation</h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg text-gray-600 text-justify">
               At Trident Academy of Technology, we are deeply committed to fostering technological excellence, sustainable development, and social well-being. We align our efforts with the United Nations’ Sustainable Development Goals (SDGs), empowering students to create meaningful, positive impacts across communities.
             </p>
           </div>
