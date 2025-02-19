@@ -76,13 +76,9 @@ const Departments = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Departments Menu</span>
           </button>
 
-          <div
-            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}
-          >
-            <h2 className="text-2xl font-semibold mb-6">Departments Menu</h2>
+          <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
             <ul className="space-y-3">
               {[
                 { name: 'Biotechnology Engineering', link: '/biotechnology-engineering' },
@@ -100,14 +96,17 @@ const Departments = () => {
                 { name: 'Master in Computer Application', link: '/mca' },
                 { name: 'Science & Humanities', link: '/science-humanities' },
               ].map((item) => (
-                <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
+                <li key={item.name}>
                   <Link href={item.link}>
-                    {item.name}
+                    <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                      {item.name}
+                    </button>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+
         </aside>
 
         {/* Main Content */}

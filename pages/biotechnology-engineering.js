@@ -77,23 +77,37 @@ const BiotechnologyEngineering = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">Biotechnology Engineering Menu</span>
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">Biotechnology Engineering Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-biotechnology-engineering">Overview</Link>
+                            <li>
+                                <Link href="/overview-biotechnology-engineering">
+                                    <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                        Overview
+                                    </button>
+                                </Link>
                             </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/courses">Courses</Link>
+                            <li>
+                                <Link href="/courses">
+                                    <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                        Courses
+                                    </button>
+                                </Link>
                             </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/faculties">Faculties</Link>
+                            <li>
+                                <Link href="/faculties">
+                                    <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                        Faculties
+                                    </button>
+                                </Link>
                             </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/laboratories">Laboratories</Link>
+                            <li>
+                                <Link href="/laboratories">
+                                    <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                        Laboratories
+                                    </button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
