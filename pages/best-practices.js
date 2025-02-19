@@ -77,21 +77,26 @@ const BestPractices = () => {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-            <span className="ml-2 text-lg font-medium">Best Practices Menu</span>
+
           </button>
 
           <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-            <h2 className="text-2xl font-semibold mb-6">Best Practices</h2>
             <ul className="space-y-3">
-              {[{ name: 'Quality/Accreditation', link: '/quality-accreditation' }, /* more items */].map((item) => (
-                <li key={item.name} className="group hover:bg-[#004D73] p-2 rounded-lg transition">
+              {[
+                { name: 'Quality/Accreditation', link: '/quality-accreditation' },
+                // Add more items here
+              ].map((item) => (
+                <li key={item.name}>
                   <Link href={item.link}>
-                    <span className="group-hover:text-white">{item.name}</span>
+                    <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                      {item.name}
+                    </button>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+
         </aside>
 
         {/* Main Content Area */}

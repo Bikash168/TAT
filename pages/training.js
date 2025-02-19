@@ -65,30 +65,32 @@ export default function Training() {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Training Menu</span>
+
           </button>
 
-          <div
-            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}
-          >
-            <h2 className="text-2xl font-semibold mb-6">Training Programs</h2>
+          <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
             <ul className="space-y-3">
-              {[ 
+              {[
                 { name: 'Attitude is Everything', link: '/attitude' },
                 { name: 'Industry Institute Partnership Cell (IIPC)', link: '/iipc' },
-                { name: 'Cisco thingQbator ', link: '/cisco' },
+                { name: 'Cisco thingQbator', link: '/cisco' },
                 { name: 'Communication Confidence: Speak Your Way to Success', link: '/communication' },
                 { name: 'Other Softskills', link: '/softskills' },
                 { name: 'Analytical Reasoning', link: '/reasoning' },
                 { name: 'Winter & Summer Training Extravaganza', link: '/skills' },
                 { name: 'Technical Augmentation', link: '/technical' },
               ].map((item) => (
-                <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                  <Link href={item.link}>{item.name}</Link>
+                <li key={item.name}>
+                  <Link href={item.link}>
+                    <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                      {item.name}
+                    </button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
         </aside>
 
         {/* Main Content Area */}
@@ -113,7 +115,7 @@ export default function Training() {
 
           {/* Training Categories Section */}
           <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-            {[ 
+            {[
               { title: 'Technology Training', description: 'Learn industry-standard technologies and develop the technical skills needed for tomorrow.', link: '#technology' },
               { title: 'Management Training', description: 'Sharpen your leadership and management skills with real-time scenarios and business case studies.', link: '#management' },
               { title: 'Soft Skills Development', description: 'Enhance your communication, teamwork, and interpersonal skills for personal and professional growth.', link: '#softskills' }
@@ -132,7 +134,7 @@ export default function Training() {
           <section className="bg-[#f8fafc] py-12 rounded-lg mb-16">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] text-center mb-6">Featured Training Programs</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-              {[ 
+              {[
                 { title: 'Full Stack Web Development', description: 'A comprehensive program to learn full-stack development using JavaScript frameworks and technologies.', duration: '6 Months', link: '#full-stack' },
                 { title: 'Project Management Certification', description: 'An advanced certification course to enhance your skills in managing large-scale projects successfully.', duration: '3 Months', link: '#project-management' },
                 { title: 'Data Science and AI', description: 'Dive into data science and AI concepts with hands-on projects and practical tools.', duration: '4 Months', link: '#data-science' }
@@ -156,7 +158,7 @@ export default function Training() {
               Trident Academy of Technology is committed to providing high-quality training programs that meet the needs of students and professionals. Here’s why you should choose us:
             </p>
             <div className="flex flex-wrap justify-center gap-12">
-              {[ 
+              {[
                 { title: 'Industry Expertise', description: 'Our trainers are experienced professionals with years of industry experience.' },
                 { title: 'Practical Learning', description: 'We offer hands-on training with real-world applications and projects.' },
                 { title: 'Flexible Schedules', description: 'We provide both full-time and part-time courses to accommodate your needs.' }
@@ -173,7 +175,7 @@ export default function Training() {
           <section className="bg-[#f8fafc] py-12 mb-16 rounded-lg">
             <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] text-center mb-6">What Our Students Say</h2>
             <div className="flex overflow-x-scroll gap-8">
-              {[ 
+              {[
                 { name: 'John Doe', program: 'Full Stack Development', testimonial: 'The course provided me with in-depth knowledge and practical experience that helped me secure a job in a top company.' },
                 { name: 'Jane Smith', program: 'Project Management', testimonial: 'This certification enhanced my career and gave me the confidence to lead successful projects.' },
                 { name: 'Mark Johnson', program: 'Data Science', testimonial: 'The hands-on approach and industry insights were invaluable in shaping my understanding of data science.' }

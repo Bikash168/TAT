@@ -24,7 +24,7 @@ const Activities = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
-        Activities
+          Activities
         </h1>
       </section>
 
@@ -65,13 +65,10 @@ const Activities = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Activities Menu</span>
+
           </button>
 
-          <div
-            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}
-          >
-            <h2 className="text-2xl font-semibold mb-6">Activities Menu</h2>
+          <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
             <ul className="space-y-3">
               {[
                 { name: 'Co-Curricular', link: '/co-curricular' },
@@ -83,17 +80,17 @@ const Activities = () => {
                 { name: 'IEDC Projects', link: '/iedc-projects' },
                 { name: 'Incubation Cell', link: '/incubation-cell' },
               ].map((item) => (
-                <li
-                  key={item.name}
-                  className="hover:bg-[#004D73] p-2 rounded-lg transition"
-                >
+                <li key={item.name}>
                   <Link href={item.link}>
-                    {item.name}
+                    <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                      {item.name}
+                    </button>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+
         </aside>
 
         {/* Main Content */}
