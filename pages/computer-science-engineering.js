@@ -77,35 +77,31 @@ const ComputerScienceEngineering = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSE Department Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSE Department Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-computer-science-engineering">Overview</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#newsletter">THE QUBIT – School of Computing Newsletter</Link>
-                            </li>
+                            {[
+                                { name: 'Overview', link: '/overview-computer-science-engineering' },
+                                { name: 'Question Bank', link: '#question-bank' },
+                                { name: 'Courses', link: '#courses' },
+                                { name: 'Faculties', link: '#faculties' },
+                                { name: 'Laboratories', link: '#laboratories' },
+                                { name: 'BPUT Questions (PY)', link: '#bput-questions' },
+                                { name: 'THE QUBIT – School of Computing Newsletter', link: '#newsletter' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.link}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                            {item.name}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
 
@@ -135,12 +131,12 @@ const ComputerScienceEngineering = () => {
                                 <p>
                                     B.Tech. in Computer Science Engineering (CSE) is an academic programme of four years of duration which integrates a study on theoretical basis of the field of Computer Science as well as the technological basis of the field of Computer Science – the Computer Engineering from the industry perspective. The programme primarily emphasises on laying a strong theoretical background through imparting studies of the basics of computer programming, networking and computer organization and architecture while also comprising a plethora of other versatile topics. All the subjects and topics that are covered under B.Tech. in Computer Science Engineering are related to algorithms, computation, programming languages, theory of computing, theory of automata, programme design, computer hardware, computer software, software engineering, computer graphics, etc. It is a comprehensive course focusing on computer systems as well as computer applications. </p>
 
-                                    <h4>Beneficiaries</h4>
+                                <h4>Beneficiaries</h4>
 
-                                    <p>Students pursuing this Bachelor’s program in Computer Science Engineering are taught about the design, implementation as well as management of computer software and computer hardware. Upon successful completion of this B.Tech.(CSE) degree, computer science engineers are engaged in a variety of fields of computing and computer engineering, ranging from the design of individual microprocessor and microcontroller based embedded</p>
+                                <p>Students pursuing this Bachelor’s program in Computer Science Engineering are taught about the design, implementation as well as management of computer software and computer hardware. Upon successful completion of this B.Tech.(CSE) degree, computer science engineers are engaged in a variety of fields of computing and computer engineering, ranging from the design of individual microprocessor and microcontroller based embedded</p>
 
-                                    <p>systems, real-time systems, supercomputers and personal computers to design and development of the software systems that powers them for managing and controlling their action, provides them artificial intelligence, supports them in decision making and exploring new avenues. Through B.Tech. in Computer Science Engineering, the students are taught to understand, learn and use the different programming languages, networking and telecommunications, digital and analogue electronics, etc. The use of computers has become an integral part of human life – a bare necessity in everyday life and therefore, its importance is inevitable, hence the course of Computer Science Engineering continues to hold its extreme popularity among all the stakeholders – students, parents and employers. Due to the increasing demand for the course and its importance in the industry sector, a career in Computer Science Engineering is highly lucrative.</p>
-                               
+                                <p>systems, real-time systems, supercomputers and personal computers to design and development of the software systems that powers them for managing and controlling their action, provides them artificial intelligence, supports them in decision making and exploring new avenues. Through B.Tech. in Computer Science Engineering, the students are taught to understand, learn and use the different programming languages, networking and telecommunications, digital and analogue electronics, etc. The use of computers has become an integral part of human life – a bare necessity in everyday life and therefore, its importance is inevitable, hence the course of Computer Science Engineering continues to hold its extreme popularity among all the stakeholders – students, parents and employers. Due to the increasing demand for the course and its importance in the industry sector, a career in Computer Science Engineering is highly lucrative.</p>
+
                             </div>
                             <div>
                                 <h3 className="font-semibold">2. M.Tech. in Computer Science & Engineering - 18 Seats</h3>

@@ -77,29 +77,29 @@ const ElectronicsTelecommEngineering = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">ETE Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">Electronics & Telecomm Engineering Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-electronics-telecommunication">Overview</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#labs">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#achievements">Achievements</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculty">Faculty</Link>
-                            </li>
+                            {[
+                                { name: 'Overview', link: '/overview-electronics-telecommunication' },
+                                { name: 'Courses', link: '#courses' },
+                                { name: 'Laboratories', link: '#labs' },
+                                { name: 'Achievements', link: '#achievements' },
+                                { name: 'Faculty', link: '#faculty' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.link}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                            {item.name}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
                 {/* Main Content Section */}
