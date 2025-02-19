@@ -97,20 +97,26 @@ const Footer = () => {
             <h3 className="font-bold text-xl">Trident Group Websites</h3>
             <ul className="mt-4 space-y-2 text-lg">
               {[
-                "Trident Group of Institutions",
-                "Trident Academy of Creative Technology",
-                "Trident Academy of Professional Studies",
-                "Trident School of Biotech Sciences",
-                "DF Group",
+                { name: "Trident Group of Institutions", link: "https://trident.ac.in/" },
+                { name: "Trident Academy of Creative Technology", link: "https://tact.ac.in/" },
+                { name: "Trident Academy of Professional Studies", link: "https://taps.ac.in/" },
+                { name: "Trident School of Biotech Sciences", link: "https://tsbs.ac.in/" },
+                { name: "DF Group", link: "https://dfgroup.in/" }, // Replace with the actual link if available
               ].map((site) => (
-                <li key={site}>
-                  <a href="/" className="hover:text-gray-300 transition-all underline">
-                    {site} ↗
+                <li key={site.name}>
+                  <a
+                    href={site.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-gray-300 transition-all underline"
+                  >
+                    {site.name} ↗
                   </a>
                 </li>
               ))}
             </ul>
           </div>
+
 
           {/* Quick Links */}
           <div>
