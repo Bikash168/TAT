@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const HeroSection = () => {
   const videoRef = useRef(null);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
     const setVideoHeight = () => {
@@ -22,16 +23,18 @@ const HeroSection = () => {
 
   return (
     <div className="relative w-full h-[93vh] bg-gray-900 text-white overflow-hidden">
-      {/* Background Video with Fallback Image */}
+      {/* Background Video (Hidden Until Loaded) */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/fallback-image.jpg"
-          alt="Fallback Image"
-          layout="fill"
-          objectFit="cover"
-          className="z-0"
-          priority
-        />
+        {!videoLoaded && (
+          <Image
+            src="/images/fallback-image.jpg"
+            alt="Fallback Image"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+            priority
+          />
+        )}
         <video
           ref={videoRef}
           autoPlay
@@ -41,9 +44,10 @@ const HeroSection = () => {
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover z-10"
           poster="/images/fallback-image.jpg"
+          onLoadedData={() => setVideoLoaded(true)} // Ensure video is displayed after loading
         >
-          <source src="/your-video-file-low.mp4" type="video/mp4" />
-          <source src="/your-video-file-high.mp4" type="video/mp4" media="(min-width: 1024px)" />
+          <source src="/your-video-file.mp4" type="video/mp4" />
+          <source src="/your-video-file.mp4" type="video/mp4" media="(min-width: 1024px)" />
           Your browser does not support the video tag.
         </video>
       </div>
