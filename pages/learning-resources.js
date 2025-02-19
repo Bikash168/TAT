@@ -71,41 +71,33 @@ const LearningResources = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">Learning Resources Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/about-learning-resources">About</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/vision-mission-learning-resources">Vision & Mission</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#catalogue-search">Catalogue Search</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#department-libraries">Department Libraries</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#e-resources">E-Resources</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#digital-resources">Digital Resources</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#print-journals">Print Journals</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#open-access">Open Access</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#suggestions">Suggestions</Link>
-                            </li>
+                            {[
+                                { href: "/about-learning-resources", label: "About" },
+                                { href: "/vision-mission-learning-resources", label: "Vision & Mission" },
+                                { href: "#catalogue-search", label: "Catalogue Search" },
+                                { href: "#department-libraries", label: "Department Libraries" },
+                                { href: "#e-resources", label: "E-Resources" },
+                                { href: "#digital-resources", label: "Digital Resources" },
+                                { href: "#print-journals", label: "Print Journals" },
+                                { href: "#open-access", label: "Open Access" },
+                                { href: "#suggestions", label: "Suggestions" },
+                            ].map((item, index) => (
+                                <li key={index}>
+                                    <Link href={item.href}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                                            {item.label}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
                 {/* Main Content Section */}
