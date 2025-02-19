@@ -132,7 +132,7 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-4">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-7">
             <button
               className="text-white text-2xl md:hidden px-2 ml-auto" // Added ml-auto to push it to the right
               onClick={toggleMenu}

@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import PlacementComponent from "../components/PlacementComponent";
 import ResearchSpotlight from "../components/ResearchSpotlight";
 import AnnouncementsSection from "../components/AnnouncementsSection";
+import AdmissionPopup from "../components/AdmissionPopup";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 
   return (
     <>
+    <AdmissionPopup /> {/* Add the popup */}
       <div className="nopadding">
         <motion.div
           variants={fadeInUp}
