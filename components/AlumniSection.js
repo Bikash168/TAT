@@ -24,10 +24,21 @@ const alumniTestimonials = [
 
 export default function HighlightSection() {
   return (
-    <section id="alumni" className="py-16 bg-gray-50 w-full">
-      <div className="max-w-7xl mx-auto overflow-hidden rounded-lg shadow-xl bg-white relative">
+    <section id="alumni" className="py-16 w-full relative overflow-hidden"
+      style={{
+        backgroundImage:
+          "repeating-linear-gradient(45deg, #ddd, #ddd 2px, transparent 2px, transparent 6px)",
+        backgroundSize: "10px 10px",
+        opacity: 0.9,
+      }}
+    >
+      {/* Background Elements */}
+      <div className="absolute inset-0 bg-white opacity-50 pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-500 opacity-20 rounded-full blur-3xl"></div>
+      <div className="absolute top-10 left-10 w-24 h-24 bg-blue-300 opacity-30 rounded-full blur-2xl"></div>
+
+      <div className="max-w-7xl mx-auto overflow-hidden rounded-lg shadow-xl bg-white relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 items-stretch min-h-[500px]">
-          
           {/* Image Section */}
           <div className="w-full bg-black">
             <img
