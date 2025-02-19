@@ -25,7 +25,7 @@ const MCA = () => {
             >
                 <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white z-10 text-center px-4 mt-16 sm:mt-0">
-                Master in Computer Application Department
+                    Master in Computer Application Department
                 </h1>
             </section>
 
@@ -77,32 +77,30 @@ const MCA = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">Master in Computer Application Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">Master in Computer Application Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-mca">Overview</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
-                            </li>
+                            {[
+                                { name: 'Overview', link: '/overview-mca' },
+                                { name: 'Courses', link: '#courses' },
+                                { name: 'Faculties', link: '#faculties' },
+                                { name: 'Laboratories', link: '#laboratories' },
+                                { name: 'Question Bank', link: '#question-bank' },
+                                { name: 'BPUT Questions (PY)', link: '#bput-questions' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.link}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003355]">
+                                            {item.name}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
                 {/* Main Content Section */}

@@ -77,32 +77,30 @@ const ComputerScienceIT = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">CSIT Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">CSIT Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-cs-it">Overview</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#courses">Courses</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#faculties">Faculties</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#laboratories">Laboratories</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#question-bank">Question Bank</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#bput-questions">BPUT Questions (PY)</Link>
-                            </li>
+                            {[
+                                { name: 'Overview', link: '/overview-cs-it' },
+                                { name: 'Courses', link: '#courses' },
+                                { name: 'Faculties', link: '#faculties' },
+                                { name: 'Laboratories', link: '#laboratories' },
+                                { name: 'Question Bank', link: '#question-bank' },
+                                { name: 'BPUT Questions (PY)', link: '#bput-questions' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.link}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                            {item.name}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
                 {/* Main Content Section */}

@@ -75,23 +75,27 @@ const MBA = () => {
                                 d="M4 6h16M4 12h16M4 18h16"
                             ></path>
                         </svg>
-                        <span className="ml-2 text-lg font-medium">MBA Menu</span>
+
                     </button>
 
                     <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
-                        <h2 className="text-2xl font-semibold mb-6">MBA Menu</h2>
                         <ul className="space-y-3">
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="/overview-mba">Overview</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#initiatives">Key Initiatives</Link>
-                            </li>
-                            <li className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                                <Link href="#facilities">Facilities</Link>
-                            </li>
+                            {[
+                                { name: 'Overview', link: '/overview-mba' },
+                                { name: 'Key Initiatives', link: '#initiatives' },
+                                { name: 'Facilities', link: '#facilities' },
+                            ].map((item) => (
+                                <li key={item.name}>
+                                    <Link href={item.link}>
+                                        <button className="w-full text-left bg-[#004D73] text-white p-2 rounded-lg transition hover:bg-[#003355]">
+                                            {item.name}
+                                        </button>
+                                    </Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
+
                 </aside>
 
                 {/* Main Content Section */}
@@ -99,7 +103,7 @@ const MBA = () => {
                     <div id="overview" className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-xl font-bold mb-4">Overview</h2>
                         <p>
-                            Trident School of Business is one of the reputed B-Schools of the city. It offers a two-year full-time MBA program approved by AICTE and Govt. of Odisha and affiliated to BPUT. 
+                            Trident School of Business is one of the reputed B-Schools of the city. It offers a two-year full-time MBA program approved by AICTE and Govt. of Odisha and affiliated to BPUT.
                             Since its commencement in 2008, the school has focused on grooming a new generation of business leaders capable of building sustainable and profitable businesses.
                         </p>
                     </div>
