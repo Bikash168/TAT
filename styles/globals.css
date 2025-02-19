@@ -32,3 +32,14 @@
     animation: fadeInUp 0.6s ease-out;
   }
   
+  .placement-section {
+    background: repeating-linear-gradient(
+      45deg,
+      #ccc,
+      #ccc 2px,
+      transparent 2px,
+      transparent 6px
+    );
+    opacity: 0.5; /* Adjust for visibility */
+  }
+  
