@@ -122,66 +122,81 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-xl">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-lg">
-              {["About TAT", "Library", "Workshop"].map((link) => (
-                <li key={link}>
-                  <a href="/" className="hover:text-gray-300 transition-all underline">
-                    {link} ↗
-                  </a>
-                </li>
-              ))}
+              <li>
+                <a
+                  href="/about"
+                  className="hover:text-gray-300 transition-all underline"
+                >
+                  About TAT ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/library"
+                  className="hover:text-gray-300 transition-all underline"
+                >
+                  Library ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/workshop"
+                  className="hover:text-gray-300 transition-all underline"
+                >
+                  Workshop ↗
+                </a>
+              </li>
             </ul>
           </div>
-        </div>
 
+          {/* Bottom Section */}
+          <div className="flex justify-center items-center mt-8">
+            {/* Links */}
+            <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
+              {[
+                "Jobs",
+                "Feedback",
+                "Press and Media",
+                "Accessibility",
+                "Privacy Policy",
+                "Legal Notice",
+                "Emergency",
+              ].map((item) => (
+                <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
+                  {item}
+                </a>
+              ))}
+            </div>
+          </div>
 
-        {/* Bottom Section */}
-        <div className="flex justify-center items-center mt-8">
-          {/* Links */}
-          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
+          {/* Social Media */}
+          <div className="flex justify-center w-full mt-4 sm:mt-0 space-x-4 text-2xl pt-4">
             {[
-              "Jobs",
-              "Feedback",
-              "Press and Media",
-              "Accessibility",
-              "Privacy Policy",
-              "Legal Notice",
-              "Emergency",
-            ].map((item) => (
-              <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
-                {item}
+              { icon: faInstagram, label: "Instagram", url: "https://www.instagram.com/trident_tat/" },
+              { icon: faLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" },
+              { icon: faFacebook, label: "Facebook", url: "https://www.facebook.com/tridentcollege/" },
+              { icon: faXTwitter, label: "Twitter", url: "https://x.com/Trident_tat" },
+              { icon: faYoutube, label: "YouTube", url: "https://www.youtube.com/@trident_tat" },
+            ].map(({ icon, label, url }) => (
+              <a
+                key={label}
+                href={url}
+                className="hover:text-gray-300 transition-all"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+              >
+                <FontAwesomeIcon icon={icon} />
               </a>
             ))}
           </div>
-        </div>
-
-        {/* Social Media */}
-        <div className="flex justify-center w-full mt-4 sm:mt-0 space-x-4 text-2xl pt-4">
-          {[
-            { icon: faInstagram, label: "Instagram", url: "https://www.instagram.com/trident_tat/" },
-            { icon: faLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" },
-            { icon: faFacebook, label: "Facebook", url: "https://www.facebook.com/tridentcollege/" },
-            { icon: faXTwitter, label: "Twitter", url: "https://x.com/Trident_tat" },
-            { icon: faYoutube, label: "YouTube", url: "https://www.youtube.com/@trident_tat" },
-          ].map(({ icon, label, url }) => (
-            <a
-              key={label}
-              href={url}
-              className="hover:text-gray-300 transition-all"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={label}
-            >
-              <FontAwesomeIcon icon={icon} />
-            </a>
-          ))}
-        </div>
 
 
-        {/* Copyright */}
-        <div className="mt-8 text-center text-sm">
-          &copy; 2024 Trident Academy of Technology. All Rights Reserved.
+          {/* Copyright */}
+          <div className="mt-8 text-center text-sm">
+            &copy; 2024 Trident Academy of Technology. All Rights Reserved.
+          </div>
         </div>
-      </div>
     </footer>
   );
 };
