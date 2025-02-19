@@ -5,7 +5,6 @@ import {
   faFacebook,
   faXTwitter,
   faYoutube,
-
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -81,14 +80,11 @@ const Footer = () => {
 
         {/* Links Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Logo and About the College Section */}
+          {/* About the College */}
           <div>
-            <div className="flex items-center justify-center space-x-4">
-              {/* College Name */}
-              <h3 className="font-bold text-xl text-center">Trident Academy of Technology</h3>
-            </div>
+            <h3 className="font-bold text-xl text-center">Trident Academy of Technology</h3>
             <p className="mt-4 text-lg text-white">
-              Trident Academy of Technology is a leading institution dedicated to providing world-class education in a variety of fields. Our mission is to foster innovation, creativity, and a sustainable future for all students.
+              Trident Academy of Technology is a leading institution dedicated to providing world-class education in various fields. Our mission is to foster innovation, creativity, and a sustainable future.
             </p>
           </div>
 
@@ -101,7 +97,7 @@ const Footer = () => {
                 { name: "Trident Academy of Creative Technology", link: "https://tact.ac.in/" },
                 { name: "Trident Academy of Professional Studies", link: "https://taps.ac.in/" },
                 { name: "Trident School of Biotech Sciences", link: "https://tsbs.ac.in/" },
-                { name: "DF Group", link: "https://dfgroup.in/" }, // Replace with the actual link if available
+                { name: "DF Group", link: "https://dfgroup.in/" },
               ].map((site) => (
                 <li key={site.name}>
                   <a
@@ -117,86 +113,62 @@ const Footer = () => {
             </ul>
           </div>
 
-
           {/* Quick Links */}
           <div>
             <h3 className="font-bold text-xl">Quick Links</h3>
             <ul className="mt-4 space-y-2 text-lg">
-              <li>
-                <a
-                  href="/about"
-                  className="hover:text-gray-300 transition-all underline"
-                >
-                  About TAT ↗
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/library"
-                  className="hover:text-gray-300 transition-all underline"
-                >
-                  Library ↗
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/workshop"
-                  className="hover:text-gray-300 transition-all underline"
-                >
-                  Workshop ↗
-                </a>
-              </li>
+              {[
+                { name: "About TAT", link: "/about" },
+                { name: "Library", link: "/library" },
+                { name: "Workshop", link: "/workshop" },
+              ].map((link) => (
+                <li key={link.name}>
+                  <a href={link.link} className="hover:text-gray-300 transition-all underline">
+                    {link.name} ↗
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
-
-          {/* Bottom Section */}
-          <div className="flex justify-center items-center mt-8">
-            {/* Links */}
-            <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
-              {[
-                "Jobs",
-                "Feedback",
-                "Press and Media",
-                "Accessibility",
-                "Privacy Policy",
-                "Legal Notice",
-                "Emergency",
-              ].map((item) => (
-                <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          {/* Social Media */}
-          <div className="flex justify-center w-full mt-4 sm:mt-0 space-x-4 text-2xl pt-4">
-            {[
-              { icon: faInstagram, label: "Instagram", url: "https://www.instagram.com/trident_tat/" },
-              { icon: faLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" },
-              { icon: faFacebook, label: "Facebook", url: "https://www.facebook.com/tridentcollege/" },
-              { icon: faXTwitter, label: "Twitter", url: "https://x.com/Trident_tat" },
-              { icon: faYoutube, label: "YouTube", url: "https://www.youtube.com/@trident_tat" },
-            ].map(({ icon, label, url }) => (
-              <a
-                key={label}
-                href={url}
-                className="hover:text-gray-300 transition-all"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-              >
-                <FontAwesomeIcon icon={icon} />
-              </a>
-            ))}
-          </div>
-
-
-          {/* Copyright */}
-          <div className="mt-8 text-center text-sm">
-            &copy; 2024 Trident Academy of Technology. All Rights Reserved.
-          </div>
         </div>
+
+        {/* Bottom Section */}
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
+          {[
+            "Jobs",
+            "Feedback",
+            "Press and Media",
+            "Accessibility",
+            "Privacy Policy",
+            "Legal Notice",
+            "Emergency",
+          ].map((item) => (
+            <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
+              {item}
+            </a>
+          ))}
+        </div>
+
+        {/* Social Media */}
+        <div className="flex justify-center w-full mt-4 space-x-4 text-2xl">
+          {[
+            { icon: faInstagram, label: "Instagram", url: "https://www.instagram.com/trident_tat/" },
+            { icon: faLinkedin, label: "LinkedIn", url: "https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" },
+            { icon: faFacebook, label: "Facebook", url: "https://www.facebook.com/tridentcollege/" },
+            { icon: faXTwitter, label: "Twitter", url: "https://x.com/Trident_tat" },
+            { icon: faYoutube, label: "YouTube", url: "https://www.youtube.com/@trident_tat" },
+          ].map(({ icon, label, url }) => (
+            <a key={label} href={url} className="hover:text-gray-300 transition-all" target="_blank" rel="noopener noreferrer" aria-label={label}>
+              <FontAwesomeIcon icon={icon} />
+            </a>
+          ))}
+        </div>
+
+        {/* Copyright */}
+        <div className="mt-8 text-center text-sm">
+          &copy; 2024 Trident Academy of Technology. All Rights Reserved.
+        </div>
+      </div>
     </footer>
   );
 };
