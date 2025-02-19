@@ -132,7 +132,7 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-5">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-4">
             <button
               className="text-white text-2xl md:hidden px-2 ml-auto" // Added ml-auto to push it to the right
               onClick={toggleMenu}
@@ -153,7 +153,7 @@ export default function Navbar() {
             </ul>
 
             {/* Dropdown */}
-            <div className="relative px-2 py-2">
+            <div className="relative px-2 py-1">
               {/* Toggle Icon */}
               <div onClick={toggleDropdown} className="cursor-pointer">
                 {isDropdownOpen ? (
@@ -165,7 +165,7 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               {isDropdownOpen && (
-                <div className="absolute right-0 mt-2 bg-white shadow-lg rounded-lg p-2 z-50">
+                <div className="absolute right-0 mt-1 bg-white shadow-lg rounded-lg p-2 z-50">
                   <ul className="flex flex-col space-y-2">
                     {dropdownItems.map((item) => (
                       <li key={item.name}>
