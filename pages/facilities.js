@@ -64,13 +64,10 @@ const Facilities = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Facilities Menu</span>
+
           </button>
 
-          <div
-            className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}
-          >
-            <h2 className="text-2xl font-semibold mb-6">Facilities</h2>
+          <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
             <ul className="space-y-3">
               {[
                 { name: 'Infrastructure', link: '/infrastructure' },
@@ -86,12 +83,17 @@ const Facilities = () => {
                 { name: 'Scholarships', link: '/scholarships' },
                 { name: 'ICT Enabled Classroom', link: '/ict-enabled-classroom' },
               ].map((item) => (
-                <li key={item.name} className="hover:bg-[#004D73] p-2 rounded-lg transition">
-                  <Link href={item.link}>{item.name}</Link>
+                <li key={item.name}>
+                  <Link href={item.link}>
+                    <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                      {item.name}
+                    </button>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
+
         </aside>
 
         {/* Main Content Area */}
