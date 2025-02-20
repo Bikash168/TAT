@@ -31,6 +31,7 @@ export default function Navbar() {
     { name: "Placement", href: "/placement" },
     { name: "Best Practices", href: "/best-practices" },
     { name: "Facilities", href: "/facilities" },
+    { name: "Admission", href: "/admission" },
   ];
 
   const topBarMenu = [
@@ -40,6 +41,7 @@ export default function Navbar() {
     { name: "Alumni", href: "/alumni" },
     { name: "Grievance", href: "/grievance" },
     { name: "E-Governance", href: "/E-GOVERNANCE" },
+    { name: "Notice", href: "/notice" },
     { name: "Careers", href: "/career" },
   ];
 
