@@ -13,6 +13,8 @@ import AdmissionPopup from "../components/AdmissionPopup";
 import NavButton from "../components/NavButton"; // Import Nav Button
 import { motion } from "framer-motion";
 
+
+
 export default function Home() {
   // Define a common animation variant for consistency.
   const fadeInUp = {
@@ -23,10 +25,12 @@ export default function Home() {
   return (
     <>
       <AdmissionPopup /> {/* Add the popup */}
-      
+
       {/* Navigation Button Section */}
-      <div className="flex justify-end p-4">
-        <NavButton label="Translation Feedback" />
+      <div className="flex justify-end p-4 bg-gray-200">
+        <NavButton label="NIRF" />
+         {/* Floating E-Magazine Button */}
+      <NavButton label="E-Magazine" position="bottom-5 left-5" />
       </div>
 
       <div className="nopadding">

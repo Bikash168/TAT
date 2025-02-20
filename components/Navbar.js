@@ -45,13 +45,7 @@ export default function Navbar() {
     { name: "Careers", href: "/career" },
   ];
 
-  const dropdownItems = [
-    { name: "Admission", href: "/admission" },
-    { name: "Appointments", href: "/appointments" },
-    { name: "Notice", href: "/notice" },
-    { name: "NIRF", href: "/nirf" },
-    { name: "E-Magazine", href: "/e-magazine" },
-  ];
+
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
@@ -154,35 +148,6 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-
-            {/* Dropdown */}
-            <div className="relative px-2 py-1">
-              {/* Toggle Icon */}
-              <div onClick={toggleDropdown} className="cursor-pointer">
-                {isDropdownOpen ? (
-                  <AiFillCaretUp className="text-3xl sm:text-4xl md:text-3xl hover:text-gray-300" />
-                ) : (
-                  <AiFillCaretDown className="text-3xl sm:text-4xl md:text-3xl hover:text-gray-300" />
-                )}
-              </div>
-
-              {/* Dropdown Menu */}
-              {isDropdownOpen && (
-                <div className="absolute right-0 mt-1 bg-white shadow-lg rounded-lg p-2 z-50">
-                  <ul className="flex flex-col space-y-2">
-                    {dropdownItems.map((item) => (
-                      <li key={item.name}>
-                        <Link href={item.href}>
-                          <span className="block text-[#002147] hover:text-blue-500 font-bold text-lg py-2 px-4">
-                            {item.name}
-                          </span>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
           </div>
         </div>
 

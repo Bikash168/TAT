@@ -22,7 +22,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[93vh] bg-gray-900 text-white overflow-hidden">
+    <div className="relative w-full h-[90vh] bg-gray-900 text-white overflow-hidden">
       {/* Background Video (Hidden Until Loaded) */}
       <div className="absolute inset-0">
         {!videoLoaded && (
