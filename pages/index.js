@@ -10,6 +10,7 @@ import PlacementComponent from "../components/PlacementComponent";
 import ResearchSpotlight from "../components/ResearchSpotlight";
 import AnnouncementsSection from "../components/AnnouncementsSection";
 import AdmissionPopup from "../components/AdmissionPopup";
+import NavButton from "../components/NavButton"; // Import Nav Button
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -21,7 +22,13 @@ export default function Home() {
 
   return (
     <>
-    <AdmissionPopup /> {/* Add the popup */}
+      <AdmissionPopup /> {/* Add the popup */}
+      
+      {/* Navigation Button Section */}
+      <div className="flex justify-end p-4">
+        <NavButton label="Translation Feedback" />
+      </div>
+
       <div className="nopadding">
         <motion.div
           variants={fadeInUp}

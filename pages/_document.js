@@ -8,7 +8,7 @@ export default function Document() {
       <Head>
         {/* Meta Tags */}
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <meta name="description" content="TACT-School of Biotech Sciences official website. Explore our courses, infrastructure, and research initiatives." />
         <meta name="keywords" content="Biotechnology, Education, Research, TSBS, Courses, Infrastructure" />
         <meta name="author" content="TACT-School of Biotech Sciences" />

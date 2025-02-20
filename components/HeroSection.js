@@ -43,7 +43,7 @@ const HeroSection = () => {
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover z-10"
-          poster="/images/fallback-image.jpg"
+          poster="/images/placeholder.jpg"
           onLoadedData={() => setVideoLoaded(true)} // Ensure video is displayed after loading
         >
           <source src="/your-video-file.mp4" type="video/mp4" />
