@@ -29,6 +29,11 @@ export default function AdmissionPopup() {
         >
           ✕
         </button>
+        <img 
+          src="/images/fallback-image.jpg" 
+          alt="Admissions Open" 
+          className="w-full rounded-lg mb-4"
+        />
         <h2 className="text-2xl font-bold text-blue-700 mb-4">Admissions Open!</h2>
         <p className="text-gray-700">
           Enroll now for the upcoming academic session. Explore our courses and start your journey today.
