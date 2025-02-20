@@ -40,7 +40,7 @@ const NewsEvents = () => {
       title: "Efficient Transportation",
       description:
         "Safe and reliable transport services connecting the campus with major city areas.",
-      img: "/images/transportation.jpg",
+      img: "/images/transportation.png",
       bgColor: "bg-green-600",
       borderColor: "border-green-600",
     },
