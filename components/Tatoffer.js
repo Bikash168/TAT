@@ -132,7 +132,7 @@ const NewsEvents = () => {
 
         {/* Dynamic Content */}
         <div
-          className={`flex flex-col md:flex-row items-center border-4 ${newsContent[activeTab].borderColor} p-6 rounded-lg`}
+          className={`flex flex-col md:flex-row items-center ml-2 border-4 ${newsContent[activeTab].borderColor} p-6 rounded-lg`}
         >
           {/* Image Section */}
           <div className="relative w-full md:w-1/2 h-80 sm:h-96 md:h-[20rem] lg:h-[24rem]">
@@ -147,7 +147,7 @@ const NewsEvents = () => {
           </div>
 
           {/* Content Section */}
-          <div className={`w-full md:w-1/2 p-6 text-white rounded-lg ${newsContent[activeTab].bgColor}`}>
+          <div className={`w-full md:w-1/2 p-6 text-white ml-3 rounded-lg ${newsContent[activeTab].bgColor}`}>
             <h2 className="text-3xl font-bold">
               {newsContent[activeTab].title}
             </h2>
