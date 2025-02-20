@@ -129,7 +129,7 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-7">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-9">
             <button
               className="text-white text-2xl md:hidden px-2 ml-auto" // Added ml-auto to push it to the right
               onClick={toggleMenu}
@@ -154,7 +154,7 @@ export default function Navbar() {
         {/* Mobile Navbar Menu */}
         {isMenuOpen && (
           <div className="text-3xl sm:text-4xl md:text-3xl md:hidden absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg">
-            <ul className="flex flex-col space-y-3 p-6">
+            <ul className="flex flex-col space-y-3 p-5">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
                   <Link href={item.href}>
