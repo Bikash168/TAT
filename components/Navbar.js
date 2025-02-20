@@ -39,6 +39,7 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
     { name: "Alumni", href: "/alumni" },
     { name: "Grievance", href: "/grievance" },
+    { name: "E-Governance", href: "/E-GOVERNANCE" },
     { name: "Careers", href: "/career" },
   ];
 
