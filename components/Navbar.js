@@ -41,7 +41,6 @@ export default function Navbar() {
     { name: "Alumni", href: "/alumni" },
     { name: "Grievance", href: "/grievance" },
     { name: "E-Governance", href: "/E-GOVERNANCE" },
-    { name: "Notice", href: "/notice" },
     { name: "Careers", href: "/career" },
   ];
 
