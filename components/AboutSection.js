@@ -75,8 +75,8 @@ export default function AboutSection() {
               />
               <h4 className="text-xs font-semibold text-black">NAAC (National Assessment & Accreditation Council)</h4>
             </div>
-             {/* DSIR SIRO Center */}
-             <div className="text-center border border-red-600 rounded-md p-2">
+            {/* DSIR SIRO Center */}
+            <div className="text-center border border-red-600 rounded-md p-2">
               <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-1 w-28 h-auto" />
               <h4 className="text-xs font-semibold text-black">DSIR SIRO CENTER</h4>
             </div>
@@ -85,7 +85,7 @@ export default function AboutSection() {
               <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-40 h-auto" />
               <h4 className="text-xs font-semibold text-black">ISO CERTIFIED INSTITUTION</h4>
             </div>
-           
+
             {/* HESI Member */}
             <div className="text-center border border-red-600 rounded-md p-2">
               <img
