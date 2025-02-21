@@ -77,7 +77,7 @@ export default function Grievance() {
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link}>
-                    <button className="w-full text-left bg-[#004D73] text-white p-3 rounded-lg transition hover:bg-[#003652]">
+                  <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
                       {item.name}
                     </button>
                   </Link>
