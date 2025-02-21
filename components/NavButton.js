@@ -1,4 +1,4 @@
-import { AlertCircle, BookOpen } from "lucide-react";
+import { AlertCircle, BookOpen, Bell } from "lucide-react";
 
 const FloatingButtons = () => {
   return (
@@ -13,6 +13,12 @@ const FloatingButtons = () => {
       <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-500 text-white hover:bg-blue-600 transition shadow-lg">
         <BookOpen size={20} />
         E-Magazine
+      </button>
+
+      {/* Notice Button (Green) */}
+      <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green-500 text-white hover:bg-green-600 transition shadow-lg">
+        <Bell size={20} />
+        Notice
       </button>
     </div>
   );

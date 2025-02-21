@@ -31,6 +31,7 @@ export default function Home() {
         <NavButton label="NIRF" />
          {/* Floating E-Magazine Button */}
       <NavButton label="E-Magazine" position="bottom-5 left-5" />
+      <NavButton label="Notice" position="bottom-5 left-5" />
       </div>
 
       <div className="nopadding">
