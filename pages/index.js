@@ -29,9 +29,9 @@ export default function Home() {
       {/* Navigation Button Section */}
       <div className="flex justify-end p-4 bg-gray-200">
         <NavButton label="NIRF" />
-         {/* Floating E-Magazine Button */}
-      <NavButton label="E-Magazine" position="bottom-5 left-5" />
-      <NavButton label="Notice" position="bottom-5 left-5" />
+        {/* Floating E-Magazine Button */}
+        <NavButton label="E-Magazine" position="bottom-5 left-5" />
+        <NavButton label="Notice" position="bottom-5 left-5" />
       </div>
 
       <div className="nopadding">
