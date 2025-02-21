@@ -27,14 +27,14 @@ export default function AboutSection() {
             variants={slideLeft}
           >
             {/* Institution Description */}
-            <p className="text-sm sm:text-sm lg:text-base leading-relaxed">
+            <p className="text-md leading-relaxed">
               Trident Academy of Technology is a leading institution focused on developing talent and excellence across a wide range of disciplines. Our approach emphasizes combining practical experience, analytical skills, and creative thinking, ensuring students gain a strong understanding of their chosen fields. We offer thoughtfully organized programs, practical learning experiences, and a curriculum aligned with industry trends, ensuring our students are well-equipped for success in their careers. With modern infrastructure, a dedicated faculty, and a focus on overall development, we ensure our students are prepared to excel in their fields and adapt to the evolving demands of the global landscape.
             </p>
 
             {/* Vision Section */}
             <div className="space-y-2">
               <h3 className="text-base sm:text-lg lg:text-xl font-semibold">Our Vision</h3>
-              <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
+              <p className="text-md leading-relaxed">
                 Trident Academy of Technology aspires to be a leading institution that nurtures innovative thinkers and responsible leaders, equipped with the knowledge, skills, and values to drive positive change and contribute to the advancement of society and a sustainable future.
               </p>
             </div>
@@ -42,7 +42,7 @@ export default function AboutSection() {
             {/* Mission Section */}
             <div className="space-y-2">
               <h3 className="text-base sm:text-lg lg:text-xl font-semibold">Our Mission</h3>
-              <p className="text-xs sm:text-sm lg:text-base leading-relaxed">
+              <p className="text-md leading-relaxed">
                 Trident Academy of Technology is committed to providing high-quality education that combines academic learning with practical skills and problem-solving. Our focus is on developing students who are ready to think strategically, address challenges, and act with integrity in their careers. Through a comprehensive curriculum, applied learning experiences, and industry-relevant knowledge, we prepare students to excel in a dynamic world and make a meaningful impact.
               </p>
             </div>
