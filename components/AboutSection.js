@@ -55,25 +55,16 @@ export default function AboutSection() {
             animate="visible"
             variants={slideRight}
           >
-            {/* ISO Certified Institution */}
+            {/* AICTE Affiliation */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-40 h-auto" />
-              <h4 className="text-xs font-semibold text-black">ISO CERTIFIED INSTITUTION</h4>
+              <img src="/images/aicte-logo.png" alt="AICTE" className="mx-auto mb-1 w-28 h-auto" />
+              <h4 className="text-xs font-semibold text-black">APPROVED BY</h4>
+              <p className="text-[10px] text-black">AICTE</p>
             </div>
-            {/* DSIR SIRO Center */}
+            {/* National Board of Accreditation */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-1 w-28 h-auto" />
-              <h4 className="text-xs font-semibold text-black">DSIR SIRO CENTER</h4>
-            </div>
-            {/* HESI Member */}
-            <div className="text-center border border-red-600 rounded-md p-2">
-              <img
-                src="/images/HESI-logo-horizontal.png"
-                alt="HESI Member"
-                className="mx-auto mb-1 w-30 h-36 object-contain"
-              />
-              <h4 className="text-xs font-semibold text-black">MEMBER OF</h4>
-              <p className="text-[10px] text-black">Higher Education Sustainability Initiative</p>
+              <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-32 h-auto" />
+              <h4 className="text-xs font-semibold text-black">National Board of Accreditation</h4>
             </div>
             {/* NAAC Accreditation */}
             <div className="text-center border border-red-600 rounded-md p-2">
@@ -84,17 +75,30 @@ export default function AboutSection() {
               />
               <h4 className="text-xs font-semibold text-black">NAAC (National Assessment & Accreditation Council)</h4>
             </div>
-            {/* National Board of Accreditation */}
-            <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-32 h-auto" />
-              <h4 className="text-xs font-semibold text-black">National Board of Accreditation</h4>
+             {/* DSIR SIRO Center */}
+             <div className="text-center border border-red-600 rounded-md p-2">
+              <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-1 w-28 h-auto" />
+              <h4 className="text-xs font-semibold text-black">DSIR SIRO CENTER</h4>
             </div>
-            {/* BPUT Affiliation */}
+            {/* ISO Certified Institution */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img src="/images/aicte-logo.png" alt="AICTE" className="mx-auto mb-1 w-28 h-auto" />
-              <h4 className="text-xs font-semibold text-black">APPROVED BY</h4>
-              <p className="text-[10px] text-black">AICTE</p>
+              <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-40 h-auto" />
+              <h4 className="text-xs font-semibold text-black">ISO CERTIFIED INSTITUTION</h4>
             </div>
+           
+            {/* HESI Member */}
+            <div className="text-center border border-red-600 rounded-md p-2">
+              <img
+                src="/images/HESI-logo-horizontal.png"
+                alt="HESI Member"
+                className="mx-auto mb-1 w-30 h-36 object-contain"
+              />
+              <h4 className="text-xs font-semibold text-black">MEMBER OF</h4>
+              <p className="text-[10px] text-black">Higher Education Sustainability Initiative</p>
+            </div>
+
+
+
 
           </motion.div>
         </div>
