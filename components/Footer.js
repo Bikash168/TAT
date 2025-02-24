@@ -58,17 +58,17 @@ const Footer = () => {
             <h2 className="font-bold text-xl">Latest News</h2>
             <ul className="mt-4 space-y-2 text-lg">
               <li>
-                <a href="/" className="hover:text-gray-300 transition-all underline">
+                <a href="/" className="hover:text-gray-300 transition-all underline text-lg">
                   → Mission: a human-made leaf
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-gray-300 transition-all underline">
+                <a href="/" className="hover:text-gray-300 transition-all underline text-lg">
                   → AI pinpoints stroke timing with high accuracy
                 </a>
               </li>
               <li>
-                <a href="/" className="hover:text-gray-300 transition-all underline">
+                <a href="/" className="hover:text-gray-300 transition-all underline text-lg">
                   → Join TAT as we turn a new page
                 </a>
               </li>
