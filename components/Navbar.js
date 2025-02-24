@@ -158,7 +158,7 @@ export default function Navbar() {
                 <li key={item.name} className="w-full">
                   <Link href={item.href}>
                     <span
-                      className="block bg-white text-[#002147] hover:bg-gray-100 font-bold text-lg py-4 px-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
+                      className="block bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-4 px-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
                       onClick={handleMenuItemClick}
                     >
                       {item.name}
