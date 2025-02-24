@@ -10,17 +10,17 @@ const DegreePrograms = () => {
 
   const degreePrograms = {
     Undergraduate: [
-      { name: "Biotechnology Engineering", slug: "be-btech", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
-      { name: "Computer Science Engineering", slug: "cse-btech", image: "/images/Computer-Science-Engineering.jpg", link: "computer-science-engineering" },
-      { name: "Computer Science & Engineering (AI & ML)", slug: "cse-ai-ml-btech", image: "/images/Computer-Science-AI-ML.jpg", link: "cs-ai-ml" },
-      { name: "Computer Science & Information Technology", slug: "csit-btech", image: "/images/ComputerScienceIT.jpg", link: "cs-it" },
-      { name: "Computer Science and Technology", slug: "cst-btech", image: "/images/ComputerScienceTechnology.jpg", link: "cs-technology" },
-      { name: "Computer Science & Engineering (Data Science)", slug: "csedt-btech", image: "/images/Data-Science.jpg", link: "cs-data-science" },
-      { name: "Electronics Engineering (VLSI)", slug: "eee-btech", image: "/images/ElectronicsEngineeringVLSI.jpg", link: "electronics-vlsi" },
-      { name: "Electronics and Telecomm Engineering", slug: "ete-btech", image: "/images/ElectronicsTelecommEngineering.jpg", link: "electronics-telecommunication" },
-      { name: "Mechanical Engineering", slug: "me-btech", image: "/images/MechanicalEngineering.jpg", link: "mechanical-engineering" },
-      { name: "Civil Engineering", slug: "ce-btech", image: "/images/Civil-Engineering.jpg", link: "civil-engineering" },
-      { name: "Electrical & Electronics Engineering", slug: "ee-btech", image: "/images/ElectricalElectronicsEngineering.jpg", link: "electrical-electronics" },
+      { name: "Biotechnology Engineering", image: "/images/Biotechnology-Engineering.jpg", link: "biotechnology-engineering" },
+      { name: "Computer Science Engineering", image: "/images/Computer-Science-Engineering.jpg", link: "computer-science-engineering" },
+      { name: "Computer Science & Engineering (AI & ML)", image: "/images/Computer-Science-AI-ML.jpg", link: "cs-ai-ml" },
+      { name: "Computer Science & Information Technology", image: "/images/ComputerScienceIT.jpg", link: "cs-it" },
+      { name: "Computer Science and Technology", image: "/images/ComputerScienceTechnology.jpg", link: "cs-technology" },
+      { name: "Computer Science & Engineering (Data Science)", image: "/images/Data-Science.jpg", link: "cs-data-science" },
+      { name: "Electronics Engineering (VLSI)", image: "/images/ElectronicsEngineeringVLSI.jpg", link: "electronics-vlsi" },
+      { name: "Electronics and Telecomm Engineering", image: "/images/ElectronicsTelecommEngineering.jpg", link: "electronics-telecommunication" },
+      { name: "Mechanical Engineering", image: "/images/MechanicalEngineering.jpg", link: "mechanical-engineering" },
+      { name: "Civil Engineering", image: "/images/Civil-Engineering.jpg", link: "civil-engineering" },
+      { name: "Electrical & Electronics Engineering", image: "/images/ElectricalElectronicsEngineering.jpg", link: "electrical-electronics" },
     ],
     Postgraduate: [
       { name: "Master in Business Administration", image: "/images/MBA.jpg", link: "mba" },
@@ -52,8 +52,32 @@ const DegreePrograms = () => {
         {/* Dynamic Content */}
         <div className={`border-4 p-6 rounded-lg bg-white ${activeTab === "Undergraduate" ? "border-blue-600" : "border-gray-500"}`}>
           {/* Grid Section */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-            {degreePrograms[activeTab]?.map((program) => (
+          <div className="grid grid-cols-5 gap-6">
+            {degreePrograms[activeTab]?.slice(0, 5).map((program) => (
+              <div
+                key={program.link}
+                className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-lg transition"
+                onClick={() => router.push(`/programs/${program.link}`)}
+              >
+                <div className="w-full h-56 relative">
+                  <Image
+                    src={program.image}
+                    alt={program.name}
+                    layout="fill"
+                    objectFit="cover"
+                    className="rounded-t-lg"
+                    priority
+                  />
+                </div>
+                <div className="p-3 text-center">
+                  <h3 className="text-base font-semibold text-gray-800">{program.name}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-6 gap-6 mt-6">
+            {degreePrograms[activeTab]?.slice(5, 11).map((program) => (
               <div
                 key={program.link}
                 className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-lg transition"
