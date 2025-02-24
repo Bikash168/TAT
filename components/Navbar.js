@@ -153,7 +153,7 @@ export default function Navbar() {
         {/* Mobile Navbar Menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
-            <ul className="flex flex-col space-y-3 p-5">
+            <ul className="flex flex-col space-y-2 p-3">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
                   <Link href={item.href}>
