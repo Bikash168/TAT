@@ -59,15 +59,25 @@ const NewsEvents = () => {
             const date = item?.Date ? new Date(item.Date).toLocaleDateString() : "Unknown Date";
             const readingTime = item?.Timing || "N/A";
 
-            const imageUrl = item?.Image?.formats?.thumbnail?.url
-              ? `http://localhost:1337${item.Image.formats.thumbnail.url}`
-              : "/default-image.jpg";
+            // Fetch high-resolution images (large > medium > original)
+            const imageUrl =
+              item?.Image?.formats?.large?.url ||
+              item?.Image?.formats?.medium?.url ||
+              item?.Image?.url ||
+              "/default-image.jpg";
 
             return (
               <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                {imageUrl && (
-                  <img src={imageUrl} alt={title} className="w-full h-40 object-cover" />
-                )}
+                <img
+                  src={imageUrl.startsWith("http") ? imageUrl : `http://localhost:1337${imageUrl}`}
+                  alt={title || "News Image"}
+                  className="w-full h-40 object-cover rounded-t-lg transition-transform duration-300 hover:scale-105"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.target.onerror = null; // Prevent infinite loop
+                    e.target.src = "/default-image.jpg"; // Set fallback image
+                  }}
+                />
                 <div className="p-4">
                   <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
                     {category}
@@ -86,6 +96,7 @@ const NewsEvents = () => {
               </div>
             );
           })}
+
 
         </div>
       </div>
