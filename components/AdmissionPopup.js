@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AdmissionPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +30,11 @@ export default function AdmissionPopup() {
         >
           ✕
         </button>
-        <img 
-          src="/images/fallback-image.jpg" 
-          alt="Admissions Open" 
+        <Image
+          src="/images/student-development1.jpg"
+          alt="Admissions Open"
+          width={400}
+          height={250}
           className="w-full rounded-lg mb-4"
         />
         <h2 className="text-2xl font-bold text-blue-700 mb-4">Admissions Open!</h2>
