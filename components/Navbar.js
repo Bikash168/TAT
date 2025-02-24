@@ -119,9 +119,9 @@ export default function Navbar() {
 
               {/* Text Section */}
               <div className="text-left leading-tight">
-                <h1 className="text-sm md:text-md font-semibold">TRIDENT</h1>
-                <h1 className="text-sm md:text-md font-semibold">ACADEMY</h1>
-                <h1 className="text-sm md:text-md font-semibold">OF TECHNOLOGY</h1>
+                <h1 className="text-md md:text-md font-semibold">TRIDENT</h1>
+                <h1 className="text-md md:text-md font-semibold">ACADEMY</h1>
+                <h1 className="text-md md:text-md font-semibold">OF TECHNOLOGY</h1>
               </div>
             </div>
           </Link>
