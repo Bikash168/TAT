@@ -152,8 +152,7 @@ export default function Navbar() {
 
         {/* Mobile Navbar Menu */}
         {isMenuOpen && (
-          <div className="text-3xl sm:text-4xl md:text-3xl md:hidden absolute top-[70%] left-0 w-full bg-[#002147] text-white shadow-lg pt-3 transition-all duration-300 ease-in-out">
-
+          <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
             <ul className="flex flex-col space-y-3 p-5">
               {menuItems.map((item) => (
                 <li key={item.name} className="w-full">
@@ -170,6 +169,7 @@ export default function Navbar() {
             </ul>
           </div>
         )}
+
       </nav>
     </div>
   );
