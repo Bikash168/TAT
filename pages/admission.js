@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const AdmissionPage = () => {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 mt-20">
       {/* Hero Section */}
       <div className="relative w-full h-[400px]">
         <Image src="/images/admission-banner.jpg" alt="Admission Banner" layout="fill" objectFit="cover" className="brightness-75" />
