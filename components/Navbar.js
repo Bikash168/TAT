@@ -130,7 +130,7 @@ export default function Navbar() {
         <div className="bg-[#002147] text-white flex-1">
           <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-9">
             <button
-              className="text-white text-3xl md:hidden px-2 ml-auto" // Added ml-auto to push it to the right
+              className="text-white text-3xl md:hidden px-2 ml-auto mb-4" // Added ml-auto to push it to the right
               onClick={toggleMenu}
             >
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
