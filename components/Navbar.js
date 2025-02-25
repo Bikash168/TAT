@@ -100,15 +100,17 @@ export default function Navbar() {
 
           {/* Top Bar Menu */}
           <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm font-semibold">
-            {topBarMenu.map((item) => (
-              <Link key={item.name} href={item.href}>
-                <span className="hover:text-blue-500">{item.name}</span>
-              </Link>
+            {topBarMenu.map((item, index) => (
+              <div key={item.name} className="flex items-center space-x-2">
+                <Link href={item.href}>
+                  <span className="hover:text-blue-500">{item.name}</span>
+                </Link>
+                {index !== topBarMenu.length - 1 && <span className="text-gray-400">|</span>}
+              </div>
             ))}
           </div>
         </div>
       </div>
-
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
         <div className="bg-white text-[#002147] flex items-center py-2 px-4 md:px-10">
@@ -169,8 +171,7 @@ export default function Navbar() {
             </ul>
           </div>
         )}
-
       </nav>
     </div>
-  );
+        );
 }
