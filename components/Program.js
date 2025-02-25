@@ -24,7 +24,17 @@ const DegreePrograms = () => {
     ],
     Postgraduate: [
       { name: "Master in Business Administration", image: "/images/MBA.jpg", link: "mba" },
+      { name: "MBA - IEV (Innovation, Entrepreneurship and Venture Development)", image: "/images/MBA_IEV.jpg", link: "mba-iev" },
+      { name: "MBA - Environmental Management", image: "/images/MBA_EM.jpg", link: "mba-environmental-management" },
       { name: "Master in Computer Application", image: "/images/MCA.jpg", link: "mca" },
+      { name: "M.Tech. in Computer Science and Engineering", image: "/images/MTech_CSE.jpg", link: "mtech-cse" },
+      { name: "M.Tech. in AI & Machine Learning", image: "/images/MTech_AI_ML.jpg", link: "mtech-ai-ml" },
+      { name: "M.Tech. in Data Science", image: "/images/MTech_DataScience.jpg", link: "mtech-data-science" },
+      { name: "M.Tech. in Electronics and Telecommunication Engineering", image: "/images/MTech_ECE.jpg", link: "mtech-ece" },
+      { name: "M.Tech. in Electronics Engineering (VLSI Design)", image: "/images/MTech_VLSI.jpg", link: "mtech-vlsi" },
+      { name: "M.Tech. in Electric Vehicle Technology", image: "/images/MTech_EV.jpg", link: "mtech-ev" },
+      { name: "M.Tech. in Energy and Environmental Engineering", image: "/images/MTech_Energy.jpg", link: "mtech-energy-environment" },
+      { name: "M.Tech. in Environmental Engineering", image: "/images/MTech_Environmental.jpg", link: "mtech-environmental" },
     ],
   };
 
@@ -32,7 +42,9 @@ const DegreePrograms = () => {
     <section id="programs" className="py-12 bg-gray-100">
       <div className="text-center mb-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Explore Our Degree Programs</h2>
-        <p className="text-gray-600 italic">Choose from diverse programs designed for future leaders and innovators.</p>
+        <p className="text-gray-600 italic">
+          Choose from diverse programs designed for future leaders and innovators.
+        </p>
       </div>
 
       <div className="container mx-auto px-4">
@@ -53,7 +65,10 @@ const DegreePrograms = () => {
         </div>
 
         {/* Dynamic Content */}
-        <div className={`border-4 p-6 rounded-lg bg-white ${activeTab === "Undergraduate" ? "border-blue-600" : "border-gray-500"}`}>
+        <div
+          className={`border-4 p-6 rounded-lg bg-white 
+            ${activeTab === "Undergraduate" ? "border-blue-600" : "border-gray-500"}`}
+        >
           {/* Grid Section */}
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6">
             {degreePrograms[activeTab]?.map((program) => (
