@@ -9,7 +9,11 @@ const NewsEvents = () => {
     let isMounted = true;
     const fetchNews = async () => {
       try {
-        const res = await axios.get("http://localhost:1337/api/news-and-events?populate=*");
+        const res = await axios.get("https://strpi1.onrender.com/api/news-and-events?populate=*", {
+          headers: {
+            Authorization: `2c19a4ee71240ed8ec689ddd5c6ff34a7ba5dd03265579f9cff8b59129ad0f867aba9b4ac463fdb311c6aaa832447149207215e0764b0989899fa28d379cd8503b43e2c3cb00fc7b65dd4e17498194b0594b836d98cf77cf5c88a9993aca0171dda18deaddffe73e2759407dab3827366df00e9422fa7e87a92372897e143666`,
+          },
+        });
 
         if (isMounted) {
           setNews(res.data.data || []);
@@ -60,11 +64,11 @@ const NewsEvents = () => {
             const readingTime = item?.Timing || "N/A";
 
             // Fetch high-resolution images (large > medium > original)
-            const imageUrl =
-              item?.Image?.formats?.large?.url ||
-              item?.Image?.formats?.medium?.url ||
-              item?.Image?.url ||
-              "/default-image.jpg";
+            const imageUrl = item?.Image?.url
+              ? item?.Image?.url.startsWith("http")
+                ? item?.Image?.url
+                : `https://strpi1.onrender.com${item?.Image?.url}`
+              : "/default-image.jpg";
 
             return (
               <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
