@@ -11,7 +11,7 @@ const NewsEvents = () => {
       try {
         const res = await axios.get("https://strpi1.onrender.com/api/news-and-events?populate=*", {
           headers: {
-            Authorization: `2fd36b251354623a652bbde812058a4dd5ed0165006edf1753554eb9c0bdd4c9a0ec49b190d30d17744aa0420cd58709d46f67375210763e3a59567631350ac6f986889751ac0f81a59ab97d8cfeb276e7cce723036c73ad6cd616b7a8b163c07f5205ed5e72524f16ae0e1fcf525318718dc61e9862d8195e4d8227a7ff0667`,
+            Authorization: `aa5c8d75c4afd9b8ccfbb1b2c47fe50434a7b59687e9c245ed5f598daecb2abb5ff05c508b874feb53eab062377cfb87baac8ff482975b50e117e77293674dacb8c5c141c48c6693bbe367337cefc79c6d4ca64d37022566cbf226005d1ab6e325af738e78ac3ec71c08ccbb14b4546fd6dc5d9af2866ff794cdf07575ffb0d1`,
           },
         });
 
