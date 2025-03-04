@@ -12,7 +12,7 @@ const NoticesPage = () => {
       keywords="Notices, Placement Notices, General Notices, Announcements"
     >
       {/* Hero Section */}
-      <div className="relative w-full h-[350px] flex items-center justify-center bg-gray-900 text-white text-center px-6">
+      <div className="relative w-full h-[350px] flex items-center justify-center bg-indigo-900 text-white text-center px-6">
         <div className="relative z-10">
           <h1 className="text-xl sm:text-3xl md:text-4xl font-bold">Notices & Announcements</h1>
           <p className="mt-3 text-base sm:text-lg text-gray-200 px-2 max-w-2xl mx-auto">
