@@ -135,19 +135,22 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col sm:flex-row justify-center items-center mt-8 space-y-4 sm:space-y-0 sm:space-x-4">
           {[
-            "Jobs",
-            "Feedback",
-            "Press and Media",
-            "Accessibility",
-            "Privacy Policy",
-            "Legal Notice",
-            "Emergency",
+            { name: "Brochure", link: "/brochure" }, // Update with the actual brochure link if needed
+            { name: "Privacy Policy | Terms & Conditions", link: "/privacy-policy" }, // Update as per the actual privacy policy page
+            { name: "Emergency", link: "/emergency" }, // Update with the correct emergency page URL
           ].map((item) => (
-            <a key={item} href="/" className="hover:text-gray-300 transition-all underline">
-              {item}
+            <a
+              key={item.name}
+              href={item.link}
+              className="hover:text-gray-300 transition-all underline"
+              target="_blank" // Opens in a new tab
+              rel="noopener noreferrer" // Security best practice for external links
+            >
+              {item.name}
             </a>
           ))}
         </div>
+
 
         {/* Social Media */}
         <div className="flex justify-center w-full mt-4 space-x-4 text-2xl">
