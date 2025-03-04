@@ -130,48 +130,52 @@ export default function Navbar() {
         </div>
 
         <div className="bg-[#002147] text-white flex-1">
-          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-9">
+          <div className="flex items-center justify-between max-w-screen-xl mx-auto px-5 relative mt-7">
+            {/* Mobile Menu Button */}
             <button
-              className="text-white text-3xl md:hidden px-2 ml-auto mb-4" // Added ml-auto to push it to the right
+              className="text-white text-3xl md:hidden px-2 ml-auto mb-4"
               onClick={toggleMenu}
             >
               <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />
             </button>
-            <ul className="hidden md:flex space-x-6 uppercase text-base font-semibold ml-auto">
+
+            {/* Desktop Menu with Less Gap */}
+            <ul className="hidden md:flex space-x-2 uppercase text-sm md:text-base font-semibold ml-auto">
               {menuItems.map((item) => (
-                <li
-                  key={item.name}
-                  className="hover:text-gray-300 cursor-pointer"
-                >
+                <li key={item.name} className="hover:text-gray-300 cursor-pointer">
                   <Link href={item.href}>
-                    <span>{item.name}</span>
+                    <button className="bg-transparent text-white hover:text-gray-300 px-2 py-1 md:px-2.5 md:py-1.5 font-semibold uppercase transition-all duration-200">
+                      {item.name}
+                    </button>
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
+
+          {/* Mobile Menu with Less Gap */}
+          {isMenuOpen && (
+            <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
+              <ul className="flex flex-col space-y-1 p-3">
+                {menuItems.map((item) => (
+                  <li key={item.name} className="w-full">
+                    <Link href={item.href}>
+                      <button
+                        className="block w-full bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out"
+                        onClick={handleMenuItemClick}
+                      >
+                        {item.name}
+                      </button>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
-        {/* Mobile Navbar Menu */}
-        {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
-            <ul className="flex flex-col space-y-2 p-3">
-              {menuItems.map((item) => (
-                <li key={item.name} className="w-full">
-                  <Link href={item.href}>
-                    <span
-                      className="block bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-4 px-6 rounded-lg shadow-lg transition-all duration-300 ease-in-out"
-                      onClick={handleMenuItemClick}
-                    >
-                      {item.name}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+
       </nav>
     </div>
-        );
+  );
 }
