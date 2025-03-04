@@ -1,11 +1,10 @@
-// components/Layout.js
-import Head from 'next/head';
-import Navbar from './Navbar';
-
+import Head from "next/head";
+import Navbar from "./Navbar";
 
 const Layout = ({ children, title, description, keywords }) => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
+      {/* Head Section for SEO */}
       <Head>
         <title>{title}</title>
         <meta name="description" content={description || "Default description"} />
@@ -14,12 +13,15 @@ const Layout = ({ children, title, description, keywords }) => {
         <meta charSet="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* Navbar Component */}
       <Navbar />
-      <main className="flex-grow pt-32">
-        {children}
-     
-      </main>
-    
+
+      {/* Main Content */}
+      <main className="flex-grow">{children}</main>
+
+
+   
     </div>
   );
 };
