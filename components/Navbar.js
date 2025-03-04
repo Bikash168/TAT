@@ -50,40 +50,41 @@ export default function Navbar() {
     <div className="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
       {/* Top Bar */}
       <div className="bg-gray-100 py-2 px-4">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
+        <div className="container mx-auto flex flex-wrap justify-between items-center gap-x-3 text-sm">
+
           {/* Left: Social Media Icons */}
-          <div className="flex space-x-4 text-gray-600">
-            <a href="https://www.facebook.com/tridentcollege/" className="text-gray-600 hover:text-blue-500" target="_blank" rel="noopener noreferrer">
+          <div className="flex space-x-3 text-gray-600">
+            <a href="https://www.facebook.com/tridentcollege/" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://www.instagram.com/trident_tat/" className="text-gray-600 hover:text-pink-500" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/trident_tat/" className="hover:text-pink-500" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" className="text-gray-600 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" className="hover:text-blue-700" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
-            <a href="https://www.youtube.com/@trident_tat" className="text-gray-600 hover:text-red-500" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@trident_tat" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faYoutube} />
             </a>
-            <a href="https://x.com/Trident_tat" className="text-gray-600 hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Trident_tat" className="hover:text-blue-400" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faXTwitter} />
             </a>
           </div>
 
           {/* Search Bar */}
-          <div className="relative block w-full sm:w-auto px-4 py-2">
+          <div className="relative w-full sm:w-auto">
             <input
               type="text"
               placeholder="Search..."
-              className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300 w-full"
+              className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300 w-full sm:w-auto"
             />
-            <button className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
+            <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
               <FontAwesomeIcon icon={faSearch} />
             </button>
           </div>
 
           {/* Right: Contact Information */}
-          <div className="flex flex-wrap justify-center sm:justify-end space-y-2 sm:space-y-0 space-x-4 sm:space-x-6 text-sm text-gray-600">
+          <div className="flex items-center flex-wrap gap-x-3 gap-y-2 text-gray-600">
             <div className="flex items-center space-x-2">
               <FaPhoneAlt />
               <span className="font-medium">0674-3530517, 9861191195</span>
@@ -99,18 +100,22 @@ export default function Navbar() {
           </div>
 
           {/* Top Bar Menu */}
-          <div className="flex flex-wrap justify-center md:justify-end space-x-4 sm:space-x-6 text-sm font-semibold">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-x-3 gap-y-2 font-semibold">
             {topBarMenu.map((item, index) => (
-              <div key={item.name} className="flex items-center space-x-2">
+              <div key={item.name} className="flex items-center">
                 <Link href={item.href}>
-                  <span className="hover:text-blue-500">{item.name}</span>
+                  <button className="px-2 py-1 bg-transparent text-black border border-transparent hover:border-blue-500 hover:text-blue-500 rounded-md transition-all duration-200">
+                    {item.name}
+                  </button>
                 </Link>
-                {index !== topBarMenu.length - 1 && <span className="text-gray-400">|</span>}
+                {index !== topBarMenu.length - 1 && <span className="text-gray-400 px-1">|</span>}
               </div>
             ))}
           </div>
+
         </div>
       </div>
+
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
         <div className="bg-white text-[#002147] flex items-center py-2 px-4 md:px-10">
