@@ -16,7 +16,8 @@ const NirfPage = () => {
       description="Download the latest NIRF documents for Trident Academy of Technology."
       keywords="NIRF, Trident Academy of Technology, NIRF Rankings, Accreditation"
     >
-      <main className="pt-[90px] sm:pt-[80px] md:pt-[70px] lg:pt-[60px] xl:pt-[50px]">
+      <main className="pt-[110px] sm:pt-[100px] md:pt-[80px] lg:pt-[70px] xl:pt-[60px]">
+
 
       {/* Hero Section */}
       <div className="relative bg-blue-900 text-white py-16 pt-[90px] sm:pt-[80px] md:pt-[70px] lg:pt-[60px] xl:pt-[50px] text-center">
