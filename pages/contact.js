@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <Layout title="Contact Us | Trident Academy of Technology">
-      <main className="container mx-auto mt-1 px-4 lg:px-16"> {/* Reduced top margin to mt-1 */}
+      <main className="mt-20 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2">{/* Reduced top margin to mt-1 */}
         {/* Contact Info Section */}
         <section className="text-center mb-8"> {/* Reduced bottom margin */}
           <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
