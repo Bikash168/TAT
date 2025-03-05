@@ -158,25 +158,24 @@ export default function Navbar() {
             </ul>
           </div>
 
-          {/* Mobile Menu with Less Gap */}
           {isMenuOpen && (
-            <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
-              <ul className="flex flex-col space-y-1 p-3">
-                {menuItems.map((item) => (
-                  <li key={item.name} className="w-full">
-                    <Link href={item.href}>
-                      <button
-                        className="block w-full bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out"
-                        onClick={handleMenuItemClick}
-                      >
-                        {item.name}
-                      </button>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+        <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
+          <ul className="flex flex-col space-y-1 p-3">
+            {menuItems.map((item) => (
+              <li key={item.name} className="w-full">
+                <Link href={item.href}>
+                  <button
+                    className="block w-full bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out"
+                    onClick={handleMenuItemClick}
+                  >
+                    {item.name}
+                  </button>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
         </div>
 
 

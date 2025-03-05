@@ -5,8 +5,7 @@ const FloatingButtons = () => {
   const router = useRouter(); // Initialize Next.js Router
 
   return (
-    <div className="fixed bottom-20 right-5 z-50 flex flex-col gap-3">
-
+    <div className="fixed bottom-11 right-5 z-40 flex flex-col gap-3">
       {/* NIRF Button (Orange) */}
       <button
         onClick={() => router.push("/nirf")}
