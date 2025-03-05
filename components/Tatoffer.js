@@ -48,7 +48,7 @@ const NewsEvents = () => {
       title: "Comfortable Hostels",
       description:
         "Secure and well-equipped hostels providing a home away from home for students.",
-      img: "/images/hostel.jpg",
+      img: "/images/hostel-2.jpg",
       bgColor: "bg-blue-700",
       borderColor: "border-blue-700",
     },
