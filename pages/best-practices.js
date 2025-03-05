@@ -74,9 +74,9 @@ const BestPractices = () => {
           <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
             <ul className="space-y-3">
               {[
-                { name: 'Quality/Accreditation', link: '/Quality' },
-                { name: 'Implementation of SDGs', link: '/Implementation-of-SDGs' },
-                { name: 'Policies', link: '/Policies' },
+                { name: 'Quality/Accreditation', link: '/quality-accreditation' },
+                { name: 'Implementation of SDGs', link: '/implementation-of-sdgs' },
+                { name: 'Policies', link: '/policies' },
                 { name: 'Peer Audits', link: '/Peer-Audits' },
                 { name: 'E-Governance', link: '/E-Governance' },
                 { name: 'College Committees', link: '/College-Committees' },
