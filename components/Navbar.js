@@ -41,7 +41,7 @@ export default function Navbar() {
     { name: "Contact", href: "/contact" },
     { name: "Alumni", href: "/alumni" },
     { name: "Grievance", href: "/grievance" },
-    { name: "E-Governance", href: "/E-GOVERNANCE" },
+    { name: "E-Governance", href: "https://ais.tat.ac.in/ais/" },
     { name: "Careers", href: "/career" },
   ];
 
