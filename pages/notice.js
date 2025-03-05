@@ -11,6 +11,7 @@ const NoticesPage = () => {
       description="Stay updated with Placement and General Notices from Trident Academy of Technology."
       keywords="Notices, Placement Notices, General Notices, Announcements"
     >
+      <main className="pt-[120px] sm:pt-[110px] md:pt-[90px] lg:pt-[80px] xl:pt-[70px]">
       {/* Hero Section */}
       <div className="relative w-full h-[350px] flex items-center justify-center bg-indigo-900 text-white text-center px-6">
         <div className="relative z-10">
@@ -59,7 +60,7 @@ const NoticesPage = () => {
 
         </div>
       </div>
-
+      </main>
       <Footer />
     </Layout>
   );
