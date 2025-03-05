@@ -88,7 +88,7 @@ const NewsEvents = () => {
       title: "Innovative Research",
       description:
         "A hub for pioneering research with state-of-the-art equipment and expert guidance.",
-      img: "/images/research14.jpg",
+      img: "/images/research14.png",
       bgColor: "bg-pink-600",
       borderColor: "border-pink-600",
     },
