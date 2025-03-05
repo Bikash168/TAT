@@ -46,8 +46,8 @@ const HeroSection = () => {
           poster="/images/placeholder.jpg"
           onLoadedData={() => setVideoLoaded(true)} // Ensure video is displayed after loading
         >
-          <source src="/your-video-file.webm" type="video/webm" />
-          <source src="/your-video-file.webm" type="video/webm" media="(min-width: 1024px)" />
+          <source src="/your-video-file (2).mp4" type="video/mp4" />
+          <source src="/your-video-file (2).mp4" type="video/mp4" media="(min-width: 1024px)" />
           Your browser does not support the video tag.
         </video>
       </div>
