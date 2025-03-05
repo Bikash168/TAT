@@ -6,7 +6,7 @@ import Link from "next/link";
 const AdmissionPage = () => {
     return (
         <Layout title="Admission | Trident Academy of Technology">
-            <div className="bg-gray-100 mt-10">
+            <div className="bg-gray-100 mt-20 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2">
                 {/* Hero Section */}
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
                     <Image src="/images/admission-banner.jpg" alt="Admission Banner" layout="fill" objectFit="cover" className="brightness-75" />
