@@ -74,7 +74,7 @@ export default function HighlightSection() {
             </div>
             <div className="text-center mt-8">
               <a
-                href="#"
+                href="/alumni"
                 className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-red-700 transition transform hover:scale-105"
               >
                 Discover Their Stories <span aria-hidden="true">↗</span>
