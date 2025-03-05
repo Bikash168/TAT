@@ -32,7 +32,7 @@ const NewsEvents = () => {
       title: "Central Library",
       description:
         "A vast collection of books, journals, and digital resources to support your academic journey.",
-      img: "/images/library.jpg",
+      img: "/images/library.png",
       bgColor: "bg-red-500",
       borderColor: "border-red-500",
     },
