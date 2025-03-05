@@ -5,8 +5,8 @@ import Link from 'next/link';
 export default function About() {
   return (
     <Layout title="About Us | Trident Academy of Technology">
-      <main className="container mx-auto px-4 sm:px-8 lg:px-16 py-2 pt-20">
-        
+      <main className="mt-20 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2">
+
         {/* About Section */}
         <section className="bg-[#002147] text-white py-16 text-center px-4 sm:px-8">
           <h1 className="text-4xl font-bold mb-4">About Us</h1>
