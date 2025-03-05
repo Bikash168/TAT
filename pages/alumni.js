@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function Alumni() {
   return (
     <Layout title="Alumni | Trident Academy of Technology">
-      <main className="container mx-auto px-4 lg:px-16 py-2">
+      <main className="mt-20 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2">
         {/* Alumni Section */}
         <section className="bg-[#002147] text-white py-16">
           <div className="container mx-auto px-4 text-center">
