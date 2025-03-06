@@ -101,18 +101,21 @@ export default function Navbar() {
         </div>
 
         {/* Top Bar Menu - Centered in Mobile, Right-Aligned in Desktop */}
-        <div className="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-2 font-semibold">
-          {topBarMenu.map((item, index) => (
-            <div key={item.name} className="flex items-center">
-              <Link href={item.href}>
-                <button className="px-2 py-1 bg-transparent text-black border border-transparent hover:border-blue-500 hover:text-blue-500 rounded-md transition-all duration-200">
-                  {item.name}
-                </button>
-              </Link>
-              {index !== topBarMenu.length - 1 && <span className="text-gray-400 px-1">|</span>}
-            </div>
-          ))}
-        </div>
+        <div className="flex flex-nowrap overflow-x-auto items-center justify-center md:justify-end space-x-2 font-semibold">
+  {topBarMenu.map((item, index) => (
+    <div key={item.name} className="flex items-center">
+      <Link href={item.href}>
+      <button className="px-2 py-1 text-sm md:text-base bg-transparent text-black border border-transparent hover:border-blue-500 hover:text-blue-500 rounded-md transition-all duration-200 whitespace-nowrap">
+
+          {item.name}
+        </button>
+      </Link>
+      {index !== topBarMenu.length - 1 && <span className="text-gray-400 px-1">|</span>}
+    </div>
+  ))}
+</div>
+
+
 
       </div>
     </div>
