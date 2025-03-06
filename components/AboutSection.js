@@ -17,17 +17,17 @@ export default function AboutSection() {
     <section className="bg-white text-[#002147] py-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">
+          
           {/* Left Box - Content Section with Animation */}
           <motion.div
-            className="bg-white p-4 rounded-md shadow-md space-y-4 text-justify"
+            className="bg-white p-4 rounded-md shadow-md space-y-4 text-justify h-full flex flex-col"
             initial="hidden"
             animate="visible"
             variants={slideLeft}
           >
             {/* Institution Description */}
-            <p className="text-md leading-relaxed">
+            <p className="text-md leading-relaxed flex-grow">
               Trident Academy of Technology is a leading institution focused on developing talent and excellence across a wide range of disciplines. Our approach emphasizes combining practical experience, analytical skills, and creative thinking, ensuring students gain a strong understanding of their chosen fields. We offer thoughtfully organized programs, practical learning experiences, and a curriculum aligned with industry trends, ensuring our students are well-equipped for success in their careers. With modern infrastructure, a dedicated faculty, and a focus on overall development, we ensure our students are prepared to excel in their fields and adapt to the evolving demands of the global landscape.
             </p>
 
@@ -50,7 +50,7 @@ export default function AboutSection() {
 
           {/* Right Box - Image Section with Animation */}
           <motion.div
-            className="bg-white p-4 sm:p-5 rounded-md shadow-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-3"
+            className="bg-white p-4 sm:p-5 rounded-md shadow-md grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 gap-3 h-full flex flex-col"
             initial="hidden"
             animate="visible"
             variants={slideRight}
@@ -61,25 +61,25 @@ export default function AboutSection() {
               <h4 className="text-xs font-semibold text-black">APPROVED BY</h4>
               <p className="text-[10px] text-black">AICTE</p>
             </div>
+
             {/* National Board of Accreditation */}
             <div className="text-center border border-red-600 rounded-md p-2">
               <img src="/images/National_Board_of_Accreditation.svg.png" alt="National Board of Accreditation" className="mx-auto mb-1 w-32 h-auto" />
               <h4 className="text-xs font-semibold text-black">National Board of Accreditation</h4>
             </div>
+
             {/* NAAC Accreditation */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img
-                src="/images/NAAC.png"
-                alt="NAAC Accreditation"
-                className="mx-auto mb-1 w-44 h-36 object-contain"
-              />
+              <img src="/images/NAAC.png" alt="NAAC Accreditation" className="mx-auto mb-1 w-44 h-36 object-contain" />
               <h4 className="text-xs font-semibold text-black">NAAC (National Assessment & Accreditation Council)</h4>
             </div>
+
             {/* DSIR SIRO Center */}
             <div className="text-center border border-red-600 rounded-md p-2">
               <img src="/images/dsir-siro.png" alt="DSIR SIRO Center" className="mx-auto mb-1 w-28 h-auto" />
               <h4 className="text-xs font-semibold text-black">DSIR SIRO CENTER</h4>
             </div>
+
             {/* ISO Certified Institution */}
             <div className="text-center border border-red-600 rounded-md p-2">
               <img src="/images/ISO-Logo.png" alt="ISO Certified Institution" className="mx-auto mb-1 w-40 h-auto" />
@@ -88,19 +88,12 @@ export default function AboutSection() {
 
             {/* HESI Member */}
             <div className="text-center border border-red-600 rounded-md p-2">
-              <img
-                src="/images/HESI-logo-horizontal.png"
-                alt="HESI Member"
-                className="mx-auto mb-1 w-30 h-36 object-contain"
-              />
+              <img src="/images/HESI-logo-horizontal.png" alt="HESI Member" className="mx-auto mb-1 w-30 h-36 object-contain" />
               <h4 className="text-xs font-semibold text-black">MEMBER OF</h4>
               <p className="text-[10px] text-black">Higher Education Sustainability Initiative</p>
             </div>
-
-
-
-
           </motion.div>
+
         </div>
       </div>
     </section>
