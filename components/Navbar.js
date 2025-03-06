@@ -51,74 +51,71 @@ export default function Navbar() {
     <div className="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
       {/* Top Bar */}
       <div className="bg-gray-100 py-2 px-4">
-      <div className="container mx-auto flex flex-wrap justify-center md:justify-between items-center gap-3 text-sm text-center md:text-left">
+        <div className="container mx-auto flex flex-wrap justify-center md:justify-between items-center gap-3 text-sm text-center md:text-left">
 
-        {/* Social Media Icons */}
-        <div className="flex space-x-3 text-gray-600">
-          <a href="https://www.facebook.com/tridentcollege/" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-          <a href="https://www.instagram.com/trident_tat/" className="hover:text-pink-500" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a href="https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" className="hover:text-blue-700" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="https://www.youtube.com/@trident_tat" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faYoutube} />
-          </a>
-          <a href="https://x.com/Trident_tat" className="hover:text-blue-400" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faXTwitter} />
-          </a>
-        </div>
-
-        {/* Search Bar - Stays Centered */}
-        <div className="relative w-full sm:w-auto">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300 w-full sm:w-auto"
-          />
-          <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
-        </div>
-
-        {/* Contact Information - Stays Centered */}
-        <div className="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-2 text-gray-600">
-          <div className="flex items-center space-x-2">
-            <FaPhoneAlt />
-            <span className="font-medium">0674-3530517, 9861191195</span>
+          {/* Social Media Icons */}
+          <div className="flex space-x-3 text-gray-600">
+            <a href="https://www.facebook.com/tridentcollege/" className="hover:text-blue-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
+            <a href="https://www.instagram.com/trident_tat/" className="hover:text-pink-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a href="https://www.linkedin.com/school/trident-academy-of-technology-tat-bhubaneswar/posts/" className="hover:text-blue-700" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://www.youtube.com/@trident_tat" className="hover:text-red-500" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faYoutube} />
+            </a>
+            <a href="https://x.com/Trident_tat" className="hover:text-blue-400" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faXTwitter} />
+            </a>
           </div>
-          <div className="flex items-center space-x-2">
-            <FaEnvelope />
-            <span className="font-medium">info@trident.ac.in</span>
+
+          {/* Search Bar - Stays Centered */}
+          <div className="relative w-full sm:w-auto">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="bg-white border border-gray-300 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-blue-300 w-full sm:w-auto"
+            />
+            <button className="absolute right-4 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-blue-500">
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
           </div>
-          <div className="flex items-center space-x-2">
-            <FaMapMarkerAlt />
-            <span className="font-medium">Bhubaneswar, India</span>
+
+          {/* Contact Information - Stays Centered */}
+          <div className="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-2 text-gray-600">
+            <div className="flex items-center space-x-2">
+              <FaPhoneAlt />
+              <span className="font-medium">0674-3530517, 9861191195</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FaEnvelope />
+              <span className="font-medium">info@trident.ac.in</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FaMapMarkerAlt />
+              <span className="font-medium">Bhubaneswar, India</span>
+            </div>
           </div>
+
+          {/* Top Bar Menu - Centered in Mobile, Right-Aligned in Desktop */}
+          <div className="flex items-center justify-center md:justify-end space-x-0.5 sm:space-x-1 font-semibold">
+            {topBarMenu.map((item, index) => (
+              <div key={item.name} className="flex items-center">
+                <Link href={item.href}>
+                  <button className="px-0.5 sm:px-1 py-0.5 text-[10px] sm:text-xs md:text-sm bg-transparent text-black border border-transparent hover:border-blue-500 hover:text-blue-500 rounded-md transition-all duration-200">
+                    {item.name}
+                  </button>
+                </Link>
+                {index !== topBarMenu.length - 1 && <span className="text-gray-400 px-0.5 sm:px-1">|</span>}
+              </div>
+            ))}
+          </div>
+
         </div>
-
-        {/* Top Bar Menu - Centered in Mobile, Right-Aligned in Desktop */}
-        <div className="flex flex-nowrap overflow-x-auto items-center justify-center md:justify-end space-x-2 font-semibold">
-  {topBarMenu.map((item, index) => (
-    <div key={item.name} className="flex items-center">
-      <Link href={item.href}>
-      <button className="px-2 py-1 text-sm md:text-base bg-transparent text-black border border-transparent hover:border-blue-500 hover:text-blue-500 rounded-md transition-all duration-200 whitespace-nowrap">
-
-          {item.name}
-        </button>
-      </Link>
-      {index !== topBarMenu.length - 1 && <span className="text-gray-400 px-1">|</span>}
-    </div>
-  ))}
-</div>
-
-
-
       </div>
-    </div>
       {/* Main Navbar */}
       <nav className="flex bg-white border-b border-gray-300">
         <div className="bg-white text-[#002147] flex items-center py-2 px-4 md:px-10">
@@ -162,23 +159,23 @@ export default function Navbar() {
           </div>
 
           {isMenuOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
-          <ul className="flex flex-col space-y-1 p-3">
-            {menuItems.map((item) => (
-              <li key={item.name} className="w-full">
-                <Link href={item.href}>
-                  <button
-                    className="block w-full bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out"
-                    onClick={handleMenuItemClick}
-                  >
-                    {item.name}
-                  </button>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+            <div className="absolute top-full left-0 w-full bg-[#002147] text-white shadow-lg transition-all duration-300 ease-in-out z-50">
+              <ul className="flex flex-col space-y-1 p-3">
+                {menuItems.map((item) => (
+                  <li key={item.name} className="w-full">
+                    <Link href={item.href}>
+                      <button
+                        className="block w-full bg-white text-[#002147] hover:bg-gray-100 font-bold text-md py-2 px-4 rounded-lg shadow-md transition-all duration-300 ease-in-out"
+                        onClick={handleMenuItemClick}
+                      >
+                        {item.name}
+                      </button>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
 
