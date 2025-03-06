@@ -75,7 +75,7 @@ const DegreePrograms = () => {
               <div
                 key={program.link}
                 className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl transition-transform transform hover:scale-105"
-                onClick={() => router.push(`/programs/${program.link}`)}
+                onClick={() => router.push(`/${program.link}`)}
               >
                 <div className="relative w-full h-48 md:h-56">
                   <Image
