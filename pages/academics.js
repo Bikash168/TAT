@@ -69,7 +69,7 @@ const Academics = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            <span className="ml-2 text-lg font-medium">Academics Menu</span>
+            
           </button>
 
           <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
