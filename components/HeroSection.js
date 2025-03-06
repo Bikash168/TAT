@@ -60,21 +60,24 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center px-4 md:px-8 lg:px-16 text-center z-20">
-        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-          Welcome to Trident Academy Of Technology
-        </h1>
-        <p className="text-sm sm:text-lg md:text-xl lg:text-2xl mt-3">
-          Leading with Innovation, Growing with Sustainability.
-        </p>
-        <div className="mt-5">
-          <Link href="/about">
-            <button className="px-5 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm md:text-lg lg:text-xl transition duration-300">
-              Learn More
-            </button>
-          </Link>
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-6 mt-24 sm:mt-16 lg:mt-32 z-20">
+        <div className="text-center space-y-4">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight my-6">
+            Welcome to Trident Academy Of Technology
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mt-2 sm:mt-4">
+            Leading with Innovation, Growing with Sustainability.
+          </p>
+          <div className="mt-6">
+            <Link href="/about">
+              <button className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl transition duration-300">
+                Learn More
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
+
     </div>
   );
 };
