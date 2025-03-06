@@ -27,6 +27,7 @@ const NewsEvents = () => {
       img: "/images/student-life.jpg",
       bgColor: "bg-yellow-500",
       borderColor: "border-yellow-500",
+      link: "/facilities",
     },
     "Central Library": {
       title: "Central Library",
@@ -35,6 +36,7 @@ const NewsEvents = () => {
       img: "/images/library.png",
       bgColor: "bg-red-500",
       borderColor: "border-red-500",
+      link: "/learning-resources",
     },
     "Transportation Services": {
       title: "Efficient Transportation",
@@ -43,6 +45,7 @@ const NewsEvents = () => {
       img: "/images/transportation.png",
       bgColor: "bg-green-600",
       borderColor: "border-green-600",
+      link: "/transport",
     },
     "Hostel Facilities": {
       title: "Comfortable Hostels",
@@ -51,6 +54,7 @@ const NewsEvents = () => {
       img: "/images/hostel-2.jpg",
       bgColor: "bg-blue-700",
       borderColor: "border-blue-700",
+      link: "/hostels",
     },
     "Sports & Recreation": {
       title: "Sports & Fitness",
@@ -59,6 +63,7 @@ const NewsEvents = () => {
       img: "/images/sports.jpg",
       bgColor: "bg-gray-600",
       borderColor: "border-gray-600",
+      link: "/sports-games",
     },
     "Cafeteria & Canteen": {
       title: "Dining Services",
@@ -67,6 +72,7 @@ const NewsEvents = () => {
       img: "/images/cafeteria.jpg",
       bgColor: "bg-orange-600",
       borderColor: "border-orange-600",
+      link: "/food-centers",
     },
     "Medical Facilities": {
       title: "Healthcare & Wellness",
@@ -75,6 +81,7 @@ const NewsEvents = () => {
       img: "/images/medical.jpg",
       bgColor: "bg-purple-700",
       borderColor: "border-purple-700",
+      link: "/healthcare",
     },
     "State of the Art Labs": {
       title: "Advanced Laboratories",
@@ -83,6 +90,7 @@ const NewsEvents = () => {
       img: "/images/labs.jpg",
       bgColor: "bg-teal-700",
       borderColor: "border-teal-700",
+      link: "/departments",
     },
     "Research Facilities": {
       title: "Innovative Research",
@@ -91,6 +99,7 @@ const NewsEvents = () => {
       img: "/images/research14.png",
       bgColor: "bg-pink-600",
       borderColor: "border-pink-600",
+      link: "/research",
     },
     "Internet & Wi-Fi": {
       title: "Seamless Connectivity",
@@ -99,6 +108,7 @@ const NewsEvents = () => {
       img: "/images/wifi.jpg",
       bgColor: "bg-indigo-600",
       borderColor: "border-indigo-600",
+      link: "/internet-wifi",
     },
   };
 
@@ -153,7 +163,7 @@ const NewsEvents = () => {
             </h2>
             <p className="mt-4">{newsContent[activeTab].description}</p>
             <a
-              href="#"
+              href={newsContent[activeTab].link}
               className="mt-6 inline-block text-white font-medium border border-white px-6 py-2 rounded hover:bg-white hover:text-blue-600 transition"
             >
               Learn More
