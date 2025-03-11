@@ -96,60 +96,60 @@ const Facilities = () => {
           </div>
 
         </aside>
-       
-    <div className="w-full lg:w-3/4 mx-auto space-y-6">
-      {/* Infrastructure */}
-      <motion.div
-        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-      >
-        <p className="text-lg text-gray-700">
-          Trident Academy of Technology provides a well-equipped campus to
-          support education, research, and professional development. Classrooms
-          are designed for interactive learning, and laboratories follow AICTE
-          standards, ensuring students gain practical knowledge through hands-on
-          experience. The library includes a vast collection of books, journals,
-          and digital resources to aid research and self-learning.
-        </p>
-      </motion.div>
 
-      {/* Hostels */}
-      <motion.div
-        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-      >
-        <p className="text-lg text-gray-700">
-          Dedicated facilities for engineering and management programs provide
-          students with specialized learning environments. Computer labs with
-          high-speed internet offer access to software tools essential for
-          programming, data analysis, and project work. Workshop areas and
-          research centers encourage innovation, while regular assessments help
-          upgrade infrastructure to meet academic and industry demands.
-        </p>
-      </motion.div>
+        <div className="w-full lg:w-3/4 mx-auto space-y-6">
+          {/* Infrastructure */}
+          <motion.div
+            className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <p className="text-lg text-gray-700">
+              Trident Academy of Technology provides a well-equipped campus to
+              support education, research, and professional development. Classrooms
+              are designed for interactive learning, and laboratories follow AICTE
+              standards, ensuring students gain practical knowledge through hands-on
+              experience. The library includes a vast collection of books, journals,
+              and digital resources to aid research and self-learning.
+            </p>
+          </motion.div>
 
-      {/* Transport */}
-      <motion.div
-        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-      >
-        <p className="text-lg text-gray-700">
-          Seminar halls and conference rooms host lectures, technical sessions,
-          and industry interactions. On-campus hostel facilities ensure a
-          comfortable stay for students, with necessary amenities for study and
-          daily activities. Transportation services provide easy access to the
-          campus. Continuous improvements in infrastructure support the evolving
-          needs of students and faculty, ensuring a well-rounded educational
-          experience.
-        </p>
-      </motion.div>
-    </div>
+          {/* Hostels */}
+          <motion.div
+            className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          >
+            <p className="text-lg text-gray-700">
+              Dedicated facilities for engineering and management programs provide
+              students with specialized learning environments. Computer labs with
+              high-speed internet offer access to software tools essential for
+              programming, data analysis, and project work. Workshop areas and
+              research centers encourage innovation, while regular assessments help
+              upgrade infrastructure to meet academic and industry demands.
+            </p>
+          </motion.div>
+
+          {/* Transport */}
+          <motion.div
+            className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+          >
+            <p className="text-lg text-gray-700">
+              Seminar halls and conference rooms host lectures, technical sessions,
+              and industry interactions. On-campus hostel facilities ensure a
+              comfortable stay for students, with necessary amenities for study and
+              daily activities. Transportation services provide easy access to the
+              campus. Continuous improvements in infrastructure support the evolving
+              needs of students and faculty, ensuring a well-rounded educational
+              experience.
+            </p>
+          </motion.div>
+        </div>
       </main>
 
       <Footer />
