@@ -10,33 +10,6 @@ export default function Research() {
     setSidebarOpen(!isSidebarOpen);
   };
 
-  const researchAreas = [
-    {
-      title: 'AI and Machine Learning',
-      description: 'Innovative solutions in AI and ML with applications across healthcare, finance, and smart cities.',
-    },
-    {
-      title: 'Renewable Energy',
-      description: 'Cutting-edge research in solar, wind, and energy storage for a sustainable future.',
-    },
-    {
-      title: 'Biotechnology Research',
-      description: 'Groundbreaking research in genomics and environmental biotechnology for health and sustainability.',
-    },
-    {
-      title: 'Robotics and Automation',
-      description: 'Designing advanced robots and automated systems for industrial and social applications.',
-    },
-    {
-      title: 'Nanotechnology',
-      description: 'Exploring the potential of nanomaterials and their applications in medicine, energy, and environment.',
-    },
-    {
-      title: 'Cybersecurity and Data Privacy',
-      description: 'Enhancing data protection and security through innovative technologies in the digital age.',
-    },
-  ];
-
   return (
     <Layout title="Research | Trident Academy of Technology">
       {/* Hero Section */}
