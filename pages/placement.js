@@ -95,78 +95,29 @@ const Placement = () => {
         <div className="w-full lg:w-3/4 lg:pl-6">
           {/* Placement Overview Section */}
           <section id="placement-overview" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Placement Overview</h2>
+
             <p className="text-lg text-gray-700">
-              Trident Academy of Technology offers a well-established placement process that assists students in securing excellent job opportunities across industries. Our placement cell provides students with the right guidance and training for career advancement.
+              The placement cell at Trident guides students in securing job opportunities through campus recruitment drives and internships. It provides complete details about job openings, selection procedures, and skill requirements. Regular sessions are conducted to help students understand industry expectations and prepare for different stages of the hiring process.
             </p>
           </section>
 
           {/* Placement Infrastructure Section */}
           <section id="placement-infrastructure" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Placement Infrastructure</h2>
+
             <p className="text-lg text-gray-700">
-              Our placement cell is equipped with state-of-the-art infrastructure including interview rooms, presentation facilities, and communication tools to provide a professional recruitment environment.
+              Students undergo structured training in problem-solving, technical skills, and interview techniques. Mock interviews, group discussions, and resume-building workshops help them develop confidence and perform well in recruitment tests. Pre-placement talks and industry interactions allow students to gain insights into workplace requirements and career growth.
             </p>
           </section>
 
           {/* Alumni Mentoring Section */}
           <section id="alumni-mentoring" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Alumni Mentoring</h2>
+
             <p className="text-lg text-gray-700">
-              Our alumni network plays a key role in mentoring current students. Alumni offer valuable insights into industry trends and help students prepare for interviews.
+              The placement process is well-organized, with timely updates on job opportunities and company expectations. Students receive continuous guidance to explore career options, understand industry trends, and secure job roles that match their skills and goals. The placement cell ensures that every student is well-prepared to enter the professional world.
             </p>
           </section>
 
-          {/* Placement Statistics Section */}
-          <section id="placement-statistics" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Placement Statistics</h2>
-            <p className="text-lg text-gray-700">
-              Over the years, our placement records have been excellent. A significant percentage of our students are placed annually with top-tier organizations.
-            </p>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
-              <div className="bg-white p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold text-[#002147]">2023 Placements</h3>
-                <ul className="list-disc list-inside mt-4 text-lg text-gray-700">
-                  <li>95% of eligible students placed</li>
-                  <li>Average salary package: ₹6.5 LPA</li>
-                  <li>Top recruiters: Infosys, TCS, Wipro, Cognizant, etc.</li>
-                </ul>
-              </div>
-              <div className="bg-[#f8fafc] p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-semibold text-[#002147]">Placement Trends</h3>
-                <p className="text-lg text-gray-700 mt-4">
-                  The placement trends have been consistently improving with greater participation from national and international companies.
-                </p>
-              </div>
-            </div>
-          </section>
 
-          {/* Recruiters Speak Section */}
-          <section id="recruiters-speak" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Recruiters Speak</h2>
-            <p className="text-lg text-gray-700">
-              Our recruiters consistently express satisfaction with the quality of Trident graduates. Many companies return year after year to recruit from our campus.
-            </p>
-            <div className="bg-white p-8 rounded-lg shadow-lg mt-8">
-              <h3 className="text-2xl font-semibold text-[#002147]">Testimonial from a Recruiter</h3>
-              <blockquote className="text-lg text-gray-700 mt-4 italic">
-                "We have been recruiting from Trident Academy for several years now, and the quality of students has been consistently exceptional. Their technical and soft skills make them valuable assets in any organization." – XYZ Corporation
-              </blockquote>
-            </div>
-          </section>
-
-          {/* Placement Notices Section */}
-          <section id="placement-notices" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Placement Notices</h2>
-            <p className="text-lg text-gray-700">
-              The Placement Cell regularly publishes notices related to placement drives, job openings, and other events. Check the latest notices for updates.
-            </p>
-            <ul className="list-disc list-inside text-lg text-gray-700 mt-4">
-              <li>Notice 1: Upcoming Campus Drive for Infosys – 5th January 2024</li>
-              <li>Notice 2: Training on Soft Skills – 12th January 2024</li>
-              <li>Notice 3: Placement Registration for 2024 Batch – 15th January 2024</li>
-            </ul>
-          </section>
         </div>
       </main>
 
