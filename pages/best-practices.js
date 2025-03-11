@@ -111,17 +111,13 @@ const BestPractices = () => {
         {/* Main Content */}
         <section className="lg:w-3/4 w-full">
           <p className="text-lg mb-6">
-            Best practices are a set of guidelines, ethics, or ideas that represent the most efficient or prudent course of action. Trident Academy of Technology ensures that such practices are followed. Some key aspects include:
+            Trident Academy of Technology follows a structured system to support students in academics and career preparation. A clear academic schedule is shared before the semester, allowing students to plan their studies efficiently. Lecture materials are available online, and interactive teaching methods, including digital tools, make learning more engaging.
           </p>
+          <p className="text-lg mb-6">
+            Skill-based training programs help students build technical expertise, while career sessions provide guidance for interviews and job readiness. Faculty mentorship ensures students receive the necessary academic and professional support. Industry workshops and seminars keep students informed about current advancements.          </p>
+          <p className="text-lg mb-6">
+            Regular parent-teacher meetings provide updates on student progress. Assessments and hands-on sessions help students track their learning and improve in key areas. These structured practices create a productive learning environment, ensuring students are well-prepared for future opportunities.          </p>
 
-          <ul className="list-disc list-inside text-lg space-y-3 mb-6">
-            <li>Availability of lectures on intranet after classroom teaching</li>
-            <li>Use of multimedia for effective teaching-learning</li>
-            <li>Availability of time schedule to students before semester starts</li>
-            <li>Summer training to upgrade skills</li>
-            <li>Career guidance and regular mentoring</li>
-            <li>Parents-teachers meet</li>
-          </ul>
 
           <p className="text-lg">
             Trident Academy of Technology believes in progressive academic practices for the betterment of technical education and research.
