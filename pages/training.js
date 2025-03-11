@@ -82,7 +82,7 @@ export default function Training() {
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link}>
-                  <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
+                    <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
                       {item.name}
                     </button>
                   </Link>
@@ -94,110 +94,27 @@ export default function Training() {
         </aside>
 
         {/* Main Content Area */}
-        <div className="w-full lg:w-3/4 lg:pl-6">
+        <div className="w-full lg:w-3/4 lg:pl-6 space-y-12">
           {/* Hero Section */}
-          <section className="text-center mb-16">
+          <section className="text-center mb-16 animate-fade-in-up">
             <h1 className="text-3xl sm:text-4xl font-semibold text-[#002147]">
               Training Programs at Trident Academy of Technology
             </h1>
-            <p className="text-lg text-gray-700 mt-4">
-              Trident Academy offers world-class training programs that equip students and professionals with skills for future-ready careers. Our comprehensive training initiatives bridge the gap between theoretical learning and industry requirements.
+            <p className="text-lg text-gray-700 mt-4 leading-relaxed">
+              Trident follows a structured training approach to equip students with the skills required for professional success. The program covers aptitude, logical reasoning, technical proficiency, and effective communication. Dedicated sessions on resume building, interview techniques, and workplace ethics help students prepare for recruitment processes. Industry experts and professionals conduct workshops, ensuring students gain relevant insights and practical knowledge.
             </p>
           </section>
 
           {/* Training Programs Overview Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] mb-6">Training Programs Overview</h2>
-            <p className="text-lg text-gray-700">
-              Our training programs are designed to enhance professional skills, address real-world industry needs, and foster career growth. We offer a variety of courses in cutting-edge fields such as technology, management, and professional development. The programs are structured to offer flexible learning opportunities to both students and working professionals.
+          <section className="mb-16 animate-fade-in-up delay-100">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              To enhance learning, students engage in internships, live projects, and industry visits. Regular mock interviews and group discussions are conducted to refine problem-solving abilities, analytical thinking, and decision-making skills. Special focus is given to improving soft skills, enabling students to adapt to corporate environments with confidence.
             </p>
           </section>
 
-          {/* Training Categories Section */}
-          <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
-            {[
-              { title: 'Technology Training', description: 'Learn industry-standard technologies and develop the technical skills needed for tomorrow.', link: '#technology' },
-              { title: 'Management Training', description: 'Sharpen your leadership and management skills with real-time scenarios and business case studies.', link: '#management' },
-              { title: 'Soft Skills Development', description: 'Enhance your communication, teamwork, and interpersonal skills for personal and professional growth.', link: '#softskills' }
-            ].map((item) => (
-              <div key={item.title} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <h3 className="text-2xl font-semibold text-[#002147]">{item.title}</h3>
-                <p className="text-lg text-gray-700 mt-4">{item.description}</p>
-                <Link href={item.link} className="text-blue-600 hover:text-blue-800 mt-6 inline-block">
-                  Learn More &rarr;
-                </Link>
-              </div>
-            ))}
-          </section>
-
-          {/* Featured Training Programs Section */}
-          <section className="bg-[#f8fafc] py-12 rounded-lg mb-16">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] text-center mb-6">Featured Training Programs</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-              {[
-                { title: 'Full Stack Web Development', description: 'A comprehensive program to learn full-stack development using JavaScript frameworks and technologies.', duration: '6 Months', link: '#full-stack' },
-                { title: 'Project Management Certification', description: 'An advanced certification course to enhance your skills in managing large-scale projects successfully.', duration: '3 Months', link: '#project-management' },
-                { title: 'Data Science and AI', description: 'Dive into data science and AI concepts with hands-on projects and practical tools.', duration: '4 Months', link: '#data-science' }
-              ].map((program) => (
-                <div key={program.title} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                  <h3 className="text-2xl font-semibold text-[#002147]">{program.title}</h3>
-                  <p className="text-lg text-gray-700 mt-4">{program.description}</p>
-                  <p className="text-lg text-gray-500 mt-2"><strong>Duration:</strong> {program.duration}</p>
-                  <Link href={program.link} className="text-blue-600 hover:text-blue-800 mt-6 inline-block">
-                    Enroll Now &rarr;
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Why Choose Us Section */}
-          <section className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] mb-6">Why Choose Trident Academy?</h2>
-            <p className="text-lg text-gray-700 mb-6">
-              Trident Academy of Technology is committed to providing high-quality training programs that meet the needs of students and professionals. Here’s why you should choose us:
-            </p>
-            <div className="flex flex-wrap justify-center gap-12">
-              {[
-                { title: 'Industry Expertise', description: 'Our trainers are experienced professionals with years of industry experience.' },
-                { title: 'Practical Learning', description: 'We offer hands-on training with real-world applications and projects.' },
-                { title: 'Flexible Schedules', description: 'We provide both full-time and part-time courses to accommodate your needs.' }
-              ].map((item) => (
-                <div key={item.title} className="max-w-xs">
-                  <h3 className="text-2xl font-semibold text-[#002147]">{item.title}</h3>
-                  <p className="text-lg text-gray-700 mt-4">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Testimonials Section */}
-          <section className="bg-[#f8fafc] py-12 mb-16 rounded-lg">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] text-center mb-6">What Our Students Say</h2>
-            <div className="flex overflow-x-scroll gap-8">
-              {[
-                { name: 'John Doe', program: 'Full Stack Development', testimonial: 'The course provided me with in-depth knowledge and practical experience that helped me secure a job in a top company.' },
-                { name: 'Jane Smith', program: 'Project Management', testimonial: 'This certification enhanced my career and gave me the confidence to lead successful projects.' },
-                { name: 'Mark Johnson', program: 'Data Science', testimonial: 'The hands-on approach and industry insights were invaluable in shaping my understanding of data science.' }
-              ].map((testimonial) => (
-                <div key={testimonial.name} className="bg-white p-6 rounded-lg shadow-md max-w-xs">
-                  <p className="text-lg text-gray-700 italic">"{testimonial.testimonial}"</p>
-                  <p className="text-xl font-semibold text-[#002147] mt-4">{testimonial.name}</p>
-                  <p className="text-lg text-gray-500">{testimonial.program}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Contact Information Section */}
-          <section className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-[#002147] mb-6">Get in Touch</h2>
-            <p className="text-lg text-gray-700 mb-4">For more information or queries, feel free to contact us.</p>
-            <p className="text-lg text-gray-700">
-              <strong>Email:</strong> <a href="mailto:training@tat.ac.in" className="text-blue-600 hover:text-blue-800">training@tat.ac.in</a>
-            </p>
-            <p className="text-lg text-gray-700">
-              <strong>Phone:</strong> +91 123 456 7890
+          <section className="mb-16 animate-fade-in-up delay-200">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Performance evaluations through assessments and feedback sessions help students track their progress. Faculty mentors provide personalized guidance, identifying areas for improvement. The training ensures that students graduate with the technical expertise and professional skills required to meet industry standards.
             </p>
           </section>
         </div>
