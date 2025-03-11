@@ -69,7 +69,7 @@ const Academics = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               ></path>
             </svg>
-            
+
           </button>
 
           <div className={`lg:block ${isSidebarOpen ? 'block' : 'hidden'} lg:w-full`}>
@@ -88,7 +88,7 @@ const Academics = () => {
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link}>
-                  <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
+                    <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
                       {item.name}
                     </button>
                   </Link>
@@ -102,82 +102,19 @@ const Academics = () => {
           {/* Main Content */}
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Introduction</h2>
+
               <p class="text-lg text-justify">
-                Trident Academy of Technology offers the kind of education needed for leadership in a rapidly changing world. Its departments – Department of Biotechnology, Department of Civil Engineering, Department Computer Science and Engineering,  Department of Electrical and Electronics Engineering, Department of Electronics and Telecommunication Engineering, Department of Mechanical Engineering,  Department of Computer Science and Information Technology, Department of Computer Science and Technology, Department of Computer Science and Engineering (AI & ML), Department of MCA and Department of MBA – offer a breadth of highly regarded M.Tech./B.Tech./M.B.A./M.C.A. degree programs under Biju Pattnaik University of Technology that allow students the freedom to explore their intellectual and personal passions.
-              </p>
+                Trident Academy of Technology offers a well-planned education system that helps students gain knowledge, develop skills, and prepare for their careers. With undergraduate and postgraduate programs across various fields, the curriculum is designed to provide both theoretical understanding and practical experience. Students are encouraged to think critically, communicate effectively, and apply their learning to real-world situations.              </p>
+            </div>
+            <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-lg text-justify">
+                Trident focuses on making learning engaging and useful. Instead of relying only on textbooks, students participate in projects, research, and industry-based training. Modern labs, expert faculty, and hands-on activities create an environment where students can explore new ideas and improve their problem-solving abilities. Internship opportunities and skill-building sessions further enhance their professional growth.  </p>
+            </div>
+            <div class="col-span-1 md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
+              <p class="text-lg text-justify">
+                Education at Trident goes beyond academics. The aim is to help students become capable professionals who can adapt to challenges and contribute meaningfully to their fields. With a focus on industry trends and emerging technologies, Trident ensures that graduates are well-equipped for a successful future. </p>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Departments</h2>
-              <p class="text-lg text-justify">
-                The institution offers a wide range of departments across multiple fields such as Engineering, Management, Biotechnology, and Social Work.
-              </p>
-              <a href="/departments" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Learning-resources</h2>
-              <p class="text-lg text-justify">
-                The institution is equipped with cutting-edge learning resources such as state-of-the-art laboratories, a comprehensive library, e-learning tools, and online resources to support students’ academic journey.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Academic Advisory Board</h2>
-              <p class="text-lg text-justify">
-                The Academic Advisory Board plays a vital role in shaping the academic policies, curricula, and ensuring the overall academic quality of the institution. The board consists of experienced academic professionals and experts from various domains.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Academic Monitoring Council</h2>
-              <p class="text-lg text-justify">
-                The Academic Monitoring Council regularly evaluates the academic performance of students, faculty, and departments to ensure that the institution maintains high standards of education and learning.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Peer Evaluation</h2>
-              <p class="text-lg text-justify">
-                The institution implements a peer evaluation system to assess both student performance and faculty teaching effectiveness. This feedback is used to improve academic standards and teaching methods.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Chapters</h2>
-              <p class="text-lg text-justify">
-                Various academic and professional chapters are maintained within the institution to foster student involvement in extracurricular and co-curricular activities, as well as to encourage knowledge sharing and leadership.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Programme & Course Outcome</h2>
-              <p class="text-lg text-justify">
-                Each program and course offered by the institution is designed to meet specific outcomes that contribute to the holistic development of students. These outcomes are regularly reviewed and aligned with industry needs.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Calendar</h2>
-              <p class="text-lg text-justify">
-                The academic calendar of the institution includes important dates such as the start and end of semesters, holidays, exam schedules, and other academic events to ensure smooth academic operations.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">Time Table</h2>
-              <p class="text-lg text-justify">
-                A well-structured time table is provided to all students at the beginning of each semester, ensuring that students are aware of their class schedules and academic requirements.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <h2 class="text-3xl font-semibold mb-4">BPUT Regulation</h2>
-              <p class="text-lg text-justify">
-                The institution adheres to the guidelines and regulations set by Biju Patnaik University of Technology (BPUT), ensuring that all academic policies and procedures are in line with the university’s standards and requirements.
-              </p>
-              <a href="#" class="text-blue-500 hover:underline">Know More</a>
-            </div>
           </div>
         </div>
       </main>
