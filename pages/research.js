@@ -112,7 +112,7 @@ export default function Research() {
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link}>
-                  <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
+                    <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
                       {item.name}
                     </button>
                   </Link>
@@ -127,9 +127,8 @@ export default function Research() {
         <div className="w-full lg:w-3/4 space-y-12">
           {/* Sections */}
           <section id="introduction" className="space-y-4">
-            <h2 className="text-3xl font-semibold text-[#002147]">Research Introduction</h2>
             <p className="text-lg text-gray-700">
-              Trident Academy of Technology is committed to cutting-edge research and innovation, addressing real-world challenges through interdisciplinary collaboration and impactful discoveries.
+              Trident Academy of Technology is dedicated to advancing research by providing modern facilities and a collaborative environment for students and faculty. Research activities span multiple disciplines, focusing on engineering, technology, and applied sciences. Trident encourages innovative projects that address industry needs and societal challenges, ensuring that research outcomes contribute to technological growth and practical solutions.
             </p>
           </section>
 
@@ -137,45 +136,22 @@ export default function Research() {
             <h2 className="text-3xl font-semibold text-[#002147]">Vision & Mission</h2>
             <h3 className="text-xl font-semibold">Our Vision</h3>
             <p className="text-lg text-gray-700">
-              To become a global leader in interdisciplinary research, fostering technological advancements and societal growth.
+              To develop a research-driven atmosphere where students and faculty explore new ideas, create solutions, and contribute to technological and social progress. Trident Academy of Technology aims to be a center for advanced studies, bridging innovation with real-world impact.
             </p>
             <h3 className="text-xl font-semibold">Our Mission</h3>
             <p className="text-lg text-gray-700">
-              To cultivate innovation and excellence in research by engaging students and faculty in transformative projects that make a tangible difference.
+              To provide a strong foundation for research by offering modern facilities and continuous support. To encourage meaningful projects that address real challenges and promote collaboration across different disciplines. To contribute to knowledge through impactful research publications and prepare skilled individuals for science, industry, and society. To strengthen partnerships with industries and position Trident as a leader in advanced studies and innovation.
             </p>
           </section>
 
           <section id="initiatives" className="space-y-4">
-            <h2 className="text-3xl font-semibold text-[#002147]">Research Initiatives</h2>
+            <h2 className="text-3xl font-semibold text-[#002147]">Advancing Research and Innovation at Trident</h2>
             <p className="text-lg text-gray-700">
-              Our initiatives span diverse disciplines, from artificial intelligence to renewable energy. We strive to create impactful solutions for global challenges.
+              Trident Research fosters collaboration across disciplines to inspire innovation among students and faculty. The focus is on developing solutions that address industrial and societal challenges while contributing to emerging fields.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {researchAreas.map((area, idx) => (
-                <div
-                  key={idx}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300"
-                >
-                  <h3 className="text-2xl font-semibold text-[#002147]">{area.title}</h3>
-                  <p className="text-lg text-gray-700 mt-2">{area.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section id="highlights" className="space-y-4">
-            <h2 className="text-3xl font-semibold text-[#002147]">Research Highlights</h2>
-            <ul className="list-disc list-inside text-lg text-gray-700 space-y-2">
-              <li>
-                Development of AI-powered traffic management systems for smart cities.
-              </li>
-              <li>
-                Breakthroughs in renewable energy storage for sustainable living.
-              </li>
-              <li>
-                Innovations in genomics and biotechnology to combat global health challenges.
-              </li>
-            </ul>
+            <p className="text-lg text-gray-700">
+              The institute supports research through initiatives like IEDC activities, student technical clubs, and funding programs. Faculty and students are encouraged to engage in national and international conferences, promoting knowledge exchange and academic recognition.
+            </p>
           </section>
         </div>
       </main>
