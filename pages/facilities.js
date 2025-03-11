@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import Link from 'next/link';
 import { useState } from 'react';
+import { motion } from "framer-motion";
 
 const Facilities = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -95,105 +96,60 @@ const Facilities = () => {
           </div>
 
         </aside>
+       
+    <div className="w-full lg:w-3/4 mx-auto space-y-6">
+      {/* Infrastructure */}
+      <motion.div
+        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <p className="text-lg text-gray-700">
+          Trident Academy of Technology provides a well-equipped campus to
+          support education, research, and professional development. Classrooms
+          are designed for interactive learning, and laboratories follow AICTE
+          standards, ensuring students gain practical knowledge through hands-on
+          experience. The library includes a vast collection of books, journals,
+          and digital resources to aid research and self-learning.
+        </p>
+      </motion.div>
 
-        {/* Main Content Area */}
-        <div className="w-full lg:w-3/4 lg:pl-6">
-          {/* Infrastructure Section */}
-          <section id="infrastructure" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Infrastructure</h2>
-            <p className="text-lg text-gray-700">
-              Trident Academy of Technology is equipped with modern infrastructure, including well-designed classrooms, laboratories, and libraries. The facilities are designed to enhance the overall academic experience.
-            </p>
-          </section>
+      {/* Hostels */}
+      <motion.div
+        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+      >
+        <p className="text-lg text-gray-700">
+          Dedicated facilities for engineering and management programs provide
+          students with specialized learning environments. Computer labs with
+          high-speed internet offer access to software tools essential for
+          programming, data analysis, and project work. Workshop areas and
+          research centers encourage innovation, while regular assessments help
+          upgrade infrastructure to meet academic and industry demands.
+        </p>
+      </motion.div>
 
-          {/* Hostels Section */}
-          <section id="hostels" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Hostels</h2>
-            <p className="text-lg text-gray-700">
-              The campus provides excellent hostel facilities with modern amenities. Our hostels are designed to ensure comfort and security, providing a home-like environment for students.
-            </p>
-          </section>
-
-          {/* Transport Section */}
-          <section id="transport" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Transport</h2>
-            <p className="text-lg text-gray-700">
-              We offer a comprehensive transport system that ensures smooth commuting for students and staff. Our fleet of buses connects the campus with key locations in the city.
-            </p>
-          </section>
-
-          {/* Food Centers Section */}
-          <section id="food-centers" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Food Centers</h2>
-            <p className="text-lg text-gray-700">
-              The campus has a variety of food centers offering healthy, nutritious, and affordable meals. Our food centers cater to diverse culinary preferences, ensuring student satisfaction.
-            </p>
-          </section>
-
-          {/* Healthcare Section */}
-          <section id="healthcare" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Healthcare</h2>
-            <p className="text-lg text-gray-700">
-              We prioritize student health with our well-equipped healthcare center, offering 24/7 medical support and emergency services for students and staff.
-            </p>
-          </section>
-
-          {/* Power Backups Section */}
-          <section id="power-backups" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Power Backups</h2>
-            <p className="text-lg text-gray-700">
-              Our campus is equipped with power backup systems to ensure a continuous supply of electricity, ensuring that academic activities and other functions are never interrupted.
-            </p>
-          </section>
-
-          {/* Water Quality Section */}
-          <section id="water-quality" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Water Quality</h2>
-            <p className="text-lg text-gray-700">
-              We ensure clean and safe drinking water across the campus with advanced water filtration systems, promoting the health and well-being of all residents.
-            </p>
-          </section>
-
-          {/* Internet and WiFi Section */}
-          <section id="internet-wifi" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Internet and WiFi</h2>
-            <p className="text-lg text-gray-700">
-              The campus offers high-speed internet access and Wi-Fi connectivity to all students and staff, ensuring that online learning and research are seamless and efficient.
-            </p>
-          </section>
-
-          {/* Sanitations Section */}
-          <section id="sanitations" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Sanitations</h2>
-            <p className="text-lg text-gray-700">
-              We maintain high standards of sanitation across the campus. All washrooms and public areas are regularly cleaned and sanitized to ensure a hygienic environment.
-            </p>
-          </section>
-
-          {/* Campus Security Section */}
-          <section id="campus-security" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Campus Security</h2>
-            <p className="text-lg text-gray-700">
-              The campus is equipped with advanced security systems, including CCTV surveillance, 24/7 security personnel, and controlled access points to ensure the safety and security of all members of the campus community.
-            </p>
-          </section>
-
-          {/* Scholarships Section */}
-          <section id="scholarships" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">Scholarships</h2>
-            <p className="text-lg text-gray-700">
-              We offer a range of scholarships for meritorious and financially disadvantaged students, ensuring that all students have the opportunity to pursue their education without financial constraints.
-            </p>
-          </section>
-
-          {/* ICT Enabled Classroom Section */}
-          <section id="ict-enabled-classroom" className="mb-12">
-            <h2 className="text-3xl font-semibold text-[#002147] mb-6">ICT Enabled Classroom</h2>
-            <p className="text-lg text-gray-700">
-              Our classrooms are equipped with the latest ICT tools and technologies, enabling an interactive and engaging learning experience. These classrooms are designed to facilitate both in-person and online learning.
-            </p>
-          </section>
-        </div>
+      {/* Transport */}
+      <motion.div
+        className="p-6 bg-white shadow-lg rounded-2xl border border-gray-200"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+      >
+        <p className="text-lg text-gray-700">
+          Seminar halls and conference rooms host lectures, technical sessions,
+          and industry interactions. On-campus hostel facilities ensure a
+          comfortable stay for students, with necessary amenities for study and
+          daily activities. Transportation services provide easy access to the
+          campus. Continuous improvements in infrastructure support the evolving
+          needs of students and faculty, ensuring a well-rounded educational
+          experience.
+        </p>
+      </motion.div>
+    </div>
       </main>
 
       <Footer />
