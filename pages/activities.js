@@ -82,7 +82,7 @@ const Activities = () => {
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.link}>
-                  <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
+                    <button className="w-full text-left bg-white text-[#002147] p-3 rounded-lg transition duration-300 ease-in-out shadow-md border border-[#002147] hover:bg-[#003652] hover:text-white hover:shadow-lg">
                       {item.name}
                     </button>
                   </Link>
@@ -94,65 +94,16 @@ const Activities = () => {
         </aside>
 
         {/* Main Content */}
-        <div className="w-full lg:w-3/4 space-y-12">
-          {/* Dynamic Sections */}
-          {[
-            {
-              id: 'co-curricular',
-              title: 'Co-Curricular Activities',
-              content:
-                'Trident students have access to 20 different student clubs that cater to both cultural and academic interests. Each club is guided by a professor and a faculty coordinator, managed by a governing body of six students.',
-            },
-            {
-              id: 'extra-curricular',
-              title: 'Extra-Curricular Activities',
-              content:
-                'We promote the holistic development of our students by encouraging participation in sports, cultural events, workshops, and leadership activities.',
-            },
-            {
-              id: 'innovation-entrepreneurship',
-              title: 'Innovation & Entrepreneurship',
-              content:
-                'Students are encouraged to bring innovative ideas to life through the support of our incubation cell and entrepreneurship development programs.',
-            },
-            {
-              id: 'sports-games',
-              title: 'Sports and Games',
-              content:
-                'Our state-of-the-art sports facilities and regular competitions ensure students excel in both individual and team sports.',
-            },
-            {
-              id: 'trilogy-magazine',
-              title: 'TRILOGY: The Annual Magazine',
-              content:
-                'Trilogy showcases the creativity and talent of our students, offering a glimpse into their achievements and artistic endeavors.',
-            },
-            {
-              id: 'iedc',
-              title: 'IEDC (Innovation & Entrepreneurship Development Cell)',
-              content:
-                'The IEDC at Trident provides guidance, mentorship, and support for students to develop entrepreneurial skills and turn innovative ideas into reality.',
-            },
-            {
-              id: 'iedc-projects',
-              title: 'IEDC Projects',
-              content:
-                'Students work on real-world projects, combining technical expertise with creativity to solve contemporary challenges.',
-            },
-            {
-              id: 'incubation-cell',
-              title: 'Incubation Cell',
-              content:
-                'The Incubation Cell at Trident fosters the spirit of entrepreneurship by providing resources and mentorship to budding innovators.',
-            },
-          ].map((section) => (
-            <section id={section.id} key={section.id} className="space-y-4">
-              <h2 className="text-3xl font-semibold text-[#002147]">
-                {section.title}
-              </h2>
-              <p className="text-lg text-gray-700">{section.content}</p>
-            </section>
-          ))}
+        <div className="w-full lg:w-3/4 space-y-12 p-6 bg-white shadow-lg rounded-2xl">
+          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-blue-500 pl-4">
+            Trident provides students with opportunities to engage in various activities that support both academic and personal development. Industry interactions, workshops, and seminars help students gain practical knowledge and stay updated with current trends. Leadership programs and student-led initiatives encourage teamwork, communication, and decision-making skills.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-green-500 pl-4">
+            Beyond academics, cultural events, competitions, and community engagement programs allow students to explore their interests and develop a well-rounded perspective. These activities help students build confidence, improve problem-solving abilities, and prepare for professional challenges.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-yellow-500 pl-4">
+            With faculty support and access to resources, students can participate in activities that align with their goals, ensuring they graduate with both theoretical knowledge and practical experience.
+          </p>
         </div>
       </main>
 
