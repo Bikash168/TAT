@@ -108,7 +108,7 @@ const NewsEvents = () => {
       img: "/images/wifi.jpg",
       bgColor: "bg-indigo-600",
       borderColor: "border-indigo-600",
-      link: "/internet-wifi",
+      link: "/images/internet-wifi.jpg",
     },
   };
 
