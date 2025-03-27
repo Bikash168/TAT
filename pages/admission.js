@@ -7,6 +7,7 @@ const AdmissionPage = () => {
     return (
         <Layout title="Admission | Trident Academy of Technology">
             <div className="bg-gray-100 mt-20 sm:mt-8 md:mt-6 lg:mt-4 xl:mt-2">
+                
                 {/* Hero Section */}
                 <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
                     <Image src="/images/admission-banner.jpg" alt="Admission Banner" layout="fill" objectFit="cover" className="brightness-75" />
@@ -18,6 +19,29 @@ const AdmissionPage = () => {
                         </Link>
                     </div>
                 </div>
+
+                {/* Information Cards */}
+                <section className="py-12 px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {[
+                        {
+                            title: "Structured Admission Process",
+                            description: "Trident Academy of Technology offers a structured admission process for students seeking quality education in engineering, management, and computer applications. The selection criteria focus on academic performance, entrance exam results, and a personal interview to assess the candidate’s potential. The institution ensures a smooth and transparent admission process, guiding applicants through each step."
+                        },
+                        {
+                            title: "Academic Excellence & Practical Learning",
+                            description: "The institute is committed to providing an environment that fosters academic excellence and practical learning. Well-equipped classrooms, advanced laboratories, and an updated curriculum help students develop technical and managerial skills required for their chosen fields. Industry exposure through seminars, workshops, and hands-on projects bridges the gap between education and real-world applications."
+                        },
+                        {
+                            title: "Career Support & Placement",
+                            description: "Students at Trident also receive career support through dedicated training programs, professional guidance, and placement assistance. The structured learning approach, combined with mentorship from experienced faculty, ensures that graduates are well-prepared for future career opportunities. With admissions now open, students aspiring for quality education can take the next step toward a strong academic foundation and professional success."
+                        }
+                    ].map((card, index) => (
+                        <div key={index} className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+                            <h3 className="text-xl font-semibold text-[#002147]">{card.title}</h3>
+                            <p className="mt-2 text-gray-700 text-justify">{card.description}</p>
+                        </div>
+                    ))}
+                </section>
 
                 {/* Why Choose Us */}
                 <section className="py-10 text-center px-4 md:px-6">
@@ -53,6 +77,7 @@ const AdmissionPage = () => {
                         <p className="text-lg font-semibold">✉️ admissions@tat.ac.in</p>
                     </div>
                 </section>
+
             </div>
             <Footer />
         </Layout>
