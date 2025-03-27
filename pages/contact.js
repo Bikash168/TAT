@@ -35,6 +35,10 @@ const Contact = () => {
           <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
             Contact Us
           </h1>
+          <p className="text-lg text-gray-700 mt-2">
+          For any queries regarding admissions, academic programs, or campus facilities, our team at Trident Academy of Technology is always ready to assist you. We encourage you to reach out and connect with us to explore the opportunities and resources available at our institution.
+          </p>
+          <br />
           <p className="text-lg text-gray-700 mt-2"> {/* Reduced top margin */}
             We would love to hear from you. Whether you have a question or need assistance, feel free to reach out!
           </p>
