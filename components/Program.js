@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 
-const DegreePrograms = () => {
-  const [activeTab, setActiveTab] = useState("Undergraduate");
+const ProgramsSection = () => {
   const router = useRouter();
 
   const tabs = ["Undergraduate", "Postgraduate"];
@@ -38,65 +37,73 @@ const DegreePrograms = () => {
     ],
   };
 
+  const [activeTab, setActiveTab] = useState("Undergraduate");
+  const [programs, setPrograms] = useState(degreePrograms["Undergraduate"]);
+
+  // Update programs when tab changes
+  useEffect(() => {
+    setPrograms([...degreePrograms[activeTab]]); // Spread to prevent stale state issues
+  }, [activeTab]);
+
   return (
     <section id="programs" className="py-12 bg-gray-100">
       <div className="text-center mb-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">Explore Our Degree Programs</h2>
-        <p className="text-gray-600 italic">
-          Choose from diverse programs designed for future leaders and innovators.
-        </p>
+        <p className="text-gray-600 italic">Choose from diverse programs designed for future leaders and innovators.</p>
       </div>
 
       <div className="container mx-auto px-4">
-        {/* Tabs */}
-        <div className="flex justify-center gap-2 sm:gap-4 mb-6">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setActiveTab(tab)}
-              className={`px-5 py-2 text-sm sm:text-lg font-semibold rounded-lg border-2 transition-all duration-300 
-                ${activeTab === tab 
-                  ? "bg-blue-600 text-white border-blue-600 shadow-lg" 
-                  : "bg-white text-gray-700 hover:bg-blue-500 hover:text-white border-gray-300"}`}
+        {/* Content inside the container */}
+      </div>
+      {/* Tabs */}
+      <div className="flex justify-center gap-3 sm:gap-6 mb-6">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-5 py-2 text-sm sm:text-lg font-semibold rounded-lg border-2 transition-all duration-300 
+                ${activeTab === tab
+                ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+                : "bg-white text-gray-700 hover:bg-blue-500 hover:text-white border-gray-300"}`}
+          >
+            {tab} Programs
+          </button>
+        ))}
+      </div>
+
+      {/* Programs List */}
+      <div key={activeTab} className="border-4 p-6 rounded-lg bg-white transition-all duration-500 shadow-lg border-blue-600">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-6">
+          {programs.map((program, index) => (
+            <div
+              key={program.link + index}
+              className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl transition-transform transform hover:scale-105"
+              onClick={() => router.push(`/${program.link}`)}
             >
-              {tab} Programs
-            </button>
+              <div className="relative w-full h-48 md:h-56">
+                <Image
+                  src={program.image}
+                  alt={program.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-lg"
+                  priority
+                />
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-lg font-semibold text-gray-800">{program.name}</h3>
+              </div>
+            </div>
           ))}
         </div>
 
-        {/* Dynamic Content */}
-        <div
-          className={`border-4 p-6 rounded-lg bg-white 
-            ${activeTab === "Undergraduate" ? "border-blue-600" : "border-gray-500"}`}
-        >
-          {/* Grid Section */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-6">
-            {degreePrograms[activeTab]?.map((program) => (
-              <div
-                key={program.link}
-                className="cursor-pointer shadow-md rounded-lg overflow-hidden bg-white hover:shadow-xl transition-transform transform hover:scale-105"
-                onClick={() => router.push(`/${program.link}`)}
-              >
-                <div className="relative w-full h-48 md:h-56">
-                  <Image
-                    src={program.image}
-                    alt={program.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-t-lg"
-                    priority
-                  />
-                </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-lg font-semibold text-gray-800">{program.name}</h3>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* No Programs Message */}
+        {programs.length === 0 && (
+          <p className="text-center text-gray-600 italic">No programs available for this category.</p>
+        )}
       </div>
     </section>
   );
 };
 
-export default DegreePrograms;
+export default ProgramsSection;
