@@ -81,7 +81,7 @@ export default function Grievance() {
           <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Grievance Redressal System at TAT</h2>
             <p className="text-lg text-gray-700 text-justify">
-            Trident Academy of Technology (TAT) prioritizes maintaining a fair and supportive academic environment. To ensure that the concerns of students, faculty, and staff are effectively addressed, the institution has implemented a structured Grievance Redressal System. This system provides a formal mechanism for voicing concerns related to academic matters, campus facilities, discrimination, harassment, and other grievances. The grievance system is organized into three dedicated committees: the General Grievance Redressal Committee (G-GRC), the Women Grievance Redressal Committee (W-GRC), and the SC/ST Grievance Redressal Committee (S-GRC). Students and staff can submit grievances in writing, via email, or through complaint boxes placed at various locations across the campus. Each committee is responsible for reviewing complaints and ensuring timely resolution in accordance with institutional policies.
+              Trident Academy of Technology (TAT) prioritizes maintaining a fair and supportive academic environment. To ensure that the concerns of students, faculty, and staff are effectively addressed, the institution has implemented a structured Grievance Redressal System. This system provides a formal mechanism for voicing concerns related to academic matters, campus facilities, discrimination, harassment, and other grievances. The grievance system is organized into three dedicated committees: the General Grievance Redressal Committee (G-GRC), the Women Grievance Redressal Committee (W-GRC), and the SC/ST Grievance Redressal Committee (S-GRC). Students and staff can submit grievances in writing, via email, or through complaint boxes placed at various locations across the campus. Each committee is responsible for reviewing complaints and ensuring timely resolution in accordance with institutional policies.
             </p>
           </section>
 
@@ -90,32 +90,42 @@ export default function Grievance() {
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Grievance Redressal Committees</h2>
 
             <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-semibold text-[#002147]">General Grievance Redressal Committee (G-GRC)</h3>
+              {/* General Grievance Redressal Committee */}
+              <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+                <h3 className="text-2xl font-semibold text-[#002147] mb-4">
+                  General Grievance Redressal Committee (G-GRC)
+                </h3>
                 <p className="text-lg text-gray-700 text-justify">
-                The General Grievance Redressal Committee (G-GRC) at TAT is responsible for addressing general complaints from students and faculty. These may include issues related to academic grievances, examination-related concerns, hostel accommodations, campus facilities, and administrative matters. The committee functions as a bridge between students and the institution, ensuring that complaints are heard, assessed, and resolved fairly. The G-GRC follows a structured approach where students can submit grievances through written applications or designated grievance portals. The committee examines each case carefully, collects relevant information, and consults concerned departments before taking necessary actions such as modifying institutional policies, improving facilities, or resolving conflicts.
+                  The General Grievance Redressal Committee (G-GRC) at TAT is responsible for addressing general complaints from students and faculty. These may include issues related to academic grievances, examination-related concerns, hostel accommodations, campus facilities, and administrative matters. The committee functions as a bridge between students and the institution, ensuring that complaints are heard, assessed, and resolved fairly. The G-GRC follows a structured approach where students can submit grievances through written applications or designated grievance portals. The committee examines each case carefully, collects relevant information, and consults concerned departments before taking necessary actions such as modifying institutional policies, improving facilities, or resolving conflicts.
                 </p>
               </div>
-              <div id="women">
-                <h3 className="text-2xl font-semibold text-[#002147]">Women Grievance Redressal Committee (W-GRC)</h3>
+
+              {/* Women Grievance Redressal Committee */}
+              <div id="women" className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+                <h3 className="text-2xl font-semibold text-[#002147] mb-4">
+                  Women Grievance Redressal Committee (W-GRC)
+                </h3>
                 <p className="text-lg text-gray-700 text-justify">
-                The Women Grievance Redressal Committee (W-GRC) is dedicated to ensuring the safety, dignity, and equal rights of female students and staff members. It provides a platform for women to voice concerns related to harassment, gender discrimination, and other safety issues within the campus. The committee actively works towards preventing harassment by conducting awareness programs and workshops on gender sensitization. It ensures swift and confidential handling of complaints regarding harassment or discrimination and offers counseling and guidance to affected individuals while taking necessary disciplinary actions against offenders. The W-GRC aims to create a safe academic space where women can freely express their concerns and receive fair treatment.
+                  The Women Grievance Redressal Committee (W-GRC) is dedicated to ensuring the safety, dignity, and equal rights of female students and staff members. It provides a platform for women to voice concerns related to harassment, gender discrimination, and other safety issues within the campus. The committee actively works towards preventing harassment by conducting awareness programs and workshops on gender sensitization. It ensures swift and confidential handling of complaints regarding harassment or discrimination and offers counseling and guidance to affected individuals while taking necessary disciplinary actions against offenders. The W-GRC aims to create a safe academic space where women can freely express their concerns and receive fair treatment.
                 </p>
               </div>
-              <div id="scst">
-                <h3 className="text-2xl font-semibold text-[#002147]">SC & ST Grievance Redressal Committee (S-GRC)</h3>
+
+              {/* SC & ST Grievance Redressal Committee */}
+              <div id="scst" className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
+                <h3 className="text-2xl font-semibold text-[#002147] mb-4">
+                  SC & ST Grievance Redressal Committee (S-GRC)
+                </h3>
                 <p className="text-lg text-gray-700 text-justify">
-                The SC/ST Grievance Redressal Committee (S-GRC) has been established to address grievances related to caste-based discrimination and to ensure an inclusive environment for students and staff belonging to Scheduled Castes (SC) and Scheduled Tribes (ST). The committee is committed to safeguarding their rights and providing equal opportunities for academic and professional growth. It works towards eliminating discrimination by ensuring that no student faces bias based on caste or social background. The committee also recommends policies that promote inclusivity in admissions, scholarships, and institutional programs while assisting students in overcoming challenges by providing guidance and necessary interventions. Through strict monitoring and awareness programs, the committee ensures a discrimination-free learning environment for all.
+                  The SC/ST Grievance Redressal Committee (S-GRC) has been established to address grievances related to caste-based discrimination and to ensure an inclusive environment for students and staff belonging to Scheduled Castes (SC) and Scheduled Tribes (ST). The committee is committed to safeguarding their rights and providing equal opportunities for academic and professional growth. It works towards eliminating discrimination by ensuring that no student faces bias based on caste or social background. The committee also recommends policies that promote inclusivity in admissions, scholarships, and institutional programs while assisting students in overcoming challenges by providing guidance and necessary interventions. Through strict monitoring and awareness programs, the committee ensures a discrimination-free learning environment for all.
                 </p>
-                <br />
+              </div>
+              <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-200">
                 <p className="text-lg text-gray-700 text-justify">
-                All grievances are submitted in writing through designated boxes or online portals. Each committee meets regularly to review complaints and ensure impartial, confidential, and timely redressal. The structured grievance system at TAT fosters a supportive environment for students and staff, upholding fairness, dignity, and mutual respect within the institution.
+                  All grievances are submitted in writing through designated boxes or online portals. Each committee meets regularly to review complaints and ensure impartial, confidential, and timely redressal. The structured grievance system at TAT fosters a supportive environment for students and staff, upholding fairness, dignity, and mutual respect within the institution.
                 </p>
-                
               </div>
             </div>
           </section>
-
           {/* Grievance Submission Form */}
           <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Submit Your Grievance</h2>
