@@ -4,9 +4,9 @@ import { useSpring, animated } from "@react-spring/web";
 
 const ResearchSpotlight = () => {
   const metrics = [
-    { number: 13636, label: "Indexed Publications", color: "bg-blue-500" },
-    { number: 8404, label: "Scopus-Indexed Publications", color: "bg-green-500" },
-    { number: 810, label: "National & International Patents", color: "bg-orange-500" },
+    { number: 1363, label: "Indexed Publications", color: "bg-blue-500" },
+    { number: 540, label: "Scopus-Indexed Publications", color: "bg-green-500" },
+    { number: 21, label: "National & International Patents", color: "bg-orange-500" },
   ];
 
   const laboratories = [
