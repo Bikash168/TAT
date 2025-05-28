@@ -99,73 +99,73 @@ const Activities = () => {
         </aside>
 
         {/* Main Content */}
-        <div className="w-full lg:w-3/4 space-y-12 p-6 bg-white shadow-lg rounded-2xl">
-          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-blue-500 pl-4 text-justify">
-            Trident provides students with opportunities to engage in various activities that support both academic and personal development. Industry interactions, workshops, and seminars help students gain practical knowledge and stay updated with current trends.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-green-500 pl-4 text-justify">
-            Leadership programs and student-led initiatives encourage teamwork, communication, and decision-making skills. Cultural events, competitions, and community engagement programs allow students to explore their interests and develop a well-rounded perspective.
-          </p>
-          <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-yellow-500 pl-4 text-justify">
-            These activities help students build confidence, improve problem-solving abilities, and prepare for professional challenges with faculty support and access to resources.
-          </p>
+        <div className="relative w-full lg:w-3/4 space-y-12 p-6 bg-white shadow-lg rounded-2xl mx-auto overflow-hidden">
+          {/* Yellow Blob Design Element on the Right */}
+          <div className="absolute bg-yellow-400 rounded-bl-[150px] rounded-tl-full h-[350px] w-[350px] -right-20 -top-10 z-0 opacity-20 blur-2xl"></div>
 
-          {/* Swiper Carousel */}
-          <div className="w-full flex flex-col items-center">
-            <Swiper
-              slidesPerView={1}
-              spaceBetween={20}
-              pagination={{
-                clickable: true,
-              }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                640: { slidesPerView: 1 },
-                768: { slidesPerView: 2 },
-                1024: { slidesPerView: 3 },
-              }}
-              modules={[Pagination, Autoplay]}
-              className="w-full"
-            >
-              {[
-                { img: '/images/social-work.jpg', title: 'Social Work' },
-                { img: '/images/conclave.jpg', title: 'Conclave' },
-                { img: '/images/case-study.jpg', title: 'Case Study' },
-                { img: '/images/FDP.jpg', title: 'FDP' },
-                { img: '/images/Function.jpg', title: 'Function' },
-                { img: '/images/Sports (2).jpg', title: 'Sports Day' },
-                { img: '/images/Picnic.jpg', title: 'Picnic' },
-                { img: '/images/Yoga.jpeg', title: 'Yoga Day' },
-                { img: '/images/inter-college-contest.jpeg', title: 'Inter College Contest' },
-              ].map((event, index) => (
-                <SwiperSlide key={index} className="flex flex-col items-center space-y-3 pb-6">
-                  <div className="w-[320px] h-[220px] overflow-hidden rounded-xl shadow-lg border">
-                    <img
-                      src={event.img}
-                      alt={event.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="text-center text-lg font-semibold text-gray-700">
-                    {event.title}
-                  </p>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+          <div className="relative z-10 space-y-6">
+            <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-yellow-900 pl-4 text-justify">
+              Trident provides students with opportunities to engage in various activities that support both academic and personal development. Industry interactions, workshops, and seminars help students gain practical knowledge and stay updated with current trends.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-yellow-900 pl-4 text-justify">
+              Leadership programs and student-led initiatives encourage teamwork, communication, and decision-making skills. Cultural events, competitions, and community engagement programs allow students to explore their interests and develop a well-rounded perspective.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed border-l-4 border-yellow-900 pl-4 text-justify">
+              These activities help students build confidence, improve problem-solving abilities, and prepare for professional challenges with faculty support and access to resources.
+            </p>
 
-            {/* Custom spacing for pagination */}
-            <style jsx global>{`
-    .swiper-pagination {
-      margin-top: 1.5rem;
-      position: relative !important;
-    }
-  `}</style>
+            {/* Swiper Carousel */}
+            <div className="w-full flex flex-col items-center">
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={20}
+                pagination={{ clickable: true }}
+                autoplay={{ delay: 2500, disableOnInteraction: false }}
+                breakpoints={{
+                  640: { slidesPerView: 1 },
+                  768: { slidesPerView: 2 },
+                  1024: { slidesPerView: 3 },
+                }}
+                modules={[Pagination, Autoplay]}
+                className="w-full"
+              >
+                {[
+                  { img: '/images/social-work.jpg', title: 'Social Work' },
+                  { img: '/images/conclave.jpg', title: 'Conclave' },
+                  { img: '/images/case-study.jpg', title: 'Case Study' },
+                  { img: '/images/FDP.jpg', title: 'FDP' },
+                  { img: '/images/Function.jpg', title: 'Function' },
+                  { img: '/images/Sports (2).jpg', title: 'Sports Day' },
+                  { img: '/images/Picnic.jpg', title: 'Picnic' },
+                  { img: '/images/Yoga.jpeg', title: 'Yoga Day' },
+                  { img: '/images/inter-college-contest.jpeg', title: 'Inter College Contest' },
+                ].map((event, index) => (
+                  <SwiperSlide key={index} className="flex flex-col items-center space-y-3 pb-6">
+                    <div className="w-[320px] h-[220px] overflow-hidden rounded-xl shadow-lg border">
+                      <img
+                        src={event.img}
+                        alt={event.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <p className="text-center text-lg font-semibold text-gray-700">
+                      {event.title}
+                    </p>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+
+              {/* Swiper pagination spacing */}
+              <style jsx global>{`
+        .swiper-pagination {
+          margin-top: 1.5rem;
+          position: relative !important;
+        }
+      `}</style>
+            </div>
           </div>
-
         </div>
+
       </main>
 
       <Footer />

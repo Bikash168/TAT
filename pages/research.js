@@ -91,12 +91,16 @@ export default function Research() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="p-6 md:w-1/2 text-gray-700">
-              <h2 className="text-2xl font-semibold mb-3 text-[#002147]">Research at Trident</h2>
-              <p className="text-lg text-justify">
+            <div className="relative p-6 md:w-1/2 text-gray-700">
+              {/* Yellow Blob Design Element on the Right */}
+              <div className="absolute bg-yellow-400 rounded-bl-[150px] rounded-tl-full h-[350px] w-[350px] -right-10 top-0 z-0 opacity-20 blur-2xl"></div>
+
+              <h2 className="text-2xl font-semibold mb-3 text-[#002147] relative z-10">Research at Trident</h2>
+              <p className="text-lg text-justify relative z-10">
                 Trident Academy of Technology is dedicated to advancing research by providing modern facilities and a collaborative environment for students and faculty. Research activities span multiple disciplines, focusing on engineering, technology, and applied sciences. Trident encourages innovative projects that address industry needs and societal challenges, ensuring that research outcomes contribute to technological growth and practical solutions.
               </p>
             </div>
+
           </motion.section>
 
           {/* Section 2 */}
@@ -114,16 +118,23 @@ export default function Research() {
                 className="w-full h-full object-contain max-h-[500px] p-4"
               />
             </div>
-            <div className="p-6 md:w-1/2 text-gray-700">
-              <h3 className="text-xl font-semibold mb-1 text-[#002147]">Our Vision</h3>
-              <p className="text-lg mb-3 text-justify">
-                To develop a research-driven atmosphere where students and faculty explore new ideas, create solutions, and contribute to technological and social progress.
-              </p>
-              <h3 className="text-xl font-semibold mb-1 text-[#002147]">Our Mission</h3>
-              <p className="text-lg text-justify">
-                To provide a strong foundation for research by offering modern facilities and continuous support. To encourage meaningful projects that address real challenges and promote collaboration across different disciplines. To contribute to knowledge through impactful research publications and prepare skilled individuals for science, industry, and society.
-              </p>
+            <div className="relative p-6 md:w-1/2 text-gray-700">
+              {/* Optional Yellow Blob Design Element on the Right */}
+              <div className="absolute bg-yellow-400 rounded-bl-[150px] rounded-tl-full h-[350px] w-[350px] -right-10 top-0 z-0 opacity-20 blur-2xl"></div>
+
+              <div className="relative z-10">
+                <h3 className="text-xl font-semibold mb-1 text-[#002147]">Our Vision</h3>
+                <p className="text-lg mb-3 text-justify">
+                  To develop a research-driven atmosphere where students and faculty explore new ideas, create solutions, and contribute to technological and social progress.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-1 text-[#002147]">Our Mission</h3>
+                <p className="text-lg text-justify">
+                  To provide a strong foundation for research by offering modern facilities and continuous support. To encourage meaningful projects that address real challenges and promote collaboration across different disciplines. To contribute to knowledge through impactful research publications and prepare skilled individuals for science, industry, and society.
+                </p>
+              </div>
             </div>
+
           </motion.section>
 
           {/* Section 3 */}
@@ -141,17 +152,23 @@ export default function Research() {
                 className="w-full h-full object-contain max-h-[500px] p-4"
               />
             </div>
-            <div className="p-6 md:w-1/2 text-gray-700">
-              <h2 className="text-2xl font-semibold mb-3 text-[#002147]">
-                Advancing Research and Innovation at Trident
-              </h2>
-              <p className="text-lg mb-3 text-justify">
-                Trident Research fosters collaboration across disciplines to inspire innovation among students and faculty. The focus is on developing solutions that address industrial and societal challenges while contributing to emerging fields.
-              </p>
-              <p className="text-lg text-justify">
-                The institute supports research through initiatives like IEDC activities, student technical clubs, and funding programs. Faculty and students are encouraged to engage in national and international conferences, promoting knowledge exchange and academic recognition.
-              </p>
+            <div className="relative p-6 md:w-1/2 text-gray-700">
+              {/* Yellow Blob Design Element on the Right */}
+              <div className="absolute bg-yellow-400 rounded-bl-[150px] rounded-tl-full h-[350px] w-[350px] -right-10 top-0 z-0 opacity-20 blur-2xl"></div>
+
+              <div className="relative z-10">
+                <h2 className="text-2xl font-semibold mb-3 text-[#002147]">
+                  Advancing Research and Innovation at Trident
+                </h2>
+                <p className="text-lg mb-3 text-justify">
+                  Trident Research fosters collaboration across disciplines to inspire innovation among students and faculty. The focus is on developing solutions that address industrial and societal challenges while contributing to emerging fields.
+                </p>
+                <p className="text-lg text-justify">
+                  The institute supports research through initiatives like IEDC activities, student technical clubs, and funding programs. Faculty and students are encouraged to engage in national and international conferences, promoting knowledge exchange and academic recognition.
+                </p>
+              </div>
             </div>
+
           </motion.section>
         </div>
       </main>
