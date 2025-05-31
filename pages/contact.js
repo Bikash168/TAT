@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import Footer from '../components/Footer';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,7 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleInputChange = (e) => {
@@ -21,54 +23,53 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your server or email service
+    // Simulate submission
     setFormSubmitted(true);
   };
 
   return (
     <Layout title="Contact Us | Trident Academy of Technology">
-      <main className="mt-[115px] sm:mt-[97px] md:mt-[81px] lg:mt-[66px] xl:mt-[58px]">
+      <main>
+        {/* Banner Image */}
+        <div className="w-full h-80 relative">
+          <Image
+            src="/images/contact-trident.jpg"
+            alt="Contact Trident Academy of Technology"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-lg"
+            priority
+          />
+        </div>
 
-      {/* Reduced top margin to mt-1 */}
         {/* Contact Info Section */}
-        <section className="text-center mb-8"> {/* Reduced bottom margin */}
-          <h1 className="text-4xl font-semibold text-[#002147] leading-tight">
-            Contact Us
-          </h1>
+        <section className="text-center mb-10">
+          <h1 className="text-4xl font-semibold text-[#002147] leading-tight">Contact Us</h1>
           <p className="text-lg text-gray-700 mt-2">
-          For any queries regarding admissions, academic programs, or campus facilities, our team at Trident Academy of Technology is always ready to assist you. We encourage you to reach out and connect with us to explore the opportunities and resources available at our institution.
+            For any queries regarding admissions, academic programs, or campus facilities, our team at Trident Academy of Technology is always ready to assist you.
           </p>
           <br />
-          <p className="text-lg text-gray-700 mt-2"> {/* Reduced top margin */}
+          <p className="text-lg text-gray-700 mt-2">
             We would love to hear from you. Whether you have a question or need assistance, feel free to reach out!
           </p>
         </section>
 
-        {/* Contact Details */}
-        <section className="lg:flex lg:gap-12 mb-8"> {/* Reduced bottom margin and gap */}
+        {/* Contact Details + Map */}
+        <section className="lg:flex lg:gap-12 mb-8">
           <div className="lg:w-1/3 bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Contact Details</h2>
             <p className="text-lg text-gray-700 mb-4">
               Feel free to reach us using the details below.
             </p>
             <ul className="text-lg text-gray-700 space-y-4">
-              <li>
-                <strong>Address:</strong> Trident Academy of Technology, Bhubaneswar, Odisha
-              </li>
-              <li>
-                <strong>Email:</strong> info@trident.ac.in
-              </li>
-              <li>
-                <strong>Tel:</strong> 0674-3530517
-              </li>
-              <li>
-                <strong>Mob:</strong> 9861191195
-              </li>
+              <li><strong>Address:</strong> Trident Academy of Technology, Bhubaneswar, Odisha</li>
+              <li><strong>Email:</strong> info@trident.ac.in</li>
+              <li><strong>Tel:</strong> 0674-3530517</li>
+              <li><strong>Mob:</strong> 9861191195</li>
             </ul>
           </div>
 
-          {/* Map Section */}
-          <div className="lg:w-2/3 bg-white p-6 rounded-lg shadow-lg">
+          <div className="lg:w-2/3 bg-white p-6 rounded-lg shadow-lg mt-8 lg:mt-0">
             <h2 className="text-3xl font-semibold text-[#002147] mb-6">Find Us</h2>
             <div className="w-full h-80">
               <iframe
@@ -84,11 +85,11 @@ const Contact = () => {
           </div>
         </section>
 
-        {/* Contact Form Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-8"> {/* Reduced bottom margin */}
+        {/* Contact Form */}
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-8">
           <h2 className="text-3xl font-semibold text-[#002147] mb-6">Get In Touch</h2>
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4"> {/* Reduced gap */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <div>
                 <label className="text-lg text-gray-700" htmlFor="name">Name</label>
                 <input
@@ -115,7 +116,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="mt-4"> {/* Reduced margin-top */}
+            <div className="mt-4">
               <label className="text-lg text-gray-700" htmlFor="subject">Subject</label>
               <input
                 type="text"
@@ -128,7 +129,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="mt-4"> {/* Reduced margin-top */}
+            <div className="mt-4">
               <label className="text-lg text-gray-700" htmlFor="message">Message</label>
               <textarea
                 id="message"
@@ -141,7 +142,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <div className="mt-4 text-center"> {/* Reduced margin-top */}
+            <div className="mt-4 text-center">
               <button type="submit" className="px-8 py-3 bg-[#002147] text-white rounded-lg hover:bg-[#004D73] transition">
                 Send Message
               </button>
@@ -149,13 +150,13 @@ const Contact = () => {
           </form>
 
           {formSubmitted && (
-            <div className="mt-4 text-center text-green-500"> {/* Reduced margin-top */}
+            <div className="mt-4 text-center text-green-500">
               <p>Thank you for your message! We will get back to you shortly.</p>
             </div>
           )}
         </section>
       </main>
-      <Footer /> {/* Footer is here */}
+      <Footer />
     </Layout>
   );
 };
